@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      walk_Gun_Left_Up_0: -8755330576473568079
+      walk_Gun_Left_Up_1: -2915659735799000892
+      walk_Gun_Left_Up_2: 5047597979648798133
+      walk_Gun_Left_Up_3: 7956237965804456059
+      walk_Gun_Left_Up_4: -5406068424519658771
+      walk_Gun_Left_Up_5: -2525803131304306500
+      walk_Gun_Left_Up_6: -4678126513366995715
+      walk_Gun_Left_Up_7: -4991150397914519453
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

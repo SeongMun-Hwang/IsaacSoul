@@ -178,7 +178,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -192,7 +192,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1322,7 +1322,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      walk_Spear_0: -2521167521798751967
+      walk_Spear_1: 8211473099266379790
+      walk_Spear_10: -4389304944852118582
+      walk_Spear_11: -5101566294187060048
+      walk_Spear_12: 8228986768678182623
+      walk_Spear_13: -8988745439888771426
+      walk_Spear_14: -5601974286342337524
+      walk_Spear_15: -449259724354073447
+      walk_Spear_16: -6439188528487505116
+      walk_Spear_17: -6676113782406002564
+      walk_Spear_18: 9214751202016724565
+      walk_Spear_19: 3392667137575094687
+      walk_Spear_2: -8990425368289153962
+      walk_Spear_20: -3948727870958934855
+      walk_Spear_21: -1383789105562191879
+      walk_Spear_22: 6017384496748968177
+      walk_Spear_23: -3341978456391525133
+      walk_Spear_24: 2889109371982337508
+      walk_Spear_25: 3970256944686434152
+      walk_Spear_26: 8551522806169997686
+      walk_Spear_27: 1063897718414796390
+      walk_Spear_28: 8154392519841465347
+      walk_Spear_29: -8404440523285568376
+      walk_Spear_3: 8750773967509777679
+      walk_Spear_30: -2352852503403625142
+      walk_Spear_31: 6153259082236548130
+      walk_Spear_32: 8604813368052821162
+      walk_Spear_33: -3695258133813439807
+      walk_Spear_34: -6360946549134012594
+      walk_Spear_35: -2744498947099375214
+      walk_Spear_36: 7106152862696787610
+      walk_Spear_37: 8618412518929948336
+      walk_Spear_38: 786777208315900797
+      walk_Spear_39: -4111425608363463550
+      walk_Spear_4: 4345009006419245722
+      walk_Spear_40: 7189323423619904181
+      walk_Spear_41: -8056085375945960421
+      walk_Spear_42: -1628877283872211180
+      walk_Spear_43: 1910924051446724867
+      walk_Spear_44: -2033467217793427762
+      walk_Spear_45: 3642697025314462393
+      walk_Spear_46: -4942290833840120814
+      walk_Spear_47: -1572922525051824014
+      walk_Spear_5: 4848274901573237240
+      walk_Spear_6: -314754563426384802
+      walk_Spear_7: 5461872978361831957
+      walk_Spear_8: 6396206797257902013
+      walk_Spear_9: -5929032992387733024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

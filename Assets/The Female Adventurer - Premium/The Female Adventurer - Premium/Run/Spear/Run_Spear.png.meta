@@ -178,7 +178,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -192,7 +192,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1322,7 +1322,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Run_Spear_0: 8730833375471364936
+      Run_Spear_1: -4421159123677127272
+      Run_Spear_10: -4017247500022164648
+      Run_Spear_11: -76890974431826490
+      Run_Spear_12: -5823589577607787804
+      Run_Spear_13: -6290623723572417079
+      Run_Spear_14: -6314965741883296623
+      Run_Spear_15: 8480094326413862888
+      Run_Spear_16: 7606299289103366629
+      Run_Spear_17: 1288500537722840491
+      Run_Spear_18: -8655650949585881050
+      Run_Spear_19: -2163120338822109036
+      Run_Spear_2: 4634297499895103423
+      Run_Spear_20: 179801784285539231
+      Run_Spear_21: 6891301547155090161
+      Run_Spear_22: -7799418283654400017
+      Run_Spear_23: 6536618414611290843
+      Run_Spear_24: 2978507369364046221
+      Run_Spear_25: 4262280508913131083
+      Run_Spear_26: -3875271839000031538
+      Run_Spear_27: 3072671947678072249
+      Run_Spear_28: 3120872965875357056
+      Run_Spear_29: -5978064887283478779
+      Run_Spear_3: 1759968391035331912
+      Run_Spear_30: -8576425434227164828
+      Run_Spear_31: 3960175457158755103
+      Run_Spear_32: -1566819072110307350
+      Run_Spear_33: -2971181385760444865
+      Run_Spear_34: 7941826513088616112
+      Run_Spear_35: 5741333115106181859
+      Run_Spear_36: -6756856576420914645
+      Run_Spear_37: -3170233222292931383
+      Run_Spear_38: -592203548515528706
+      Run_Spear_39: 5580022406524357342
+      Run_Spear_4: -8757575779775104785
+      Run_Spear_40: -4254697578631938124
+      Run_Spear_41: 1189972037421363323
+      Run_Spear_42: -1022944261523819655
+      Run_Spear_43: -2603085032923918016
+      Run_Spear_44: 6190095102705226291
+      Run_Spear_45: -3022031275766059274
+      Run_Spear_46: -8799420662053865696
+      Run_Spear_47: -5602804807028373901
+      Run_Spear_5: 1919683918183202806
+      Run_Spear_6: 6841535849297818325
+      Run_Spear_7: -7437075908037275626
+      Run_Spear_8: 1191084209063651675
+      Run_Spear_9: -1433252079951870400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

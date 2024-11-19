@@ -178,7 +178,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -192,7 +192,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1322,7 +1322,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      walk_Gun_0: 8406333539488161638
+      walk_Gun_1: 6508525812175322977
+      walk_Gun_10: -4580240495468694801
+      walk_Gun_11: 1382265155580324406
+      walk_Gun_12: 1618528253982860406
+      walk_Gun_13: 7860860816674859951
+      walk_Gun_14: -5037578989479564490
+      walk_Gun_15: -8208760134739169452
+      walk_Gun_16: -7909688970556796440
+      walk_Gun_17: 5120143367172877099
+      walk_Gun_18: 7016415166398283223
+      walk_Gun_19: 4565919449450316621
+      walk_Gun_2: -6645531138105887575
+      walk_Gun_20: -1249944904337028747
+      walk_Gun_21: -9058869711659434909
+      walk_Gun_22: 2531678453825569248
+      walk_Gun_23: 1378517976860887622
+      walk_Gun_24: 122923165432353468
+      walk_Gun_25: -7805834709096016172
+      walk_Gun_26: -6669310639046144954
+      walk_Gun_27: -7131028026798470776
+      walk_Gun_28: 3018189260697380591
+      walk_Gun_29: 2575141025199186134
+      walk_Gun_3: -2658961886208223514
+      walk_Gun_30: -5071919899680838492
+      walk_Gun_31: 2355969899086731893
+      walk_Gun_32: 880581690941951693
+      walk_Gun_33: -5332142520844618755
+      walk_Gun_34: -870949261042685258
+      walk_Gun_35: -3098913462730350151
+      walk_Gun_36: -1451314144564104137
+      walk_Gun_37: -6885303068866612755
+      walk_Gun_38: 2711593328618735806
+      walk_Gun_39: -2713170142409636120
+      walk_Gun_4: 4960205980580976097
+      walk_Gun_40: 8353702061167280601
+      walk_Gun_41: 3335507540307718661
+      walk_Gun_42: 2692042768811214203
+      walk_Gun_43: -5178241154973897727
+      walk_Gun_44: -977288003999538582
+      walk_Gun_45: 2203944682638355908
+      walk_Gun_46: -8413245744313227105
+      walk_Gun_47: 5764234379135197095
+      walk_Gun_5: 2250928180793925877
+      walk_Gun_6: -2988217173638053869
+      walk_Gun_7: 6109873521878175982
+      walk_Gun_8: -6928367069823200825
+      walk_Gun_9: 1127894235989285119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

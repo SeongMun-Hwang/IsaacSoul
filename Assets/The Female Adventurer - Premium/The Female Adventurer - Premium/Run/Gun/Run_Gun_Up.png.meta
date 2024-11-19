@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Run_Gun_Up_0: 1739148732796941455
+      Run_Gun_Up_1: -3895502755903177562
+      Run_Gun_Up_2: -7966609541682171803
+      Run_Gun_Up_3: -3927799635342671196
+      Run_Gun_Up_4: 8768909076289757823
+      Run_Gun_Up_5: 769226057979487682
+      Run_Gun_Up_6: 8656864468350778366
+      Run_Gun_Up_7: -5408897327366400475
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
