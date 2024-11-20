@@ -13,6 +13,7 @@ public class PlayerStat
             return instance;
         }
     }
+    
     public float spearAtk = 2;
     public float gunAtk = 3;
 

@@ -1,8 +1,16 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class StateController : MonoBehaviour
 {
+    //StateMachine for each equipment
+    public NormalStateMachine normalStateMachine;
+    public SpearStateMachine spearStateMachine;
+    public GunStateMachine gunStateMachine;
+    //StateMachine List for change equipment
+    public List<StateMachine> stateMachines;
+    public int stateMachineIndex;
+
     //Physics
     Rigidbody2D playerRb;
     //Animation
@@ -20,8 +28,22 @@ public class PlayerController : MonoBehaviour
     }
     EquipState equipState;
 
+    private void Awake()
+    {
+        //StateMachien Initialize
+        stateMachines = new List<StateMachine>();
+        normalStateMachine = new NormalStateMachine();
+        spearStateMachine = new SpearStateMachine();
+        gunStateMachine = new GunStateMachine();      
+    }
     void Start()
     {
+        //stateMachine
+        stateMachines.Add(normalStateMachine);
+        stateMachines.Add(spearStateMachine);
+        stateMachines.Add(gunStateMachine);
+
+        stateMachineIndex = 0;
         //Physics
         playerRb = GetComponent<Rigidbody2D>();
         //Animation
