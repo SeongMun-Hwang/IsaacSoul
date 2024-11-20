@@ -3,13 +3,9 @@ using UnityEngine;
 
 public class StateController : MonoBehaviour
 {
-    //StateMachine for each equipment
-    public NormalStateMachine normalStateMachine;
-    public SpearStateMachine spearStateMachine;
-    public GunStateMachine gunStateMachine;
+
     //StateMachine List for change equipment
-    public List<StateMachine> stateMachines;
-    public int stateMachineIndex;
+    public StateMachineController stateMachineController;
 
     //Physics
     Rigidbody2D playerRb;
@@ -31,19 +27,12 @@ public class StateController : MonoBehaviour
     private void Awake()
     {
         //StateMachien Initialize
-        stateMachines = new List<StateMachine>();
-        normalStateMachine = new NormalStateMachine();
-        spearStateMachine = new SpearStateMachine();
-        gunStateMachine = new GunStateMachine();      
+        stateMachineController=new StateMachineController(this);
     }
     void Start()
     {
-        //stateMachine
-        stateMachines.Add(normalStateMachine);
-        stateMachines.Add(spearStateMachine);
-        stateMachines.Add(gunStateMachine);
-
-        stateMachineIndex = 0;
+        //stateMachineController
+        stateMachineController.Initialize();
         //Physics
         playerRb = GetComponent<Rigidbody2D>();
         //Animation
@@ -53,6 +42,13 @@ public class StateController : MonoBehaviour
     }
     private void Update()
     {
+        //Switch Equip
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            stateMachineController.TransitionToNext();
+            Debug.Log(stateMachineController.currentStateMachine.ToString());
+        }
+        //Run
         if (Input.GetKey(KeyCode.LeftShift))
         {
             isRunPressed = true;
