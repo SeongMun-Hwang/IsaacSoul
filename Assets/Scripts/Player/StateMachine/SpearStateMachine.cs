@@ -3,14 +3,14 @@ using UnityEngine;
 public class SpearStateMachine : StateMachine
 {
     public PlayerState CurrentState { get; private set; }
-    StateController player;
+    StateMachineController player;
 
     public DeathState deathState;
     public IdleState idleState;
     public MoveState moveState;
     public AttackState attackState;
 
-    public SpearStateMachine(StateController player)
+    public SpearStateMachine(StateMachineController player)
     {
         this.player = player;
         deathState = new DeathState(player);
@@ -31,5 +31,30 @@ public class SpearStateMachine : StateMachine
     {
         CurrentState = nextState;
         CurrentState.Enter();
+    }
+    public void TransitionToAttack()
+    {
+        if (attackState != null)
+        {
+            player.state = State.SpearAttack;
+            player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            TransitionTo(attackState);
+        }
+    }
+    public void TransitionToIdle()
+    {
+        if (idleState != null)
+        {
+            player.state = State.Idle;
+            TransitionTo(idleState);
+        }
+    }
+    public void TransitionToMove()
+    {
+        if (moveState != null)
+        {
+            player.state = State.Move;
+            TransitionTo(moveState);
+        }
     }
 }

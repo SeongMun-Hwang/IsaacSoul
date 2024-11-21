@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class IdleState : PlayerState
 {
-    StateController player;
-    public IdleState(StateController player)
+    StateMachineController player;
+    public IdleState(StateMachineController player)
     {
         this.player = player;
     }
     public void Enter()
     {
         player.GetComponent<Animator>().SetTrigger("Idle");
+    }
+    public void Exit()
+    {
+
     }
 }

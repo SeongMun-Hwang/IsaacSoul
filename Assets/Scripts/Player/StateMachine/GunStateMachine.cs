@@ -3,7 +3,7 @@ using UnityEngine;
 public class GunStateMachine : StateMachine
 {
     public PlayerState CurrentState { get; private set; }
-    StateController player;
+    StateMachineController player;
 
     public DeathState deathState;
     public IdleState idleState;
@@ -11,7 +11,7 @@ public class GunStateMachine : StateMachine
     public AttackState attackState;
     public ReloadingState reloadingState;
 
-    public GunStateMachine(StateController player)
+    public GunStateMachine(StateMachineController player)
     {
         this.player = player;
         deathState = new DeathState(player);
@@ -33,5 +33,29 @@ public class GunStateMachine : StateMachine
     {
         CurrentState = nextState;
         CurrentState.Enter();
+    }
+    public void TransitionToAttack()
+    {
+        if (attackState != null)
+        {
+            player.state = State.GunAttack;
+            TransitionTo(attackState);
+        }
+    }
+    public void TransitionToIdle()
+    {
+        if (idleState != null)
+        {
+            player.state = State.Idle;
+            TransitionTo(idleState);
+        }
+    }
+    public void TransitionToMove()
+    {
+        if (moveState != null)
+        {
+            player.state = State.Move;
+            TransitionTo(moveState);
+        }
     }
 }
