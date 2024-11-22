@@ -9,6 +9,7 @@ public class MoveState : PlayerState
     }
     public void Enter()
     {
+        Debug.Log("Move");
         player.GetComponent<Animator>().SetTrigger("Move");
     }
     public void Exit()

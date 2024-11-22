@@ -9,6 +9,7 @@ public class IdleState : PlayerState
     }
     public void Enter()
     {
+        Debug.Log("Idle");
         player.GetComponent<Animator>().SetTrigger("Idle");
     }
     public void Exit()

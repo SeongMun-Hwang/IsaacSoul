@@ -32,8 +32,8 @@ public class StateMachineController : MonoBehaviour
     InputActionAsset inputActions;
     InputAction moveInput;
     InputAction attackInput;
-    //state enum
 
+    //state enum
     public State state;
     private void Awake()
     {
@@ -82,10 +82,6 @@ public class StateMachineController : MonoBehaviour
         switch (state)
         {
             case State.Idle:
-                if (moveVector != Vector2.zero)
-                {
-                    stateMachines[stateIndex].TransitionToMove();
-                }
                 if (attackVector != Vector2.zero)
                 {
                     stateMachines[stateIndex].TransitionToAttack();
@@ -126,26 +122,29 @@ public class StateMachineController : MonoBehaviour
     }
     public void PlayerMove()
     {
-        if (state == State.SpearAttack || state==State.GunAttack) return;
-        //Player move
+        if (state == State.SpearAttack || state == State.GunAttack) return;
+
         moveVector = moveInput.ReadValue<Vector2>();
-        if (isRunPressed)
-        {
-            moveSpeed = PlayerStat.Instance.runSpeed;
-        }
-        else
-        {
-            moveSpeed = PlayerStat.Instance.walkSpeed;
-        }
-        playerAnimator.SetFloat("InputX", moveVector.x * moveSpeed / 5f);
-        playerAnimator.SetFloat("InputY", moveVector.y * moveSpeed / 5f);
-        moveVector *= moveSpeed;
-        //PlayerIdle
+        //Player move
         if (moveVector != Vector2.zero)
         {
+            if (isRunPressed)
+            {
+                moveSpeed = PlayerStat.Instance.runSpeed;
+            }
+            else
+            {
+                moveSpeed = PlayerStat.Instance.walkSpeed;
+            }
+            //PlayerIdle
             moveAngle = Mathf.Atan2(moveVector.y, moveVector.x) * Mathf.Rad2Deg;
             playerAnimator.SetFloat("MoveDirection", moveAngle);
         }
+        else
+        {
+            moveSpeed = 0f;
+        }
+        playerAnimator.SetFloat("MoveSpeed", moveSpeed);
         playerRb.linearVelocity = moveVector.normalized * moveSpeed;
     }
     void PlayerAttack()
@@ -155,12 +154,8 @@ public class StateMachineController : MonoBehaviour
         attackVector = attackInput.ReadValue<Vector2>();
         if (attackVector != Vector2.zero)
         {
-            playerAnimator.SetFloat("AttackX", attackVector.x);
-            playerAnimator.SetFloat("AttackY", attackVector.y);
-
             moveAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
-            playerAnimator.SetFloat("AttackDirection", moveAngle);          
-            Debug.Log(attackAngle);
+            playerAnimator.SetFloat("AttackDirection", moveAngle);
         }
     }
 }

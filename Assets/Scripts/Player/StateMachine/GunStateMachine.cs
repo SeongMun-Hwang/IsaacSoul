@@ -50,12 +50,4 @@ public class GunStateMachine : StateMachine
             TransitionTo(idleState);
         }
     }
-    public void TransitionToMove()
-    {
-        if (moveState != null)
-        {
-            player.state = State.Move;
-            TransitionTo(moveState);
-        }
-    }
 }

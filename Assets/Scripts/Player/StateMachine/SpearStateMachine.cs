@@ -49,12 +49,4 @@ public class SpearStateMachine : StateMachine
             TransitionTo(idleState);
         }
     }
-    public void TransitionToMove()
-    {
-        if (moveState != null)
-        {
-            player.state = State.Move;
-            TransitionTo(moveState);
-        }
-    }
 }
