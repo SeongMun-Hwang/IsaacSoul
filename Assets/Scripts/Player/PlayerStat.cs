@@ -17,6 +17,7 @@ public class PlayerStat
     public float spearAtk = 2;
     public float gunAtk = 3;
 
+    public float normalSpeed = 7.5f;
     public float walkSpeed = 5;
     public float runSpeed = 10;
 }

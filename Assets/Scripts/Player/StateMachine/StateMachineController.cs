@@ -125,10 +125,9 @@ public class StateMachineController : MonoBehaviour
     }
     public void PlayerMove()
     {
-        if (state == State.SpearAttack) return;
+        if (state == State.SpearAttack || state==State.GunAttack) return;
         //Player move
         moveVector = moveInput.ReadValue<Vector2>();
-
         if (isRunPressed)
         {
             moveSpeed = PlayerStat.Instance.runSpeed;
@@ -136,6 +135,10 @@ public class StateMachineController : MonoBehaviour
         else
         {
             moveSpeed = PlayerStat.Instance.walkSpeed;
+            if(stateMachines[stateIndex] is NormalStateMachine)
+            {
+                //moveSpeed = PlayerStat.Instance.normalSpeed;
+            } 
         }
         playerAnimator.SetFloat("InputX", moveVector.x * moveSpeed / 5f);
         playerAnimator.SetFloat("InputY", moveVector.y * moveSpeed / 5f);
