@@ -23,7 +23,8 @@ public class StateMachineController : MonoBehaviour
     Rigidbody2D playerRb;
     Animator playerAnimator;
     bool isRunPressed = false;
-    float angle = 0f;
+    float moveAngle = 0f;
+    float attackAngle = 0f;
     float moveSpeed;
     Vector2 moveVector;
     Vector2 attackVector;
@@ -135,18 +136,15 @@ public class StateMachineController : MonoBehaviour
         else
         {
             moveSpeed = PlayerStat.Instance.walkSpeed;
-            if(stateMachines[stateIndex] is NormalStateMachine)
-            {
-                //moveSpeed = PlayerStat.Instance.normalSpeed;
-            } 
         }
         playerAnimator.SetFloat("InputX", moveVector.x * moveSpeed / 5f);
         playerAnimator.SetFloat("InputY", moveVector.y * moveSpeed / 5f);
+        moveVector *= moveSpeed;
         //PlayerIdle
         if (moveVector != Vector2.zero)
         {
-            angle = Mathf.Atan2(moveVector.y, moveVector.x) * Mathf.Rad2Deg;
-            playerAnimator.SetFloat("Direction", angle / 90);
+            moveAngle = Mathf.Atan2(moveVector.y, moveVector.x) * Mathf.Rad2Deg;
+            playerAnimator.SetFloat("MoveDirection", moveAngle);
         }
         playerRb.linearVelocity = moveVector.normalized * moveSpeed;
     }
@@ -160,8 +158,9 @@ public class StateMachineController : MonoBehaviour
             playerAnimator.SetFloat("AttackX", attackVector.x);
             playerAnimator.SetFloat("AttackY", attackVector.y);
 
-            angle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
-            playerAnimator.SetFloat("Direction", angle / 90);          
+            moveAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
+            playerAnimator.SetFloat("AttackDirection", moveAngle);          
+            Debug.Log(attackAngle);
         }
     }
 }
