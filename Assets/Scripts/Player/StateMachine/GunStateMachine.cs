@@ -23,6 +23,7 @@ public class GunStateMachine : StateMachine
     public void Enter()
     {
         player.GetComponent<Animator>().SetTrigger("Gun");
+        player.state = State.Idle;
     }
     public void Initialize(PlayerState state)
     {

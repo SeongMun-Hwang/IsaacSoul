@@ -21,6 +21,7 @@ public class SpearStateMachine : StateMachine
     public void Enter()
     {
         player.GetComponent<Animator>().SetTrigger("Spear");
+        player.state = State.Idle;
     }
     public void Initialize(PlayerState state)
     {

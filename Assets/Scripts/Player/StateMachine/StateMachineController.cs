@@ -90,13 +90,17 @@ public class StateMachineController : MonoBehaviour
             case State.SpearAttack:
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
-                    stateMachines[stateIndex].TransitionToIdle();
+                    //stateMachines[stateIndex].TransitionToIdle();
+                    Debug.Log(stateMachines[stateIndex].ToString());
+                    stateMachines[stateIndex].Enter();
                 }
                 break;
             case State.GunAttack:
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
-                    stateMachines[stateIndex].TransitionToIdle();
+                    //stateMachines[stateIndex].TransitionToIdle();
+                    Debug.Log(stateMachines[stateIndex].ToString());
+                    stateMachines[stateIndex].Enter();
                 }
                 break;
             case State.Move:
