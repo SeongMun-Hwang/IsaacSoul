@@ -6,8 +6,7 @@ public class GunStateMachine : StateMachine
     StateMachineController player;
 
     public DeathState deathState;
-    public IdleState idleState;
-    public MoveState moveState;
+
     public AttackState attackState;
     public ReloadingState reloadingState;
 
@@ -15,8 +14,6 @@ public class GunStateMachine : StateMachine
     {
         this.player = player;
         deathState = new DeathState(player);
-        idleState = new IdleState(player);
-        moveState = new MoveState(player);
         attackState = new AttackState(player);
         reloadingState = new ReloadingState(player);
     }
@@ -41,14 +38,6 @@ public class GunStateMachine : StateMachine
         {
             player.state = State.GunAttack;
             TransitionTo(attackState);
-        }
-    }
-    public void TransitionToIdle()
-    {
-        if (idleState != null)
-        {
-            player.state = State.Idle;
-            TransitionTo(idleState);
         }
     }
 }

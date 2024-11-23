@@ -107,7 +107,7 @@ public class StateMachineController : MonoBehaviour
                 if (moveVector == Vector2.zero)
                 {
                     moveSpeed = 0f;
-                    stateMachines[stateIndex].TransitionToIdle();
+                    stateMachines[stateIndex].Enter();
                 }
                 if (attackVector != Vector2.zero)
                 {
@@ -158,8 +158,8 @@ public class StateMachineController : MonoBehaviour
         attackVector = attackInput.ReadValue<Vector2>();
         if (attackVector != Vector2.zero)
         {
-            moveAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
-            playerAnimator.SetFloat("AttackDirection", moveAngle);
+            attackAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
+            playerAnimator.SetFloat("AttackDirection", attackAngle);
         }
     }
 }

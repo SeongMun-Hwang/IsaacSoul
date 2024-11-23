@@ -6,16 +6,12 @@ public class SpearStateMachine : StateMachine
     StateMachineController player;
 
     public DeathState deathState;
-    public IdleState idleState;
-    public MoveState moveState;
     public AttackState attackState;
 
     public SpearStateMachine(StateMachineController player)
     {
         this.player = player;
         deathState = new DeathState(player);
-        idleState = new IdleState(player);
-        moveState = new MoveState(player);
         attackState = new AttackState(player);
     }
     public void Enter()
@@ -40,14 +36,6 @@ public class SpearStateMachine : StateMachine
             player.state = State.SpearAttack;
             player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
             TransitionTo(attackState);
-        }
-    }
-    public void TransitionToIdle()
-    {
-        if (idleState != null)
-        {
-            player.state = State.Idle;
-            TransitionTo(idleState);
         }
     }
 }

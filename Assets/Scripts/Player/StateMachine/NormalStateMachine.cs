@@ -9,15 +9,11 @@ public class NormalStateMachine : StateMachine
     StateMachineController player;
 
     public DeathState deathState;
-    public IdleState idleState;
-    public MoveState moveState;
     public AttackState attackState; //null
     public NormalStateMachine(StateMachineController player)
     {
         this.player = player;
         deathState=new DeathState(player);
-        idleState=new IdleState(player);
-        moveState=new MoveState(player);
     }
     public void Enter()
     {
@@ -38,14 +34,6 @@ public class NormalStateMachine : StateMachine
         if (attackState != null)
         {
             TransitionTo(attackState);
-        }
-    }
-    public void TransitionToIdle()
-    {
-        if (idleState != null)
-        {
-            player.state = State.Idle;
-            TransitionTo(idleState);
         }
     }
 }
