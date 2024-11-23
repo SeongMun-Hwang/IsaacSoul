@@ -40,4 +40,9 @@ public class GunStateMachine : StateMachine
             TransitionTo(attackState);
         }
     }
+    public void TransitionToReloading()
+    {
+        player.state = State.Reload;
+        TransitionTo(reloadingState);
+    }
 }

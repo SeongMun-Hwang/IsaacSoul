@@ -9,7 +9,7 @@ public class ReloadingState : PlayerState
     }
     public void Enter()
     {
-        player.GetComponent<Animator>().SetTrigger("Reloading");
+        player.GetComponent<Animator>().SetTrigger("Reload");
     }
     public void Exit()
     {

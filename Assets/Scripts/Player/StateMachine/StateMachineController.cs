@@ -7,6 +7,7 @@ public enum State
     SpearAttack,
     GunAttack,
     Move,
+    Reload,
     Death,
 }
 public class StateMachineController : MonoBehaviour
@@ -86,20 +87,29 @@ public class StateMachineController : MonoBehaviour
                 {
                     stateMachines[stateIndex].TransitionToAttack();
                 }
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    if (stateMachines[stateIndex] is GunStateMachine)
+                    {
+                        (stateMachines[stateIndex] as GunStateMachine).TransitionToReloading();
+                    }
+                }
                 break;
             case State.SpearAttack:
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
-                    //stateMachines[stateIndex].TransitionToIdle();
-                    Debug.Log(stateMachines[stateIndex].ToString());
                     stateMachines[stateIndex].Enter();
                 }
                 break;
             case State.GunAttack:
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
-                    //stateMachines[stateIndex].TransitionToIdle();
-                    Debug.Log(stateMachines[stateIndex].ToString());
+                    stateMachines[stateIndex].Enter();
+                }
+                break;
+            case State.Reload:
+                if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+                {
                     stateMachines[stateIndex].Enter();
                 }
                 break;
