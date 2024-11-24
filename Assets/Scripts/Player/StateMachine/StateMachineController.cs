@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public enum State
@@ -19,14 +20,14 @@ public class StateMachineController : MonoBehaviour
     public NormalStateMachine normalStateMachine;
     public SpearStateMachine spearStateMachine;
     public GunStateMachine gunStateMachine;
-    int stateIndex = 0;
+    public int stateIndex = 0;
     //playerMove
     Rigidbody2D playerRb;
     Animator playerAnimator;
     bool isRunPressed = false;
     float moveAngle = 0f;
     float attackAngle = 0f;
-    float moveSpeed;
+    public float moveSpeed;
     Vector2 moveVector;
     Vector2 attackVector;
     //player input
@@ -36,6 +37,9 @@ public class StateMachineController : MonoBehaviour
 
     //state enum
     public State state;
+
+    //state Text
+    public TextMeshPro stateText;
     private void Awake()
     {
         stateMachines = new List<StateMachine>();
@@ -79,7 +83,7 @@ public class StateMachineController : MonoBehaviour
     }
     void HandleAnimation()
     {
-        Debug.Log(state);
+        stateText.text = state.ToString();
         switch (state)
         {
             case State.Idle:
@@ -118,6 +122,7 @@ public class StateMachineController : MonoBehaviour
                 if (moveVector == Vector2.zero)
                 {
                     moveSpeed = 0f;
+                    state = State.Idle;
                     stateMachines[stateIndex].Enter();
                 }
                 if (attackVector != Vector2.zero)
@@ -137,12 +142,14 @@ public class StateMachineController : MonoBehaviour
     }
     public void PlayerMove()
     {
-        if (state == State.SpearAttack || state == State.GunAttack) return;
+        //stop move while spear attack
+        if (state == State.SpearAttack) return;
 
         moveVector = moveInput.ReadValue<Vector2>();
         //Player move
         if (moveVector != Vector2.zero)
         {
+            state = State.Move;
             if (isRunPressed)
             {
                 moveSpeed = PlayerStat.Instance.runSpeed;
@@ -158,6 +165,16 @@ public class StateMachineController : MonoBehaviour
         else
         {
             moveSpeed = 0f;
+        }
+        //lower moveSpeed while Shooting
+        if (state == State.GunAttack)
+        {
+            moveSpeed /= 2;
+        }
+        //Normal Equip move speed bonus;
+        if (stateMachines[stateIndex] is NormalStateMachine && state==State.Move)
+        {
+            moveSpeed += 1f;
         }
         playerAnimator.SetFloat("MoveSpeed", moveSpeed);
         playerRb.linearVelocity = moveVector.normalized * moveSpeed;
