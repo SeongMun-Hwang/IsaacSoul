@@ -34,7 +34,7 @@ public class SpearStateMachine : StateMachine
         if (attackState != null)
         {
             player.state = State.SpearAttack;
-            player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            //player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
             TransitionTo(attackState);
         }
     }

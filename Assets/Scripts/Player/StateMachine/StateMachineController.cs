@@ -96,6 +96,7 @@ public class StateMachineController : MonoBehaviour
                 }
                 break;
             case State.SpearAttack:
+                playerRb.linearVelocity = Vector2.zero;
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
                     stateMachines[stateIndex].Enter();
@@ -170,6 +171,7 @@ public class StateMachineController : MonoBehaviour
         {
             attackAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
             playerAnimator.SetFloat("AttackDirection", attackAngle);
+            playerAnimator.SetFloat("MoveDirection", attackAngle);
         }
     }
 }

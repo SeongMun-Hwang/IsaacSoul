@@ -1,0 +1,346 @@
+fileFormatVersion: 2
+guid: 9c4669b2c11774747a6f525671d173ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8224979204647976906
+    second: death_Spear_Right_Down_0
+  - first:
+      213: 1677914148332201480
+    second: death_Spear_Right_Down_1
+  - first:
+      213: -6969655631336974983
+    second: death_Spear_Right_Down_2
+  - first:
+      213: 9171819159701518585
+    second: death_Spear_Right_Down_3
+  - first:
+      213: -5880767571833256014
+    second: death_Spear_Right_Down_4
+  - first:
+      213: 6470653048877421852
+    second: death_Spear_Right_Down_5
+  - first:
+      213: 7764640476872100061
+    second: death_Spear_Right_Down_6
+  - first:
+      213: -8768559649946485817
+    second: death_Spear_Right_Down_7
+  - first:
+      213: 2576193971046125401
+    second: death_Spear_Right_Down_8
+  - first:
+      213: -1989786291001352596
+    second: death_Spear_Right_Down_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 18
+        width: 15
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6308bfdbdf00bdd80800000000000000
+      internalID: -8224979204647976906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 17
+        width: 15
+        height: 26
+      alignment: 9
+      pivot: {x: 0.4666667, y: 0.11538462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80661f62706294710800000000000000
+      internalID: 1677914148332201480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 19
+        width: 25
+        height: 22
+      alignment: 9
+      pivot: {x: 0.28, y: 0.09090909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975db5f412fc64f90800000000000000
+      internalID: -6969655631336974983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 17
+        width: 28
+        height: 25
+      alignment: 9
+      pivot: {x: 0.25, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8712e6ee8d84f70800000000000000
+      internalID: 9171819159701518585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 10
+        width: 26
+        height: 31
+      alignment: 9
+      pivot: {x: 0.15384616, y: 0.3548387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15132b3aa06cc950800000000000000
+      internalID: 6470653048877421852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_6
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 11
+        width: 27
+        height: 29
+      alignment: 9
+      pivot: {x: 0.14814815, y: 0.3448276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8c498ff5b81cb60800000000000000
+      internalID: 7764640476872100061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_7
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 10
+        width: 27
+        height: 20
+      alignment: 9
+      pivot: {x: 0.14814815, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cbbd19c471df4680800000000000000
+      internalID: -8768559649946485817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_8
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 8
+        width: 27
+        height: 20
+      alignment: 9
+      pivot: {x: 0.14814815, y: 0.65000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f05b474ca70c320800000000000000
+      internalID: 2576193971046125401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 595a57cf506a16743b892e54f640da28
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      death_Spear_Right_Down_0: -8224979204647976906
+      death_Spear_Right_Down_1: 1677914148332201480
+      death_Spear_Right_Down_2: -6969655631336974983
+      death_Spear_Right_Down_3: 9171819159701518585
+      death_Spear_Right_Down_4: -5880767571833256014
+      death_Spear_Right_Down_5: 6470653048877421852
+      death_Spear_Right_Down_6: 7764640476872100061
+      death_Spear_Right_Down_7: -8768559649946485817
+      death_Spear_Right_Down_8: 2576193971046125401
+      death_Spear_Right_Down_9: -1989786291001352596
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
