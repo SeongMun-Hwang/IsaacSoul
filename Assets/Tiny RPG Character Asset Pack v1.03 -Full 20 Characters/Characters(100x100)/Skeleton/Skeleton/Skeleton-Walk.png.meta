@@ -137,12 +137,12 @@ TextureImporter:
       name: Skeleton-Walk_0
       rect:
         serializedVersion: 2
-        x: 42
-        y: 42
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 43
+        width: 26
+        height: 15
+      alignment: 9
+      pivot: {x: 0.3345513, y: 0.0047017415}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: Skeleton-Walk_1
       rect:
         serializedVersion: 2
-        x: 143
-        y: 43
-        width: 27
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 44
+        width: 25
+        height: 15
+      alignment: 9
+      pivot: {x: 0.3217932, y: 0.0047014873}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Skeleton-Walk_2
       rect:
         serializedVersion: 2
-        x: 243
-        y: 42
-        width: 27
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 244
+        y: 43
+        width: 25
+        height: 15
+      alignment: 9
+      pivot: {x: 0.29508057, y: 0.006636556}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: Skeleton-Walk_3
       rect:
         serializedVersion: 2
-        x: 342
-        y: 42
-        width: 28
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 343
+        y: 43
+        width: 26
+        height: 14
+      alignment: 9
+      pivot: {x: 0.34763512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: Skeleton-Walk_4
       rect:
         serializedVersion: 2
-        x: 442
-        y: 42
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 443
+        y: 43
+        width: 26
+        height: 15
+      alignment: 9
+      pivot: {x: 0.33886015, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: Skeleton-Walk_5
       rect:
         serializedVersion: 2
-        x: 542
-        y: 43
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 543
+        y: 44
+        width: 26
+        height: 15
+      alignment: 9
+      pivot: {x: 0.32737616, y: 0.0066368105}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: Skeleton-Walk_6
       rect:
         serializedVersion: 2
-        x: 642
-        y: 42
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 643
+        y: 43
+        width: 26
+        height: 15
+      alignment: 9
+      pivot: {x: 0.3449214, y: 0.006636556}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: Skeleton-Walk_7
       rect:
         serializedVersion: 2
-        x: 742
-        y: 42
-        width: 28
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 743
+        y: 43
+        width: 26
+        height: 14
+      alignment: 9
+      pivot: {x: 0.3404588, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 31df9218928206e45ae5c2efa54ef58b
     internalID: 0
     vertices: []
     indices: 

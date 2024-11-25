@@ -2,8 +2,12 @@ using UnityEngine;
 
 public class Spear : MonoBehaviour
 {
+    public int spearDamage=2;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        if(collision.gameObject.GetComponent<HpController>() != null)
+        {
+            collision.collider.GetComponent<HpController>().GetDamage(spearDamage);
+        }
     }
 }

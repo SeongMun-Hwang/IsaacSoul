@@ -125,12 +125,12 @@ TextureImporter:
       name: Skeleton-Block_0
       rect:
         serializedVersion: 2
-        x: 42
-        y: 42
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 43
+        width: 26
+        height: 15
+      alignment: 9
+      pivot: {x: 0.33304697, y: 0.005565135}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Skeleton-Block_1
       rect:
         serializedVersion: 2
-        x: 146
-        y: 42
-        width: 24
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 147
+        y: 43
+        width: 22
+        height: 15
+      alignment: 9
+      pivot: {x: 0.20783164, y: 0.005565135}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Skeleton-Block_2
       rect:
         serializedVersion: 2
-        x: 246
-        y: 42
-        width: 24
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 247
+        y: 43
+        width: 22
+        height: 15
+      alignment: 9
+      pivot: {x: 0.21162623, y: 0.005565135}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Skeleton-Block_3
       rect:
         serializedVersion: 2
-        x: 346
-        y: 42
-        width: 24
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 347
+        y: 43
+        width: 22
+        height: 15
+      alignment: 9
+      pivot: {x: 0.2192147, y: 0.01113027}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5418385085a2a294a8824b1c3f6128d6
     internalID: 0
     vertices: []
     indices: 

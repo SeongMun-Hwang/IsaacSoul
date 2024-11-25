@@ -125,12 +125,12 @@ TextureImporter:
       name: Skeleton-Hurt_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 42
-        width: 30
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 40
+        y: 43
+        width: 28
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4158764, y: -0.00000050862633}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Skeleton-Hurt_1
       rect:
         serializedVersion: 2
-        x: 139
-        y: 42
-        width: 30
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 140
+        y: 43
+        width: 28
+        height: 15
+      alignment: 9
+      pivot: {x: 0.51624787, y: -0.00000025431316}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Skeleton-Hurt_2
       rect:
         serializedVersion: 2
-        x: 239
-        y: 42
-        width: 30
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 43
+        width: 28
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5259966, y: 0.006065623}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Skeleton-Hurt_3
       rect:
         serializedVersion: 2
-        x: 339
-        y: 42
-        width: 30
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 340
+        y: 43
+        width: 28
+        height: 15
+      alignment: 9
+      pivot: {x: 0.41875786, y: -0.00000025431316}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f6ac9679649541145a6f524871dfdec4
     internalID: 0
     vertices: []
     indices: 
