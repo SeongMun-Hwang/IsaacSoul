@@ -22,8 +22,8 @@ public class StateMachineController : MonoBehaviour
     public GunStateMachine gunStateMachine;
     public int stateIndex = 0;
     //playerMove
-    Rigidbody2D playerRb;
-    Animator playerAnimator;
+    public Rigidbody2D playerRb;
+    public Animator playerAnimator;
     bool isRunPressed = false;
     float moveAngle = 0f;
     float attackAngle = 0f;
@@ -39,7 +39,8 @@ public class StateMachineController : MonoBehaviour
     public State state;
 
     //state Text
-    public TextMeshPro stateText;
+    public TextMeshProUGUI stateText;
+    public TextMeshProUGUI moveSpeedText;
     private void Awake()
     {
         stateMachines = new List<StateMachine>();
@@ -80,13 +81,20 @@ public class StateMachineController : MonoBehaviour
             stateMachines[stateIndex].Enter();
         }
         HandleAnimation();
+
+        //status text
+        stateText.text = state.ToString();
+        moveSpeedText.text = "Move Speed : " + moveSpeed;
     }
     void HandleAnimation()
     {
-        stateText.text = state.ToString();
         switch (state)
         {
             case State.Idle:
+                if (moveVector != Vector2.zero)
+                {
+                    state = State.Move;
+                }
                 if (attackVector != Vector2.zero)
                 {
                     stateMachines[stateIndex].TransitionToAttack();
@@ -122,7 +130,6 @@ public class StateMachineController : MonoBehaviour
                 if (moveVector == Vector2.zero)
                 {
                     moveSpeed = 0f;
-                    state = State.Idle;
                     stateMachines[stateIndex].Enter();
                 }
                 if (attackVector != Vector2.zero)
@@ -149,7 +156,6 @@ public class StateMachineController : MonoBehaviour
         //Player move
         if (moveVector != Vector2.zero)
         {
-            state = State.Move;
             if (isRunPressed)
             {
                 moveSpeed = PlayerStat.Instance.runSpeed;
@@ -181,8 +187,6 @@ public class StateMachineController : MonoBehaviour
     }
     void PlayerAttack()
     {
-        //if (state == State.SpearAttack || state==State.GunAttack) return;
-
         attackVector = attackInput.ReadValue<Vector2>();
         if (attackVector != Vector2.zero)
         {

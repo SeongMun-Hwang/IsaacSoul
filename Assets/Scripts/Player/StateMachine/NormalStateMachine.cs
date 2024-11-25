@@ -18,6 +18,7 @@ public class NormalStateMachine : StateMachine
     public void Enter()
     {
         player.GetComponent<Animator>().SetTrigger("Normal");
+        player.state = State.Idle;
     }
     public void Initialize(PlayerState state)
     {
