@@ -4,17 +4,17 @@ using UnityEngine;
 public class Skeleton : MonsterAgent
 {
     public TextMeshPro stateText;
+    public MonsterStat monsterStat;
     private void Start()
     {
-        state = MonsterState.Move;
-        attackRange = 2f;
-        moveSpeed = 3f;
-        agent.speed = moveSpeed;
-        attackVarious = 2;
-        attackDelay = 2f;
+        //Get MonsterStat data
+        attackRange = monsterStat.attackRange;
+        moveSpeed = monsterStat.moveSpeed;
+        attackVarious = monsterStat.attackVarious;
+        attackDelay = monsterStat.attackDelay;
 
-        hpController.OnHpChanged += HandleHpState;
         state = MonsterState.Move;
+        hpController.OnHpChanged += HandleHpState;
     }
     protected override void HandleState()
     {

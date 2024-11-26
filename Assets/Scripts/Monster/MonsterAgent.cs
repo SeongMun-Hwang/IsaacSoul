@@ -7,7 +7,6 @@ public abstract class MonsterAgent : MonoBehaviour
     protected GameObject player;
     protected Animator animator;
     protected HpController hpController;
-    protected Collider2D collider2D;
 
     protected Vector3 direction;
     protected Vector3 distanceToTarget;
@@ -43,7 +42,6 @@ public abstract class MonsterAgent : MonoBehaviour
         //Animator
         animator = GetComponent<Animator>();
         hpController = GetComponent<HpController>();
-        collider2D = GetComponent<Collider2D>();
     }
 
     protected virtual void Update()
