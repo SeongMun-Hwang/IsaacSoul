@@ -1,40 +1,105 @@
+using TMPro;
 using UnityEngine;
 
 public class Skeleton : MonsterAgent
 {
-    float attackRange = 2f;
-    float moveSpeed = 3.5f;
-    MonsterState state;
+    public TextMeshPro stateText;
     private void Start()
     {
         state = MonsterState.Move;
+        attackRange = 2f;
+        moveSpeed = 3f;
+        agent.speed = moveSpeed;
+        attackVarious = 2;
+        attackDelay = 2f;
+
+        hpController.OnHpChanged += HandleHpState;
+        state = MonsterState.Move;
     }
-    private void Update()
+    protected override void HandleState()
     {
-        base.Update();
+        stateText.text = state.ToString() + attackTimer;
         switch (state)
         {
             case MonsterState.Idle:
 
                 break;
             case MonsterState.Move:
-                if (base.distanceToTarget.magnitude < attackRange)
-                {
-                    int rand = Random.Range(0, 2);
-                    base.animator.SetFloat("AttackType", (float)rand);
-                    base.animator.SetTrigger("Attack");
-                    state = MonsterState.Attack;
-                }
+                HandleMoveState();
                 break;
             case MonsterState.Attack:
-                base.agent.speed = 0f;
-                if (base.animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-                {
-                    base.animator.SetTrigger("Idle");
-                    base.agent.speed = moveSpeed;
-                    state = MonsterState.Move;
-                }
+                HandleAttackState();
+                break;
+            case MonsterState.Hit:
+                HandleHitState();
+                break;
+            case MonsterState.Death:
+                HandleDeathState();
                 break;
         }
+    }
+    private void HandleMoveState()
+    {
+        if (attackTimer < attackDelay)
+        {
+            attackTimer += Time.deltaTime;
+        }
+        if (distanceToTarget.magnitude < attackRange)
+        {
+            int rand = Random.Range(0, attackVarious);
+            animator.SetFloat("AttackType", (float)rand);
+            animator.SetTrigger("Attack");
+            state = MonsterState.Attack;
+        }
+    }
+    private void HandleAttackState()
+    {
+        agent.speed = 0f;
+        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            animator.SetTrigger("Idle");
+            agent.speed = moveSpeed;
+            attackTimer = 0f;
+            state = MonsterState.Move;
+        }
+    }
+    private void HandleHpState()
+    {
+        attackTimer = 0f;
+        state = MonsterState.Hit;
+        animator.SetTrigger("Hit");
+    }
+    private void HandleHitState()
+    {
+        agent.speed = 0f;
+        hpController.enabled = false;
+
+        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            if (hpController.hp < 1)
+            {
+                animator.SetTrigger("Death");
+                state = MonsterState.Death;
+            }
+            else
+            {
+                animator.SetTrigger("Idle");
+                hpController.enabled = true;
+                agent.speed = moveSpeed;
+                state = MonsterState.Move;
+            }
+        }
+    }
+    private void HandleDeathState()
+    {
+        agent.speed = 0f;
+        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnDestroy()
+    {
+        hpController.OnHpChanged -= HandleHpState;
     }
 }

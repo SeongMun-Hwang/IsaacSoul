@@ -7,6 +7,7 @@ public class Spear : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<HpController>() != null)
         {
+            Debug.Log("Hit "+collision.gameObject.name);
             collision.collider.GetComponent<HpController>().GetDamage(spearDamage);
         }
     }
