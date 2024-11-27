@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -15,8 +17,6 @@ public class StateMachineController : MonoBehaviour
 {
     //StateMachine for each equipment
     public List<StateMachine> stateMachines;
-    int equipIndex = 0;
-
     public NormalStateMachine normalStateMachine;
     public SpearStateMachine spearStateMachine;
     public GunStateMachine gunStateMachine;
@@ -34,9 +34,10 @@ public class StateMachineController : MonoBehaviour
     InputActionAsset inputActions;
     InputAction moveInput;
     InputAction attackInput;
-
     //state enum
     public State state;
+    //hp
+    HpController hpController;
 
     //state Text
     public TextMeshProUGUI stateText;
@@ -54,7 +55,7 @@ public class StateMachineController : MonoBehaviour
     }
     private void Start()
     {
-        stateMachines[equipIndex].Enter();
+        stateMachines[stateIndex].Enter();
         state = State.Idle;
         //player
         playerRb = GetComponent<Rigidbody2D>();
@@ -63,6 +64,9 @@ public class StateMachineController : MonoBehaviour
         inputActions = GetComponent<PlayerInput>().actions;
         moveInput = inputActions.FindAction("Move");
         attackInput = inputActions.FindAction("Attack");
+        //hp action subscribe
+        hpController = GetComponent<HpController>();
+        hpController.OnHpChanged += ActionOnDamage;
     }
     private void Update()
     {
@@ -138,7 +142,7 @@ public class StateMachineController : MonoBehaviour
                 }
                 break;
             case State.Death:
-
+                return;
                 break;
         }
     }
@@ -150,7 +154,7 @@ public class StateMachineController : MonoBehaviour
     public void PlayerMove()
     {
         //stop move while spear attack
-        if (state == State.SpearAttack) return;
+        if (state == State.SpearAttack || state == State.Death) return;
 
         moveVector = moveInput.ReadValue<Vector2>();
         //Player move
@@ -178,7 +182,7 @@ public class StateMachineController : MonoBehaviour
             moveSpeed /= 2;
         }
         //Normal Equip move speed bonus;
-        if (stateMachines[stateIndex] is NormalStateMachine && state==State.Move)
+        if (stateMachines[stateIndex] is NormalStateMachine && state == State.Move)
         {
             moveSpeed += 1f;
         }
@@ -193,6 +197,34 @@ public class StateMachineController : MonoBehaviour
             attackAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
             playerAnimator.SetFloat("AttackDirection", attackAngle);
             playerAnimator.SetFloat("MoveDirection", attackAngle);
+        }
+    }
+    void ActionOnDamage()
+    {
+        StartCoroutine(GetDamage());
+    }
+    IEnumerator GetDamage()
+    {
+        stateMachines[stateIndex].Enter();
+        hpController.enabled = false;
+        for (float f = 0f; f < 1f; f += 0.1f)
+        {
+            SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+            if (renderer.enabled)
+            {
+                renderer.enabled = false;
+            }
+            else
+            {
+                renderer.enabled = true;
+            }
+            yield return new WaitForSeconds(0.1f);
+        }
+        hpController.enabled = true;
+        if (hpController.hp < 1)
+        {
+            hpController.enabled = false;
+            stateMachines[stateIndex].TransitionToDeath();
         }
     }
 }

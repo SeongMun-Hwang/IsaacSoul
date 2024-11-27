@@ -6,7 +6,6 @@ public class GunStateMachine : StateMachine
     StateMachineController player;
 
     public DeathState deathState;
-
     public AttackState attackState;
     public ReloadingState reloadingState;
 
@@ -44,5 +43,11 @@ public class GunStateMachine : StateMachine
     {
         player.state = State.Reload;
         TransitionTo(reloadingState);
+    }
+    public void TransitionToDeath()
+    {
+        Enter();
+        player.state = State.Death;
+        TransitionTo(deathState);
     }
 }

@@ -37,4 +37,10 @@ public class NormalStateMachine : StateMachine
             TransitionTo(attackState);
         }
     }
+    public void TransitionToDeath()
+    {
+        Enter();
+        player.state = State.Death;
+        TransitionTo(deathState);
+    }
 }
