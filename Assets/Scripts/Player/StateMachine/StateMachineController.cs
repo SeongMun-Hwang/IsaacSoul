@@ -26,7 +26,7 @@ public class StateMachineController : MonoBehaviour
     public Animator playerAnimator;
     bool isRunPressed = false;
     float moveAngle = 0f;
-    float attackAngle = 0f;
+    public float attackAngle = 0f;
     public float moveSpeed;
     Vector2 moveVector;
     Vector2 attackVector;
@@ -38,7 +38,11 @@ public class StateMachineController : MonoBehaviour
     public State state;
     //hp
     HpController hpController;
-
+    float invincibleTime = 1f;
+    //bullet
+    int bulletNumer = 10;
+    public GameObject BulletPrefab;
+    public GameObject FirePosition;
     //state Text
     public TextMeshProUGUI stateText;
     public TextMeshProUGUI moveSpeedText;
@@ -88,7 +92,7 @@ public class StateMachineController : MonoBehaviour
 
         //status text
         stateText.text = state.ToString();
-        moveSpeedText.text = "Move Speed : " + moveSpeed;
+        moveSpeedText.text = "Move Speed : " + moveSpeed +"\nBulletNumber : "+bulletNumer;
     }
     void HandleAnimation()
     {
@@ -143,7 +147,6 @@ public class StateMachineController : MonoBehaviour
                 break;
             case State.Death:
                 return;
-                break;
         }
     }
     private void FixedUpdate()
@@ -191,6 +194,7 @@ public class StateMachineController : MonoBehaviour
     }
     void PlayerAttack()
     {
+        if (state == State.Death) return;
         attackVector = attackInput.ReadValue<Vector2>();
         if (attackVector != Vector2.zero)
         {
@@ -207,7 +211,7 @@ public class StateMachineController : MonoBehaviour
     {
         stateMachines[stateIndex].Enter();
         hpController.enabled = false;
-        for (float f = 0f; f < 1f; f += 0.1f)
+        for (float f = 0f; f < invincibleTime; f += 0.1f)
         {
             SpriteRenderer renderer = GetComponent<SpriteRenderer>();
             if (renderer.enabled)
@@ -223,8 +227,20 @@ public class StateMachineController : MonoBehaviour
         hpController.enabled = true;
         if (hpController.hp < 1)
         {
+            moveSpeed = 0f;
+            playerAnimator.SetFloat("MoveSpeed", moveSpeed);
+            playerRb.linearVelocity = Vector3.zero;
             hpController.enabled = false;
             stateMachines[stateIndex].TransitionToDeath();
+        }
+    }
+    public void ShootBullet()
+    {
+        if (bulletNumer > 0)
+        {
+            GameObject go = Instantiate(BulletPrefab, FirePosition.transform.position, Quaternion.identity);
+            go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
+            bulletNumer--;
         }
     }
 }

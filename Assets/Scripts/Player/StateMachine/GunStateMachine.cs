@@ -35,8 +35,8 @@ public class GunStateMachine : StateMachine
     {
         if (attackState != null)
         {
+            player.playerAnimator.SetTrigger("Attack");
             player.state = State.GunAttack;
-            TransitionTo(attackState);
         }
     }
     public void TransitionToReloading()
