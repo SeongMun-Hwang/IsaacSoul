@@ -15,10 +15,9 @@ public class LongRangeWeapon : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        gameObject.GetComponent<Collider2D>().enabled = false;
         if (collision.gameObject.GetComponent<HpController>() != null && collision.gameObject.tag == targetTagName)
         {
-            collision.collider.GetComponent<HpController>().GetDamage(Damage);
+            collision.gameObject.GetComponent<HpController>().GetDamage(Damage);
         }
         Destroy(gameObject);
     }

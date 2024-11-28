@@ -7,9 +7,9 @@ using UnityEngine.InputSystem;
 public enum State
 {
     Idle,
+    Move,
     SpearAttack,
     GunAttack,
-    Move,
     Reload,
     Death,
 }
@@ -39,8 +39,10 @@ public class StateMachineController : MonoBehaviour
     //hp
     HpController hpController;
     float invincibleTime = 1f;
+    //stamina
+    public StaminaController staminaController;
     //bullet
-    int bulletNumer = 10;
+    int bulletNumer = 100;
     public GameObject BulletPrefab;
     public GameObject FirePosition;
     //state Text
@@ -59,7 +61,6 @@ public class StateMachineController : MonoBehaviour
     }
     private void Start()
     {
-        stateMachines[stateIndex].Enter();
         state = State.Idle;
         //player
         playerRb = GetComponent<Rigidbody2D>();
@@ -71,38 +72,22 @@ public class StateMachineController : MonoBehaviour
         //hp action subscribe
         hpController = GetComponent<HpController>();
         hpController.OnHpChanged += ActionOnDamage;
+        //stamina
+        staminaController = GetComponent<StaminaController>();
     }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            isRunPressed = true;
-        }
-        else isRunPressed = false;
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            stateIndex++;
-            if (stateIndex >= stateMachines.Count)
-            {
-                stateIndex = 0;
-            }
-            stateMachines[stateIndex].Enter();
-        }
-        HandleAnimation();
-
         //status text
         stateText.text = state.ToString();
-        moveSpeedText.text = "Move Speed : " + moveSpeed +"\nBulletNumber : "+bulletNumer;
+        moveSpeedText.text = "Move Speed : " + moveSpeed + "\nBulletNumber : " + bulletNumer;
+
+        HandleAnimation();
     }
     void HandleAnimation()
     {
         switch (state)
         {
             case State.Idle:
-                if (moveVector != Vector2.zero)
-                {
-                    state = State.Move;
-                }
                 if (attackVector != Vector2.zero)
                 {
                     stateMachines[stateIndex].TransitionToAttack();
@@ -114,17 +99,43 @@ public class StateMachineController : MonoBehaviour
                         (stateMachines[stateIndex] as GunStateMachine).TransitionToReloading();
                     }
                 }
+                if (Input.GetKey(KeyCode.LeftShift) && staminaController.stamina > 0 && state != State.GunAttack)
+                {
+                    isRunPressed = true;
+                }
+                else isRunPressed = false;
+                if (Input.GetKeyDown(KeyCode.Q))
+                {
+                    stateIndex++;
+                    if (stateIndex >= stateMachines.Count)
+                    {
+                        stateIndex = 0;
+                    }
+                    stateMachines[stateIndex].Enter();
+                }
                 break;
             case State.SpearAttack:
                 playerRb.linearVelocity = Vector2.zero;
+                //공격 전 스태미나가 0이하면
+                if (staminaController.stamina + 10 <= 0)
+                {
+                    if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.5f)
+                    {
+                        stateMachines[stateIndex].Enter();
+                        playerAnimator.SetFloat("MoveDirection", attackAngle);
+                    }
+                }
+                //스태미나 0만 넘으면 공격 가능
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
                     stateMachines[stateIndex].Enter();
+                    playerAnimator.SetFloat("MoveDirection", attackAngle);
                 }
                 break;
             case State.GunAttack:
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
+                    playerAnimator.SetFloat("MoveDirection", attackAngle);
                     stateMachines[stateIndex].Enter();
                 }
                 break;
@@ -134,19 +145,12 @@ public class StateMachineController : MonoBehaviour
                     stateMachines[stateIndex].Enter();
                 }
                 break;
-            case State.Move:
-                if (moveVector == Vector2.zero)
+            case State.Death:
+                if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
-                    moveSpeed = 0f;
-                    stateMachines[stateIndex].Enter();
-                }
-                if (attackVector != Vector2.zero)
-                {
-                    stateMachines[stateIndex].TransitionToAttack();
+                    Destroy(gameObject); // 애니메이션 완료 후 객체 삭제
                 }
                 break;
-            case State.Death:
-                return;
         }
     }
     private void FixedUpdate()
@@ -158,6 +162,12 @@ public class StateMachineController : MonoBehaviour
     {
         //stop move while spear attack
         if (state == State.SpearAttack || state == State.Death) return;
+        if (state == State.GunAttack && staminaController.stamina <= 0)
+        {
+            playerRb.linearVelocity = Vector2.zero;
+            moveSpeed = 0;
+            return;
+        }
 
         moveVector = moveInput.ReadValue<Vector2>();
         //Player move
@@ -185,7 +195,7 @@ public class StateMachineController : MonoBehaviour
             moveSpeed /= 2;
         }
         //Normal Equip move speed bonus;
-        if (stateMachines[stateIndex] is NormalStateMachine && state == State.Move)
+        if (stateMachines[stateIndex] is NormalStateMachine && moveSpeed > 0)
         {
             moveSpeed += 1f;
         }
@@ -194,22 +204,32 @@ public class StateMachineController : MonoBehaviour
     }
     void PlayerAttack()
     {
-        if (state == State.Death) return;
+        //if (state == State.Death) return;
         attackVector = attackInput.ReadValue<Vector2>();
         if (attackVector != Vector2.zero)
         {
             attackAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
             playerAnimator.SetFloat("AttackDirection", attackAngle);
-            playerAnimator.SetFloat("MoveDirection", attackAngle);
         }
     }
     void ActionOnDamage()
     {
-        StartCoroutine(GetDamage());
+        if (hpController.hp < 1)
+        {
+            moveSpeed = 0f;
+            playerAnimator.SetFloat("MoveSpeed", moveSpeed);
+            playerRb.linearVelocity = Vector3.zero;
+            hpController.enabled = false;
+            stateMachines[stateIndex].TransitionToDeath();
+        }
+        else
+        {
+
+            StartCoroutine(GetDamage());
+        }
     }
     IEnumerator GetDamage()
     {
-        stateMachines[stateIndex].Enter();
         hpController.enabled = false;
         for (float f = 0f; f < invincibleTime; f += 0.1f)
         {
@@ -225,14 +245,6 @@ public class StateMachineController : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         hpController.enabled = true;
-        if (hpController.hp < 1)
-        {
-            moveSpeed = 0f;
-            playerAnimator.SetFloat("MoveSpeed", moveSpeed);
-            playerRb.linearVelocity = Vector3.zero;
-            hpController.enabled = false;
-            stateMachines[stateIndex].TransitionToDeath();
-        }
     }
     public void ShootBullet()
     {

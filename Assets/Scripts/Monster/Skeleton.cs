@@ -40,10 +40,6 @@ public class Skeleton : MonsterAgent
     }
     private void HandleMoveState()
     {
-        if (attackTimer < attackDelay)
-        {
-            attackTimer += Time.deltaTime;
-        }
         if (distanceToTarget.magnitude < attackRange)
         {
             int rand = Random.Range(0, attackVarious);
@@ -59,22 +55,21 @@ public class Skeleton : MonsterAgent
         {
             animator.SetTrigger("Idle");
             agent.speed = moveSpeed;
-            attackTimer = 0f;
             state = MonsterState.Move;
         }
     }
     private void HandleHpState()
     {
-        attackTimer = 0f;
-        state = MonsterState.Hit;
         animator.SetTrigger("Hit");
+        state = MonsterState.Hit;
     }
     private void HandleHitState()
     {
-        agent.speed = 0f;
         hpController.enabled = false;
+        agent.speed = 0f;
 
-        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f 
+            && animator.GetCurrentAnimatorStateInfo(0).IsName("Hit"))
         {
             if (hpController.hp < 1)
             {

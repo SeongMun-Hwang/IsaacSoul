@@ -8,7 +8,7 @@ public class ShortRangeWeapon : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<HpController>() != null && collision.gameObject.tag == targetTagName)
         {
-            collision.collider.GetComponent<HpController>().GetDamage(Damage);
+            collision.gameObject.GetComponent<HpController>().GetDamage(Damage);
         }
     }
 }
