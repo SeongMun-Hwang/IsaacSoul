@@ -3,7 +3,8 @@ using UnityEngine;
 public class GunStateMachine : StateMachine
 {
     StateMachineController player;
-
+    int maxBullet = 8;
+    int addedBullet;
     public GunStateMachine(StateMachineController player)
     {
         this.player = player;
@@ -16,10 +17,14 @@ public class GunStateMachine : StateMachine
     public void TransitionToAttack()
     {
         player.playerAnimator.SetTrigger("Attack");
+        player.ShootBullet();
         player.state = State.GunAttack;
     }
     public void TransitionToReloading()
     {
+        addedBullet = maxBullet - player.currentBullet;
+        player.currentBullet += addedBullet;
+        player.totalBullet -= addedBullet;
         player.state = State.Reload;
         player.playerAnimator.SetTrigger("Reload");
     }

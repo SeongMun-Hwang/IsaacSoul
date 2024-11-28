@@ -1401,7 +1401,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.14, y: 0.25}
+  m_Size: {x: 0.75, y: 1.4375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1453,6 +1453,8 @@ MonoBehaviour:
   moveSpeed: 0
   state: 0
   staminaController: {fileID: 0}
+  currentBullet: 8
+  totalBullet: 20
   BulletPrefab: {fileID: 2407209647820271621, guid: 64ee293800edfa44fae720c99519aac4, type: 3}
   FirePosition: {fileID: 975059188}
   stateText: {fileID: 1682847478}

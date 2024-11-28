@@ -147,8 +147,8 @@ TextureImporter:
         y: 18
         width: 15
         height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.6, y: 0.14285715}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,7 +170,7 @@ TextureImporter:
         width: 15
         height: 26
       alignment: 9
-      pivot: {x: 0.4666667, y: 0.11538462}
+      pivot: {x: 0.6, y: 0.1923077}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,7 +192,7 @@ TextureImporter:
         width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.28, y: 0.09090909}
+      pivot: {x: 0.4, y: 0.13636364}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,7 +214,7 @@ TextureImporter:
         width: 28
         height: 25
       alignment: 9
-      pivot: {x: 0.25, y: 0.16}
+      pivot: {x: 0.2857143, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,50 +228,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_Spear_Right_Down_5
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 10
-        width: 26
-        height: 31
-      alignment: 9
-      pivot: {x: 0.15384616, y: 0.3548387}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c15132b3aa06cc950800000000000000
-      internalID: 6470653048877421852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_Spear_Right_Down_6
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 11
-        width: 27
-        height: 29
-      alignment: 9
-      pivot: {x: 0.14814815, y: 0.3448276}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd8c498ff5b81cb60800000000000000
-      internalID: 7764640476872100061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: death_Spear_Right_Down_7
       rect:
         serializedVersion: 2
@@ -280,7 +236,7 @@ TextureImporter:
         width: 27
         height: 20
       alignment: 9
-      pivot: {x: 0.14814815, y: 0.55}
+      pivot: {x: 0.25925925, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,7 +258,7 @@ TextureImporter:
         width: 27
         height: 20
       alignment: 9
-      pivot: {x: 0.14814815, y: 0.65000004}
+      pivot: {x: 0.25925925, y: 0.65000004}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -311,6 +267,50 @@ TextureImporter:
       bones: []
       spriteID: 95f05b474ca70c320800000000000000
       internalID: 2576193971046125401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 10
+        width: 27
+        height: 31
+      alignment: 9
+      pivot: {x: 0.2962963, y: 0.41935483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8453f0d0886deb54b8cefca15045145d
+      internalID: -5880767571833256014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_Spear_Right_Down_9
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 11
+        width: 27
+        height: 29
+      alignment: 9
+      pivot: {x: 0.2962963, y: 0.37931034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0caaf5539094adf4eb4eb89b13b511ea
+      internalID: -1989786291001352596
       vertices: []
       indices: 
       edges: []

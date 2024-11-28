@@ -154,7 +154,7 @@ TextureImporter:
         width: 17
         height: 26
       alignment: 9
-      pivot: {x: 0.5882353, y: -0}
+      pivot: {x: 0.64705884, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,7 +176,7 @@ TextureImporter:
         width: 19
         height: 24
       alignment: 9
-      pivot: {x: 0.57894737, y: -0}
+      pivot: {x: 0.57894737, y: 0.041666668}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -198,7 +198,7 @@ TextureImporter:
         width: 17
         height: 19
       alignment: 9
-      pivot: {x: 0.64705884, y: -0}
+      pivot: {x: 0.7058824, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 18
         height: 21
       alignment: 9
-      pivot: {x: 0.6666667, y: 0.14285715}
+      pivot: {x: 0.7222222, y: 0.14285715}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,7 +242,7 @@ TextureImporter:
         width: 19
         height: 31
       alignment: 9
-      pivot: {x: 0.68421054, y: 0.41935483}
+      pivot: {x: 0.7368421, y: 0.41935483}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -264,7 +264,7 @@ TextureImporter:
         width: 20
         height: 29
       alignment: 9
-      pivot: {x: 0.6, y: 0.4137931}
+      pivot: {x: 0.65, y: 0.4137931}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,7 +286,7 @@ TextureImporter:
         width: 21
         height: 23
       alignment: 9
-      pivot: {x: 0.61904764, y: 0.95652175}
+      pivot: {x: 0.6666667, y: 0.95652175}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -308,7 +308,7 @@ TextureImporter:
         width: 21
         height: 23
       alignment: 9
-      pivot: {x: 0.61904764, y: 0.95652175}
+      pivot: {x: 0.6666667, y: 0.95652175}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

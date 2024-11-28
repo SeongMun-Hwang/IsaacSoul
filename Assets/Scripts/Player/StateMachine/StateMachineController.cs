@@ -42,7 +42,8 @@ public class StateMachineController : MonoBehaviour
     //stamina
     public StaminaController staminaController;
     //bullet
-    int bulletNumer = 100;
+    public int currentBullet = 8;
+    public int totalBullet = 20;
     public GameObject BulletPrefab;
     public GameObject FirePosition;
     //state Text
@@ -79,7 +80,7 @@ public class StateMachineController : MonoBehaviour
     {
         //status text
         stateText.text = state.ToString();
-        moveSpeedText.text = "Move Speed : " + moveSpeed + "\nBulletNumber : " + bulletNumer;
+        moveSpeedText.text = "Move Speed : " + moveSpeed + "\nTotalBullet : " + totalBullet + "\nCurrentBullet : " + currentBullet;
 
         HandleAnimation();
     }
@@ -128,8 +129,9 @@ public class StateMachineController : MonoBehaviour
                 //스태미나 0만 넘으면 공격 가능
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
-                    stateMachines[stateIndex].Enter();
-                    playerAnimator.SetFloat("MoveDirection", attackAngle);
+
+                        stateMachines[stateIndex].Enter();
+                        playerAnimator.SetFloat("MoveDirection", attackAngle);
                 }
                 break;
             case State.GunAttack:
@@ -248,11 +250,11 @@ public class StateMachineController : MonoBehaviour
     }
     public void ShootBullet()
     {
-        if (bulletNumer > 0)
+        if (currentBullet > 0)
         {
             GameObject go = Instantiate(BulletPrefab, FirePosition.transform.position, Quaternion.identity);
             go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
-            bulletNumer--;
+            currentBullet--;
         }
     }
 }
