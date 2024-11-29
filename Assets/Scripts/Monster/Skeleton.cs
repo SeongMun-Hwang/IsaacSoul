@@ -68,7 +68,6 @@ public class Skeleton : MonsterAgent
     }
     private void HandleHitState()
     {
-        hpController.enabled = false;
         agent.speed = 0f;
 
         if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f 
@@ -82,7 +81,6 @@ public class Skeleton : MonsterAgent
             else
             {
                 animator.SetTrigger("Idle");
-                hpController.enabled = true;
                 agent.speed = moveSpeed;
                 state = MonsterState.Move;
             }

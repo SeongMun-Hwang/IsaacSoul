@@ -67,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Restore
 
-    HP +20'
+    HP +40'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f1d3c73cbdff5643b773d6e862c9207, type: 2}
   m_sharedMaterial: {fileID: -8124299434488200381, guid: 4f1d3c73cbdff5643b773d6e862c9207, type: 2}
