@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class HpController : MonoBehaviour
 {
-    public int hp;
+    public float hp;
     public event Action OnHpChanged;
 
-    public void GetDamage(int damage)
+    public void GetDamage(float damage)
     {
         if (!enabled)
         {

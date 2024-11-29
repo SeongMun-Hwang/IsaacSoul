@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ShortRangeWeapon : MonoBehaviour
 {
-    public int Damage;
+    public float Damage;
     public string targetTagName;
     protected void OnCollisionEnter2D(Collision2D collision)
     {

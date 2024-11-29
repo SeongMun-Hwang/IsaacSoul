@@ -5,13 +5,16 @@ public class Skeleton : MonsterAgent
 {
     public TextMeshPro stateText;
     public MonsterStat monsterStat;
+
     private void Start()
     {
         //Get MonsterStat data
         attackRange = monsterStat.attackRange;
         moveSpeed = monsterStat.moveSpeed;
+        agent.speed = monsterStat.moveSpeed;
         attackVarious = monsterStat.attackVarious;
         attackDelay = monsterStat.attackDelay;
+        hpController.hp = monsterStat.hp;
 
         state = MonsterState.Move;
         hpController.OnHpChanged += HandleHpState;

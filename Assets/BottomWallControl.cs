@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class BottomWallControl : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Material wallMaterial;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        Color color = wallMaterial.color;
+        color.a = 0.3f;
+        wallMaterial.color = color;
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        Color color = wallMaterial.color;
+        color.a = 1f;
+        wallMaterial.color = color;
     }
 }

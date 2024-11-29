@@ -88,7 +88,7 @@ public class StaminaController : MonoBehaviour
     IEnumerator StaminaRestoreCoolTime()
     {
         isCoolDown = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(staminaRestoreCooltime);
         isCoolDown = false;
     }
 }

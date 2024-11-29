@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LongRangeWeapon : MonoBehaviour
 {
-    public int Damage;
+    public float Damage;
     public string targetTagName;
     public Vector2 Velocity;
     private void FixedUpdate()
