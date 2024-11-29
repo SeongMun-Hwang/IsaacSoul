@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medium_blue_potion_01_0: -7315490147282707582
+      medium_blue_potion_01_1: 7102121903999050310
+      medium_blue_potion_01_10: -3005108920994435823
+      medium_blue_potion_01_11: -6037064367813809437
+      medium_blue_potion_01_12: -2370412510994561194
+      medium_blue_potion_01_13: 1226460126842241534
+      medium_blue_potion_01_14: 5784460127459836483
+      medium_blue_potion_01_15: 1137803188455762853
+      medium_blue_potion_01_16: -5935966735023080492
+      medium_blue_potion_01_17: -4789254049846517168
+      medium_blue_potion_01_18: -2270691473705329241
+      medium_blue_potion_01_19: -6058511230966508853
+      medium_blue_potion_01_2: -7950322110408231978
+      medium_blue_potion_01_20: -716641076863757533
+      medium_blue_potion_01_21: -4972835508453017050
+      medium_blue_potion_01_22: -2063047883649588984
+      medium_blue_potion_01_23: -7211099171921672846
+      medium_blue_potion_01_24: 8340992248274296632
+      medium_blue_potion_01_25: 8621569087041492840
+      medium_blue_potion_01_26: -5552433852547306309
+      medium_blue_potion_01_27: 3414695558524537803
+      medium_blue_potion_01_28: -8954344541203342332
+      medium_blue_potion_01_29: 707618482866129219
+      medium_blue_potion_01_3: 907384282830843848
+      medium_blue_potion_01_4: -87650468396115651
+      medium_blue_potion_01_5: 7224811982463669729
+      medium_blue_potion_01_6: -7213573107206036758
+      medium_blue_potion_01_7: 8748771490195204717
+      medium_blue_potion_01_8: 5407802090044620522
+      medium_blue_potion_01_9: 6361789366766586531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

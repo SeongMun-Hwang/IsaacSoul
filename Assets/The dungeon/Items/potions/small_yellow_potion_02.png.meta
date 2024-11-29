@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small_yellow_potion_02_0: 5383821403996880355
+      small_yellow_potion_02_1: 7758739755942599238
+      small_yellow_potion_02_10: 1852226890386301780
+      small_yellow_potion_02_11: -1272272304367693014
+      small_yellow_potion_02_12: -4781216965312017122
+      small_yellow_potion_02_13: -2801397700788675132
+      small_yellow_potion_02_14: 2568427337169201993
+      small_yellow_potion_02_15: 7073906528163030879
+      small_yellow_potion_02_16: -3043882508237227979
+      small_yellow_potion_02_17: 7862619257463078732
+      small_yellow_potion_02_18: -3372530500410303725
+      small_yellow_potion_02_19: -7056698647087621841
+      small_yellow_potion_02_2: -7878109388257021073
+      small_yellow_potion_02_20: -7506264317650229195
+      small_yellow_potion_02_21: 5838594468731803380
+      small_yellow_potion_02_22: -2016474871880851602
+      small_yellow_potion_02_23: -5689161737020749903
+      small_yellow_potion_02_24: 1494133199146145654
+      small_yellow_potion_02_25: -4758135411361334737
+      small_yellow_potion_02_26: 452395705577360886
+      small_yellow_potion_02_27: -7577225295234138461
+      small_yellow_potion_02_28: -864033510943710565
+      small_yellow_potion_02_29: -1523407751326964883
+      small_yellow_potion_02_3: -7379621050491130906
+      small_yellow_potion_02_4: -3796342554779220084
+      small_yellow_potion_02_5: 3454699887434846428
+      small_yellow_potion_02_6: 8967907164324428278
+      small_yellow_potion_02_7: -7451935896524641938
+      small_yellow_potion_02_8: -2491094888838753174
+      small_yellow_potion_02_9: 6977621632830427307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

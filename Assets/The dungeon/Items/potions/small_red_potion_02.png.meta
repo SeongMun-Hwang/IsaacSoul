@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small_red_potion_02_0: -1911515872681085753
+      small_red_potion_02_1: -4940471230634152369
+      small_red_potion_02_10: -8064241966260682752
+      small_red_potion_02_11: 4085355957303423018
+      small_red_potion_02_12: -977061346704878858
+      small_red_potion_02_13: -4168018219401189601
+      small_red_potion_02_14: -2153382032726869321
+      small_red_potion_02_15: 6717996261597997122
+      small_red_potion_02_16: 7100305561370004527
+      small_red_potion_02_17: -1774061053988027123
+      small_red_potion_02_18: 8879607659262253494
+      small_red_potion_02_19: -6474066311355759026
+      small_red_potion_02_2: -6387946446424546414
+      small_red_potion_02_20: -9194952622550067217
+      small_red_potion_02_21: -4036759672549957318
+      small_red_potion_02_22: 5875350386696505709
+      small_red_potion_02_23: 828957157168569123
+      small_red_potion_02_24: -2254664610964075528
+      small_red_potion_02_25: -8980387812575816625
+      small_red_potion_02_26: 6189285730095836494
+      small_red_potion_02_27: -5216051313227395425
+      small_red_potion_02_28: 3518050439001710537
+      small_red_potion_02_29: 1173340031301973467
+      small_red_potion_02_3: 3209092649529619826
+      small_red_potion_02_4: 6816593434695549296
+      small_red_potion_02_5: -3747955649088987867
+      small_red_potion_02_6: -7064622245447398078
+      small_red_potion_02_7: 3549724449217457897
+      small_red_potion_02_8: 8298353448922692134
+      small_red_potion_02_9: 3482870388585926445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small_green_potion_02_0: -146247848232258974
+      small_green_potion_02_1: 6867577779269923918
+      small_green_potion_02_10: -4108588116726827674
+      small_green_potion_02_11: -4707586411474164930
+      small_green_potion_02_12: 920571165630177846
+      small_green_potion_02_13: -7368379014840441506
+      small_green_potion_02_14: -4447729336974900532
+      small_green_potion_02_15: 7225359312703895590
+      small_green_potion_02_16: -8350167342372562647
+      small_green_potion_02_17: 5711537926161738
+      small_green_potion_02_18: 4712333772831429930
+      small_green_potion_02_19: -3846286173425813033
+      small_green_potion_02_2: -9212798221089875655
+      small_green_potion_02_20: -4055164991113039330
+      small_green_potion_02_21: 8440436402973113853
+      small_green_potion_02_22: -5593570531959774137
+      small_green_potion_02_23: -7242145047617870202
+      small_green_potion_02_24: 5576893716425836317
+      small_green_potion_02_25: -382906205160161895
+      small_green_potion_02_26: 140403630306859253
+      small_green_potion_02_27: -6947390357905679696
+      small_green_potion_02_28: 5367493049705701680
+      small_green_potion_02_29: 2959068790332291694
+      small_green_potion_02_3: -8877097815982573018
+      small_green_potion_02_4: -1459319273570788814
+      small_green_potion_02_5: -2435167718946115013
+      small_green_potion_02_6: -1158472876130772347
+      small_green_potion_02_7: -308654222030273872
+      small_green_potion_02_8: 6438197208257570720
+      small_green_potion_02_9: 8821616148276735957
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

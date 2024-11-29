@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medium_violet_potion_03_0: 1132669691424249583
+      medium_violet_potion_03_1: 1286061057997393337
+      medium_violet_potion_03_10: -8262993515807260460
+      medium_violet_potion_03_11: 2807516600496402296
+      medium_violet_potion_03_12: -1592033788609620422
+      medium_violet_potion_03_13: -744532102888032146
+      medium_violet_potion_03_14: -6268023457944278864
+      medium_violet_potion_03_15: 1859728025398818036
+      medium_violet_potion_03_2: -911220758877963597
+      medium_violet_potion_03_3: -607437319924851354
+      medium_violet_potion_03_4: 2617627757418823552
+      medium_violet_potion_03_5: -4350191247857889579
+      medium_violet_potion_03_6: 1946783024834084411
+      medium_violet_potion_03_7: -6360687355432279206
+      medium_violet_potion_03_8: 4420924476635330627
+      medium_violet_potion_03_9: -7623432090229531342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

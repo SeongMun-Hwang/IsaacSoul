@@ -44,6 +44,7 @@ public class StateMachineController : MonoBehaviour
     //bullet
     public int currentBullet = 8;
     public int totalBullet = 20;
+    public float bulletDamage = 30;
     public GameObject BulletPrefab;
     public GameObject FirePosition;
     //state Text
@@ -253,6 +254,7 @@ public class StateMachineController : MonoBehaviour
         if (currentBullet > 0)
         {
             GameObject go = Instantiate(BulletPrefab, FirePosition.transform.position, Quaternion.identity);
+            go.GetComponent<LongRangeWeapon>().Damage = bulletDamage;
             go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
             currentBullet--;
         }

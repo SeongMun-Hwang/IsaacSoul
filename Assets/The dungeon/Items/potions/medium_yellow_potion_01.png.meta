@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medium_yellow_potion_01_0: -1754078500548466392
+      medium_yellow_potion_01_1: 2681047586438021051
+      medium_yellow_potion_01_10: 4820901722942867762
+      medium_yellow_potion_01_11: 1384686994312698672
+      medium_yellow_potion_01_12: 660470812796634673
+      medium_yellow_potion_01_13: 5396699681372796676
+      medium_yellow_potion_01_14: -746640222973537987
+      medium_yellow_potion_01_15: -2175826501312711247
+      medium_yellow_potion_01_16: -1248429354362734522
+      medium_yellow_potion_01_17: -4400341213525113999
+      medium_yellow_potion_01_18: 3482814000531158490
+      medium_yellow_potion_01_19: -6060018233128289741
+      medium_yellow_potion_01_2: -2823497162451248731
+      medium_yellow_potion_01_20: 1451907940408332173
+      medium_yellow_potion_01_21: -8480438883399410245
+      medium_yellow_potion_01_22: 2278164970970704702
+      medium_yellow_potion_01_23: 7794044395797771025
+      medium_yellow_potion_01_24: -3222670071629652177
+      medium_yellow_potion_01_25: 7099529591740092861
+      medium_yellow_potion_01_26: 5439106912576640138
+      medium_yellow_potion_01_27: 5116277733041749255
+      medium_yellow_potion_01_28: -437890739664436642
+      medium_yellow_potion_01_29: -1966434878522027411
+      medium_yellow_potion_01_3: 8705317908796756425
+      medium_yellow_potion_01_4: -5013922452081583094
+      medium_yellow_potion_01_5: 3824585593237126962
+      medium_yellow_potion_01_6: -3922769490413458436
+      medium_yellow_potion_01_7: -4149785561345523746
+      medium_yellow_potion_01_8: -4247111200303253490
+      medium_yellow_potion_01_9: 7871522664294129992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

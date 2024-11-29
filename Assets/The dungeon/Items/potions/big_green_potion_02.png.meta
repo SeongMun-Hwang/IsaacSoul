@@ -100,7 +100,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -114,7 +114,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      big_green_potion_02_0: 2854875737345650640
+      big_green_potion_02_1: -3255900264129666445
+      big_green_potion_02_10: -7561900619710901704
+      big_green_potion_02_11: 387137147709622219
+      big_green_potion_02_12: 2772270325769992231
+      big_green_potion_02_13: -7554257335363886853
+      big_green_potion_02_14: -3066734141190777669
+      big_green_potion_02_15: 6798988963176752504
+      big_green_potion_02_16: 801416360452602370
+      big_green_potion_02_17: 9036579371636139042
+      big_green_potion_02_18: 5647928518784487641
+      big_green_potion_02_19: -462373492138990222
+      big_green_potion_02_2: -6339676522400224945
+      big_green_potion_02_20: -2148171511138022044
+      big_green_potion_02_21: -6348922470861958955
+      big_green_potion_02_3: -5467996904796532883
+      big_green_potion_02_4: -8774521351236404296
+      big_green_potion_02_5: -88475589381334819
+      big_green_potion_02_6: 7684474540619310500
+      big_green_potion_02_7: 7322630499554438404
+      big_green_potion_02_8: -8659957736905054877
+      big_green_potion_02_9: -2113673389939180922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

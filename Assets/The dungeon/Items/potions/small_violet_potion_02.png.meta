@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small_violet_potion_02_0: -6529824370546202206
+      small_violet_potion_02_1: 6883950895541317988
+      small_violet_potion_02_10: 7460634234499610719
+      small_violet_potion_02_11: -4119393413838596077
+      small_violet_potion_02_12: 857123865749305764
+      small_violet_potion_02_13: 3912179340047914815
+      small_violet_potion_02_14: 3963541604838540377
+      small_violet_potion_02_15: -5847436054357707608
+      small_violet_potion_02_16: 9141813621951105794
+      small_violet_potion_02_17: 1952351482641000522
+      small_violet_potion_02_18: -263206700592301216
+      small_violet_potion_02_19: 93815548652179490
+      small_violet_potion_02_2: -2254903774903101625
+      small_violet_potion_02_20: -3255720567210563790
+      small_violet_potion_02_21: 3577039414195718187
+      small_violet_potion_02_22: 5720773206912898262
+      small_violet_potion_02_23: -2594121719785401644
+      small_violet_potion_02_24: 8928410884902737866
+      small_violet_potion_02_25: -8212422746071554909
+      small_violet_potion_02_26: 814471036305404337
+      small_violet_potion_02_27: -963991601644138438
+      small_violet_potion_02_28: -3105020873968181543
+      small_violet_potion_02_29: -3331232138327667215
+      small_violet_potion_02_3: -3915025963125471445
+      small_violet_potion_02_4: 2949150704924010461
+      small_violet_potion_02_5: -3154026152532485006
+      small_violet_potion_02_6: -8649352320776762263
+      small_violet_potion_02_7: -2727138498195651026
+      small_violet_potion_02_8: -6522282775001622798
+      small_violet_potion_02_9: -3693329356784071125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

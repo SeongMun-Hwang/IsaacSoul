@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small_green_potion_03_0: -4945035808150880246
+      small_green_potion_03_1: 3735085538570263435
+      small_green_potion_03_10: 8522114966913473303
+      small_green_potion_03_11: 6157822127136985844
+      small_green_potion_03_12: 1267335157999192667
+      small_green_potion_03_13: 4785110030897357353
+      small_green_potion_03_14: 3737591327048289743
+      small_green_potion_03_15: -9162694296395631180
+      small_green_potion_03_2: -8507138699740126330
+      small_green_potion_03_3: -768013247022105853
+      small_green_potion_03_4: -2922733639425488600
+      small_green_potion_03_5: -5280017796718170816
+      small_green_potion_03_6: 2520376614865941616
+      small_green_potion_03_7: 4766528923212375243
+      small_green_potion_03_8: 4806713082161047545
+      small_green_potion_03_9: -5510006080905467655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

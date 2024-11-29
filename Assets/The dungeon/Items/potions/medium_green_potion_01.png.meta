@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medium_green_potion_01_0: -7608082686271274251
+      medium_green_potion_01_1: 5061053176875945699
+      medium_green_potion_01_10: 8802204142538204216
+      medium_green_potion_01_11: 3578264370908157567
+      medium_green_potion_01_12: 3939174825748852624
+      medium_green_potion_01_13: 6443295972861279207
+      medium_green_potion_01_14: -8080625434841422030
+      medium_green_potion_01_15: 784981842036344974
+      medium_green_potion_01_16: 2834494598184034871
+      medium_green_potion_01_17: 1236345653441424575
+      medium_green_potion_01_18: 4343993025291525807
+      medium_green_potion_01_19: -3558811660048985973
+      medium_green_potion_01_2: 5752435716542117549
+      medium_green_potion_01_20: -5984758342784496139
+      medium_green_potion_01_21: 1193945558606714167
+      medium_green_potion_01_22: 2924004591497938080
+      medium_green_potion_01_23: 8040680782597614242
+      medium_green_potion_01_24: 9217156111322186117
+      medium_green_potion_01_25: 3393225874446402533
+      medium_green_potion_01_26: -3885191592359666362
+      medium_green_potion_01_27: 9194359111758620582
+      medium_green_potion_01_28: 409890412434565859
+      medium_green_potion_01_29: 6804967870764791136
+      medium_green_potion_01_3: 3610432110221545001
+      medium_green_potion_01_4: -5281435198005413347
+      medium_green_potion_01_5: 5888423606898238638
+      medium_green_potion_01_6: 7347578858462823922
+      medium_green_potion_01_7: 5407168846647887176
+      medium_green_potion_01_8: -4831688926332378941
+      medium_green_potion_01_9: -4340569262676870269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

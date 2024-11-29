@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medium_red_potion_02_0: 1911348799845449808
+      medium_red_potion_02_1: 5249800849377014824
+      medium_red_potion_02_10: 938334596535996272
+      medium_red_potion_02_11: -1603968177458790737
+      medium_red_potion_02_12: -6815876746893284014
+      medium_red_potion_02_13: -7975989182121267330
+      medium_red_potion_02_14: -3705996928901365311
+      medium_red_potion_02_15: -2205014331107530103
+      medium_red_potion_02_16: 2359663088215523927
+      medium_red_potion_02_17: 4176657684003509869
+      medium_red_potion_02_18: 3637872987070722716
+      medium_red_potion_02_19: -3814604443839384364
+      medium_red_potion_02_2: -8228728285499495840
+      medium_red_potion_02_20: -5664649160363496967
+      medium_red_potion_02_21: -5956201480140851437
+      medium_red_potion_02_22: 3781494367036088276
+      medium_red_potion_02_23: -6588980907102583430
+      medium_red_potion_02_24: -775682189748208441
+      medium_red_potion_02_25: -5153816599454859921
+      medium_red_potion_02_26: -4401428410239231180
+      medium_red_potion_02_27: -5385745383275369323
+      medium_red_potion_02_28: -1204293872495835345
+      medium_red_potion_02_29: -6764788640194971765
+      medium_red_potion_02_3: 8552451727253434695
+      medium_red_potion_02_4: 9179601688334281265
+      medium_red_potion_02_5: 6608700330044540056
+      medium_red_potion_02_6: -8008823709397855560
+      medium_red_potion_02_7: 6009409109965863489
+      medium_red_potion_02_8: 3723809794539728030
+      medium_red_potion_02_9: 3803611392217127617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

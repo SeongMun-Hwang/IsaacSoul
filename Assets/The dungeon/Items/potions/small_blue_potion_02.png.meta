@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small_blue_potion_02_0: 6650392615719558034
+      small_blue_potion_02_1: 7438747789750262632
+      small_blue_potion_02_10: -2524804598418114472
+      small_blue_potion_02_11: 3625300321447005225
+      small_blue_potion_02_12: -825089098035332679
+      small_blue_potion_02_13: -661115128057374908
+      small_blue_potion_02_14: -5165266633741032136
+      small_blue_potion_02_15: -9177880934228913624
+      small_blue_potion_02_16: -1553817269622646954
+      small_blue_potion_02_17: -4880764876466697943
+      small_blue_potion_02_18: -8859388220299391354
+      small_blue_potion_02_19: 4344777862839214515
+      small_blue_potion_02_2: -3032812217507061049
+      small_blue_potion_02_20: 6982508861711723374
+      small_blue_potion_02_21: 2936228442789501153
+      small_blue_potion_02_22: 2926825821152503803
+      small_blue_potion_02_23: -7444114223041407911
+      small_blue_potion_02_24: 1525256888567555286
+      small_blue_potion_02_25: 7482373106350154602
+      small_blue_potion_02_26: -1768040481958979890
+      small_blue_potion_02_27: 1101006136889145573
+      small_blue_potion_02_28: 1378737065333851584
+      small_blue_potion_02_29: 1735761264616403271
+      small_blue_potion_02_3: -1249886345597062563
+      small_blue_potion_02_4: 4118609487301862893
+      small_blue_potion_02_5: -7337653410841006960
+      small_blue_potion_02_6: -4330040348498382213
+      small_blue_potion_02_7: 8964220789921453300
+      small_blue_potion_02_8: -3884313563761298130
+      small_blue_potion_02_9: -8845875677060642286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

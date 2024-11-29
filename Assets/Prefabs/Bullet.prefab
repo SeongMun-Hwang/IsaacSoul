@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc191cfffd73a224ea1569bdedcdbf9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 3
+  Damage: 30
   targetTagName: Enemy
   Velocity: {x: 10, y: 0}
 --- !u!61 &7537235953248806658

@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medium_red_potion_03_0: 2275756363383776929
+      medium_red_potion_03_1: 2164379626786888352
+      medium_red_potion_03_10: 8989783213670281583
+      medium_red_potion_03_11: -4795646629691181223
+      medium_red_potion_03_12: -7869964480226885853
+      medium_red_potion_03_13: 8977057432242185555
+      medium_red_potion_03_14: -4596599857205944708
+      medium_red_potion_03_15: 5378252684508553384
+      medium_red_potion_03_2: -8850648045237073041
+      medium_red_potion_03_3: 4919966582439206015
+      medium_red_potion_03_4: 1697373323189221842
+      medium_red_potion_03_5: -8672086252974070637
+      medium_red_potion_03_6: -2067149914752546915
+      medium_red_potion_03_7: -4205664212846268428
+      medium_red_potion_03_8: 5617517591789851909
+      medium_red_potion_03_9: 9160942957276562460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

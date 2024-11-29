@@ -10,11 +10,9 @@ public class PlayerController : MonoBehaviour
     public Image hpBar;
     public Image staminaBar;
 
-    float maxHp = 10;
-    int maxStamina = 100;
+    public float maxHp = 10;
 
     public ShortRangeWeapon playerSpear;
-    public LongRangeWeapon playerBullet;
     public StateMachineController stateMachineController;
 
     private void Start()
@@ -25,26 +23,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         hpBar.fillAmount = hpController.hp / maxHp;
-        staminaBar.fillAmount = staminaController.stamina / maxStamina;
+        staminaBar.fillAmount = staminaController.stamina / staminaController.maxStamina;
     }
-    public void IncreaseHp(int hp)
-    {
-        hpController.hp += hp;
-    }
-    public void IncreaseStamina(float stamina)
-    {
-        staminaController.maxStamina += stamina;
-    }
-    public void IncreaseSpearDamage(float damage)
-    {
-        playerSpear.Damage += damage;
-    }   
-    public void IncreaseBulletDamage(float damage)
-    {
-        playerBullet.Damage += damage;
-    }
-    public void IncreaseBulletNumber(int number)
-    {
-        stateMachineController.totalBullet += number;
-    }
+    
 }

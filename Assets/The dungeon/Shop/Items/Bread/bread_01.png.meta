@@ -112,7 +112,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,7 +126,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -772,7 +772,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bread_01_0: -252344756894224405
+      bread_01_1: -3144480016299139697
+      bread_01_10: 5838175408399835793
+      bread_01_11: -8704295170765732357
+      bread_01_12: -6022134006305910739
+      bread_01_13: 3178731920297938238
+      bread_01_14: -8381388504691006420
+      bread_01_15: 419535182883101973
+      bread_01_16: -503223435091618527
+      bread_01_17: -7272260732433041364
+      bread_01_18: 6788763248699632360
+      bread_01_19: -333056878855691737
+      bread_01_2: 6485097171043503538
+      bread_01_20: -1318492781352630724
+      bread_01_21: 1164018483639633976
+      bread_01_22: -1182382645538493340
+      bread_01_23: -19849456027319656
+      bread_01_24: -7573520557867787555
+      bread_01_25: 4081059163363356268
+      bread_01_3: -4760441586477233152
+      bread_01_4: -2918774820482208020
+      bread_01_5: -2179942255483500207
+      bread_01_6: -5111691333604676521
+      bread_01_7: -8438735236295291925
+      bread_01_8: -2965505795672254727
+      bread_01_9: -3419057509440986511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

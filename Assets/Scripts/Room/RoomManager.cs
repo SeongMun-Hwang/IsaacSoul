@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoomManager : MonoBehaviour
 {
@@ -16,11 +17,11 @@ public class RoomManager : MonoBehaviour
     public List<GameObject> spawnableEnemyList;
 
     //Player Reward
-    PlayerController playerController;
+    public GameObject rewardCanvas;
+    public GameObject horizontalLayoutGroup;
+    public List<GameObject> rewardCards;
     private void Start()
-    {
-        
-        playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+    {   
         if (!isCleared)
         {
             //시작 시 모든 몬스터 스폰에서 몬스터 리스트의 몬스터 생성
@@ -37,7 +38,6 @@ public class RoomManager : MonoBehaviour
             }
         }
     }
-
     void Update()
     {
         if (enemies.Count == 0 && !isDoorOpened)
@@ -48,6 +48,7 @@ public class RoomManager : MonoBehaviour
             {
                 door.GetComponent<Animator>().SetTrigger("Open");
             }
+            CreateRandomRewardCards();
         }
         for (int i = enemies.Count - 1; i >= 0; i--)
         {
@@ -55,6 +56,18 @@ public class RoomManager : MonoBehaviour
             {
                 enemies.RemoveAt(i);
             }
+        }
+    }
+    void CreateRandomRewardCards()
+    {
+        rewardCanvas.SetActive(true);
+        Time.timeScale = 0f;
+        List<GameObject> buttons = rewardCards;
+        for(int i = 0; i < 3; i++)
+        {
+            int num = Random.Range(0, buttons.Count);
+            Instantiate(buttons[num], horizontalLayoutGroup.transform);
+            buttons.RemoveAt(num);
         }
     }
 }

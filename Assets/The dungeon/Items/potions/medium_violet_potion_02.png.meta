@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medium_violet_potion_02_0: 4588615618026879339
+      medium_violet_potion_02_1: -1735252375961516747
+      medium_violet_potion_02_10: -6351595915849578476
+      medium_violet_potion_02_11: 8615008262552978845
+      medium_violet_potion_02_12: 4384402048843000703
+      medium_violet_potion_02_13: 8851679212018318443
+      medium_violet_potion_02_14: 6594441175139715905
+      medium_violet_potion_02_15: -3474276249981127298
+      medium_violet_potion_02_16: 1477645240854365555
+      medium_violet_potion_02_17: -1650204914902363836
+      medium_violet_potion_02_18: -5254909438511258802
+      medium_violet_potion_02_19: 582791284271082611
+      medium_violet_potion_02_2: -7675792851622662139
+      medium_violet_potion_02_20: 5281941286353948397
+      medium_violet_potion_02_21: -6020159988327620300
+      medium_violet_potion_02_22: -815710869900468729
+      medium_violet_potion_02_23: -7654387266996797645
+      medium_violet_potion_02_24: 7947739782037317665
+      medium_violet_potion_02_25: 8870985330211931418
+      medium_violet_potion_02_26: 670832969913999543
+      medium_violet_potion_02_27: -5294253839229911027
+      medium_violet_potion_02_28: 5549721713646500585
+      medium_violet_potion_02_29: -4053288417357279754
+      medium_violet_potion_02_3: -2356246496728970503
+      medium_violet_potion_02_4: 8475793707356621687
+      medium_violet_potion_02_5: 8630753643174570948
+      medium_violet_potion_02_6: 5327127915775503507
+      medium_violet_potion_02_7: 5670731225890132375
+      medium_violet_potion_02_8: 7697608627481187264
+      medium_violet_potion_02_9: 3328111751714949741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      big_blue_potion_03_0: -4382539393049492460
+      big_blue_potion_03_1: -5592050459358534316
+      big_blue_potion_03_10: -7319825238652773185
+      big_blue_potion_03_11: -735235877358774657
+      big_blue_potion_03_12: -3752179732747517901
+      big_blue_potion_03_13: -1465822847423147835
+      big_blue_potion_03_14: 5018737488876864837
+      big_blue_potion_03_15: 8074707978589009716
+      big_blue_potion_03_2: -4063978942997980197
+      big_blue_potion_03_3: 2274033472568918940
+      big_blue_potion_03_4: -1680896158820292391
+      big_blue_potion_03_5: -5738857533092496186
+      big_blue_potion_03_6: -3188773778911232645
+      big_blue_potion_03_7: 6682329718675090244
+      big_blue_potion_03_8: -6436882573447669253
+      big_blue_potion_03_9: -1531125441257690087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      big_yellow_potion_03_0: 2791790373576290152
+      big_yellow_potion_03_1: -1993544794593118626
+      big_yellow_potion_03_10: 295007285443207095
+      big_yellow_potion_03_11: -397823359491718923
+      big_yellow_potion_03_12: -8704044926990448079
+      big_yellow_potion_03_13: -843436859073641960
+      big_yellow_potion_03_14: -745132741601700393
+      big_yellow_potion_03_15: 2526383823381034252
+      big_yellow_potion_03_2: 1331604847994470545
+      big_yellow_potion_03_3: -6725570022806334218
+      big_yellow_potion_03_4: 405263094565273349
+      big_yellow_potion_03_5: -7682299757980439861
+      big_yellow_potion_03_6: -858871983235305699
+      big_yellow_potion_03_7: -3068972311038140197
+      big_yellow_potion_03_8: 2486734153459840204
+      big_yellow_potion_03_9: 1573356828229631620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
