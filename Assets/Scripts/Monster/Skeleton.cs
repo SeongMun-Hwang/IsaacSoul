@@ -63,8 +63,11 @@ public class Skeleton : MonsterAgent
     }
     private void HandleHpState()
     {
-        animator.SetTrigger("Hit");
-        state = MonsterState.Hit;
+        if (hpController.hp > 0)
+        {
+            animator.SetTrigger("Hit");
+            state = MonsterState.Hit;
+        }
     }
     private void HandleHitState()
     {
@@ -89,6 +92,7 @@ public class Skeleton : MonsterAgent
     private void HandleDeathState()
     {
         agent.speed = 0f;
+        GetComponent<Collider2D>().enabled = false;
         if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             Destroy(gameObject);
