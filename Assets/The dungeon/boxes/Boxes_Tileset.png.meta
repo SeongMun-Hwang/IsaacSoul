@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -108,7 +108,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -622,7 +622,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boxes_Tileset_0: 8455489039356774584
+      Boxes_Tileset_1: 3566294937470205723
+      Boxes_Tileset_10: 3303110853183631884
+      Boxes_Tileset_11: 6495542562309452421
+      Boxes_Tileset_12: -3228694255745422154
+      Boxes_Tileset_13: -1698150324480944976
+      Boxes_Tileset_14: 8700941887318609835
+      Boxes_Tileset_15: -5145979021179549875
+      Boxes_Tileset_16: -7342660601195798561
+      Boxes_Tileset_17: 7414809591160971958
+      Boxes_Tileset_18: -1033803832499511794
+      Boxes_Tileset_19: 318405052521231312
+      Boxes_Tileset_2: -525901452812287073
+      Boxes_Tileset_3: 8572315628793708244
+      Boxes_Tileset_4: 5701408020097288223
+      Boxes_Tileset_5: -6433848472360780265
+      Boxes_Tileset_6: 2254113621603694369
+      Boxes_Tileset_7: -6820502233826411241
+      Boxes_Tileset_8: 3146339615465594080
+      Boxes_Tileset_9: -2856297626073935052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
