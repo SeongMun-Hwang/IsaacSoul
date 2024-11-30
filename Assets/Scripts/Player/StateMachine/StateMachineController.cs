@@ -131,8 +131,8 @@ public class StateMachineController : MonoBehaviour
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
 
-                        stateMachines[stateIndex].Enter();
-                        playerAnimator.SetFloat("MoveDirection", attackAngle);
+                    stateMachines[stateIndex].Enter();
+                    playerAnimator.SetFloat("MoveDirection", attackAngle);
                 }
                 break;
             case State.GunAttack:
@@ -149,11 +149,12 @@ public class StateMachineController : MonoBehaviour
                 }
                 break;
             case State.Death:
-                if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+                if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f
+                    && playerAnimator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Contains("death"))
                 {
-                    Destroy(gameObject); // 애니메이션 완료 후 객체 삭제
+                    Destroy(gameObject);
                 }
-                break;
+                return;
         }
     }
     private void FixedUpdate()
@@ -217,7 +218,7 @@ public class StateMachineController : MonoBehaviour
     }
     void ActionOnDamage()
     {
-        if (hpController.hp < 1)
+        if (hpController.hp < 0.1)
         {
             moveSpeed = 0f;
             playerAnimator.SetFloat("MoveSpeed", moveSpeed);
@@ -227,7 +228,6 @@ public class StateMachineController : MonoBehaviour
         }
         else
         {
-
             StartCoroutine(GetDamage());
         }
     }
@@ -258,5 +258,9 @@ public class StateMachineController : MonoBehaviour
             go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
             currentBullet--;
         }
+    }
+    public void ActionOnDeath()
+    {
+        Destroy(gameObject);
     }
 }
