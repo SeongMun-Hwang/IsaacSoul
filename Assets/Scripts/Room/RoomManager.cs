@@ -113,7 +113,7 @@ public class RoomManager : MonoBehaviour
                 buttonIndex = rewardButtons.Count - 1;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Return) && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             rewardButtons[buttonIndex].onClick.Invoke();
         }
