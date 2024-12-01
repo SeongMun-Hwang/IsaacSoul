@@ -20,8 +20,14 @@ public class RoomManager : MonoBehaviour
     public GameObject rewardCanvas;
     public GameObject horizontalLayoutGroup;
     public List<GameObject> rewardCards;
+
+    List<Button> rewardButtons = new List<Button>();
+    Color selectedColor = Color.red;
+    Color originColor = Color.white;
+    public int buttonIndex = 0;
+
     private void Start()
-    {   
+    {
         if (!isCleared)
         {
             //시작 시 모든 몬스터 스폰에서 몬스터 리스트의 몬스터 생성
@@ -44,7 +50,7 @@ public class RoomManager : MonoBehaviour
         {
             isDoorOpened = true;
             isCleared = true;
-            foreach(GameObject door in doors)
+            foreach (GameObject door in doors)
             {
                 door.GetComponent<Animator>().SetTrigger("Open");
             }
@@ -57,17 +63,59 @@ public class RoomManager : MonoBehaviour
                 enemies.RemoveAt(i);
             }
         }
+        if (rewardCanvas.activeSelf)
+        {
+            ChooseRewards();
+        }
     }
     void CreateRandomRewardCards()
     {
         rewardCanvas.SetActive(true);
         Time.timeScale = 0f;
         List<GameObject> buttons = rewardCards;
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
             int num = Random.Range(0, buttons.Count);
-            Instantiate(buttons[num], horizontalLayoutGroup.transform);
+            GameObject go = Instantiate(buttons[num], horizontalLayoutGroup.transform);
             buttons.RemoveAt(num);
+            rewardButtons.Add(go.GetComponent<Button>());
+        }
+    }
+    void ChooseRewards()
+    {
+        for (int i = 0; i < rewardButtons.Count; i++)
+        {
+            ColorBlock color = rewardButtons[i].colors;
+            if (i == buttonIndex)
+            {
+                rewardButtons[i].Select();
+                color.selectedColor = selectedColor;
+            }
+            else
+            {
+                color.selectedColor = originColor;
+            }
+            rewardButtons[i].colors = color;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            buttonIndex++;
+            if (buttonIndex >= rewardButtons.Count)
+            {
+                buttonIndex = 0;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            buttonIndex--;
+            if (buttonIndex < 0)
+            {
+                buttonIndex = rewardButtons.Count - 1;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Return) && Input.GetKeyDown(KeyCode.Space))
+        {
+            rewardButtons[buttonIndex].onClick.Invoke();
         }
     }
 }

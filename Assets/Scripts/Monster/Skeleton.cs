@@ -63,11 +63,9 @@ public class Skeleton : MonsterAgent
     }
     private void HandleHpState()
     {
-        if (hpController.hp > 0)
-        {
             animator.SetTrigger("Hit");
             state = MonsterState.Hit;
-        }
+        
     }
     private void HandleHitState()
     {
@@ -76,7 +74,7 @@ public class Skeleton : MonsterAgent
         if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f 
             && animator.GetCurrentAnimatorStateInfo(0).IsName("Hit"))
         {
-            if (hpController.hp < 1)
+            if (hpController.hp < 0.1f)
             {
                 animator.SetTrigger("Death");
                 state = MonsterState.Death;
