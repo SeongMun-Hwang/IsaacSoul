@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         roomGrid[centerX, centerY] = baseRoom;
         //맵 생성
         CreateMap(centerX, centerY);
-        ConnectRoom();
+        ConnectDoor();
     }
     public void CreateMap(int startX, int startY)
     {
@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
             worldPos = new Vector3(worldPosX, worldPosY),
             room = Instantiate(room, new Vector3(worldPosX, worldPosY, 0), Quaternion.identity)
         };
-        //newRoom.room.SetActive(false);
+        newRoom.room.SetActive(false);
         roomGrid[x, y] = newRoom;
         isRoomPosDisabled[x, y] = true;
 
@@ -131,7 +131,7 @@ public class GameManager : MonoBehaviour
         }
         return true;
     }
-    void ConnectRoom()
+    void ConnectDoor()
     {
         for (int i = 0; i < row; i++)
         {
@@ -151,19 +151,19 @@ public class GameManager : MonoBehaviour
                             // 방향에 따른 연결 처리
                             if (dir == new Vector2Int(1, 0)) // 오른쪽
                             {
-                                roomManager.rightDoor.connectedRoom = roomGrid[neighborX, neighborY].room;
+                                roomManager.rightDoor.GetComponent<Door>().connectedDoor = roomGrid[neighborX, neighborY].room.GetComponent<RoomManager>().leftDoor;
                             }
                             else if (dir == new Vector2Int(-1, 0)) // 왼쪽
                             {
-                                roomManager.leftDoor.connectedRoom = roomGrid[neighborX, neighborY].room;
+                                roomManager.leftDoor.GetComponent<Door>().connectedDoor = roomGrid[neighborX, neighborY].room.GetComponent<RoomManager>().rightDoor;
                             }
                             else if (dir == new Vector2Int(0, 1)) // 위쪽
                             {
-                                roomManager.topDoor.connectedRoom = roomGrid[neighborX, neighborY].room;
+                                roomManager.topDoor.GetComponent<Door>().connectedDoor = roomGrid[neighborX, neighborY].room.GetComponent<RoomManager>().bottomDoor;
                             }
                             else if (dir == new Vector2Int(0, -1)) // 아래쪽
                             {
-                                roomManager.bottomDoor.connectedRoom = roomGrid[neighborX, neighborY].room;
+                                roomManager.bottomDoor.GetComponent<Door>().connectedDoor = roomGrid[neighborX, neighborY].room.GetComponent<RoomManager>().topDoor; ;
                             }
                         }
                     }

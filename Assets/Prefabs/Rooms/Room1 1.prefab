@@ -197,8 +197,8 @@ Transform:
   m_Children:
   - {fileID: 3221884221478072644}
   - {fileID: 2163707679141208238}
-  - {fileID: 6817926559409794540}
   - {fileID: 3067148203410651501}
+  - {fileID: 6817926559409794540}
   m_Father: {fileID: 805314593866630169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1049334711088350378
@@ -10873,18 +10873,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03c76979e9ab84409ad6d010d369aee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topDoor:
-    door: {fileID: 2605998326023384796}
-    connectedRoom: {fileID: 0}
-  bottomDoor:
-    door: {fileID: 1534838900997108411}
-    connectedRoom: {fileID: 0}
-  leftDoor:
-    door: {fileID: 2439662889097358200}
-    connectedRoom: {fileID: 0}
-  rightDoor:
-    door: {fileID: 6185126085543297017}
-    connectedRoom: {fileID: 0}
+  topDoor: {fileID: 2605998326023384796}
+  bottomDoor: {fileID: 1534838900997108411}
+  leftDoor: {fileID: 2439662889097358200}
+  rightDoor: {fileID: 6185126085543297017}
   enemies: []
   spawnableEnemyList:
   - {fileID: 103520070058774815, guid: f6b5b926f5408c14da54ce5275c8c2b7, type: 3}
@@ -10898,6 +10890,7 @@ MonoBehaviour:
   - {fileID: 2022822322439816689, guid: fb37420bc5593964aaa78afbc043820d, type: 3}
   - {fileID: 755919791588027660, guid: 408be1feda973c447b8ad8ec093da824, type: 3}
   buttonIndex: 0
+  border: {fileID: 0}
 --- !u!1 &8623329118338411554
 GameObject:
   m_ObjectHideFlags: 0

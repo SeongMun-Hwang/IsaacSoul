@@ -4,23 +4,17 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-[Serializable]
-public struct Door
-{
-    public GameObject door;
-    public GameObject connectedRoom;
-}
 public class RoomManager : MonoBehaviour
 {
     //RoomControl
     bool isCleared = false;
 
     //Door Control
-    List<Door> doors;
-    public Door topDoor;
-    public Door bottomDoor;
-    public Door leftDoor;
-    public Door rightDoor;
+    List<GameObject> doors;
+    public GameObject topDoor;
+    public GameObject bottomDoor;
+    public GameObject leftDoor;
+    public GameObject rightDoor;
     bool isDoorOpened = false;
 
     //Enemy Control
@@ -37,9 +31,12 @@ public class RoomManager : MonoBehaviour
     Color originColor = Color.white;
     public int buttonIndex = 0;
 
+    //cinemachine camera border
+    public PolygonCollider2D border;
+
     private void Start()
     {
-        doors= new List<Door>();
+        doors= new List<GameObject>();
         doors.Add(topDoor);
         doors.Add(bottomDoor);
         doors.Add(leftDoor);
@@ -65,11 +62,11 @@ public class RoomManager : MonoBehaviour
         {
             isDoorOpened = true;
             isCleared = true;
-            foreach (Door door in doors)
+            foreach (GameObject door in doors)
             {
-                if (door.connectedRoom != null)
+                if (door.GetComponent<Door>().connectedDoor != null)
                 {
-                    door.door.GetComponent<Animator>().SetTrigger("Open");
+                    door.GetComponent<Animator>().SetTrigger("Open");
                 }
             }
             if (rewardCanvas != null)
