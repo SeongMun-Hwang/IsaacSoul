@@ -54,7 +54,10 @@ public class RoomManager : MonoBehaviour
             {
                 door.GetComponent<Animator>().SetTrigger("Open");
             }
-            CreateRandomRewardCards();
+            if (rewardCanvas != null)
+            {
+                CreateRandomRewardCards();
+            }
         }
         for (int i = enemies.Count - 1; i >= 0; i--)
         {
@@ -63,7 +66,7 @@ public class RoomManager : MonoBehaviour
                 enemies.RemoveAt(i);
             }
         }
-        if (rewardCanvas.activeSelf)
+        if (rewardCanvas != null && rewardCanvas.activeSelf)
         {
             ChooseRewards();
         }
