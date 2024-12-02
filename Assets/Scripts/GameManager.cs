@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI.Table;
 
 public class Room
 {
@@ -56,12 +55,29 @@ public class GameManager : MonoBehaviour
         currentRoomPos.Push(new Vector2Int(startX, startY));
         //생성된 방 갯수(디폴트:기본 방)
         int createdRooms = 1;
+        List<Vector2Int> picked = new List<Vector2Int>();
+
         while (createdRooms < roomNumber) //생성된 방이 생성할 갯수보다 적으면
         {
             if (currentRoomPos.Count == 0) break; //방을 생성할 곳이 없으면
 
             Vector2Int currentPos = currentRoomPos.Peek(); //스택 위 좌표부터 방 생성
-            Vector2Int dir = directions[Random.Range(0, directions.Length)]; //방 기준 상하좌우
+
+            Vector2Int dir;
+            //모든 방향을 확인했으면
+            if (picked.Count == directions.Length)
+            {
+                picked.Clear();
+                currentRoomPos.Pop();
+                continue;
+            }
+            //확장 방향 랜덤
+            do
+            {
+                dir = directions[Random.Range(0, directions.Length)];
+            }
+            while (picked.Contains(dir));
+
             int nextX = currentPos.x + dir.x;
             int nextY = currentPos.y + dir.y;
             if (CheckNextRoomPosition(nextX, nextY)) //방 생성 가능한지 확인
@@ -70,13 +86,10 @@ public class GameManager : MonoBehaviour
                 CreateRoom(nextX, nextY, go);
 
                 currentRoomPos.Push(new Vector2Int(nextX, nextY)); //생성하고 생성한 방 좌표 푸시
+                picked.Clear();
                 createdRooms++;
             }
-            else
-            {
-                isRoomPosDisabled[currentPos.x, currentPos.y] = true; //생성 불가 참
-                currentRoomPos.Pop();
-            }
+            picked.Add(dir);
         }
     }
     Room CreateRoom(int x, int y, GameObject room)
@@ -104,11 +117,11 @@ public class GameManager : MonoBehaviour
         {
             int nextX = x + dir.x;
             int nextY = y + dir.y;
-
+            //생성하려는 좌표 주위에 방이 2개 이상 있으면 false(너무 방이 뭉치는 걸 막기 위함)
             if (nextX >= 0 && nextX < row && nextY >= 0 && nextY < col && roomGrid[nextX, nextY] != null)
             {
                 count++;
-                if (count >= 3)
+                if (count >= 2)
                 {
                     return false;
                 }

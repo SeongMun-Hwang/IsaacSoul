@@ -36,9 +36,8 @@ public class RoomManager : MonoBehaviour
             {
                 foreach (Transform child in monsterSpawnPosition)
                 {
-                    Debug.Log(child);
                     int number = Random.Range(0, spawnableEnemyList.Count);
-                    GameObject go = Instantiate(spawnableEnemyList[number], child.position, spawnableEnemyList[number].transform.rotation);
+                    GameObject go = Instantiate(spawnableEnemyList[number], child.transform.position, spawnableEnemyList[number].transform.rotation);
                     enemies.Add(go);
                 }
             }
