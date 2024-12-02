@@ -44,8 +44,10 @@ public class GameManager : MonoBehaviour
         int centerX = row / 2;
         int centerY = col / 2;
         isRoomPosDisabled[centerX, centerY] = true;
+        roomGrid[centerX, centerY] = baseRoom;
         //맵 생성
         CreateMap(centerX, centerY);
+        ConnectRoom();
     }
     public void CreateMap(int startX, int startY)
     {
@@ -128,5 +130,45 @@ public class GameManager : MonoBehaviour
             }
         }
         return true;
+    }
+    void ConnectRoom()
+    {
+        for (int i = 0; i < row; i++)
+        {
+            for (int j = 0; j < col; j++)
+            {
+                if (roomGrid[i, j] != null)
+                {
+                    RoomManager roomManager = roomGrid[i, j].room.GetComponent<RoomManager>();
+                    foreach (Vector2Int dir in directions)
+                    {
+                        int neighborX = i + dir.x;
+                        int neighborY = j + dir.y;
+
+                        // 경계 조건 확인
+                        if (neighborX >= 0 && neighborX < row && neighborY >= 0 && neighborY < col && roomGrid[neighborX, neighborY] != null)
+                        {
+                            // 방향에 따른 연결 처리
+                            if (dir == new Vector2Int(1, 0)) // 오른쪽
+                            {
+                                roomManager.rightDoor.connectedRoom = roomGrid[neighborX, neighborY].room;
+                            }
+                            else if (dir == new Vector2Int(-1, 0)) // 왼쪽
+                            {
+                                roomManager.leftDoor.connectedRoom = roomGrid[neighborX, neighborY].room;
+                            }
+                            else if (dir == new Vector2Int(0, 1)) // 위쪽
+                            {
+                                roomManager.topDoor.connectedRoom = roomGrid[neighborX, neighborY].room;
+                            }
+                            else if (dir == new Vector2Int(0, -1)) // 아래쪽
+                            {
+                                roomManager.bottomDoor.connectedRoom = roomGrid[neighborX, neighborY].room;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

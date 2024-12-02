@@ -1,15 +1,26 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
+[Serializable]
+public struct Door
+{
+    public GameObject door;
+    public GameObject connectedRoom;
+}
 public class RoomManager : MonoBehaviour
 {
     //RoomControl
     bool isCleared = false;
 
     //Door Control
-    public GameObject[] doors;
+    List<Door> doors;
+    public Door topDoor;
+    public Door bottomDoor;
+    public Door leftDoor;
+    public Door rightDoor;
     bool isDoorOpened = false;
 
     //Enemy Control
@@ -28,6 +39,11 @@ public class RoomManager : MonoBehaviour
 
     private void Start()
     {
+        doors= new List<Door>();
+        doors.Add(topDoor);
+        doors.Add(bottomDoor);
+        doors.Add(leftDoor);
+        doors.Add(rightDoor);
         if (!isCleared)
         {
             //시작 시 모든 몬스터 스폰에서 몬스터 리스트의 몬스터 생성
@@ -36,7 +52,7 @@ public class RoomManager : MonoBehaviour
             {
                 foreach (Transform child in monsterSpawnPosition)
                 {
-                    int number = Random.Range(0, spawnableEnemyList.Count);
+                    int number = UnityEngine.Random.Range(0, spawnableEnemyList.Count);
                     GameObject go = Instantiate(spawnableEnemyList[number], child.transform.position, spawnableEnemyList[number].transform.rotation);
                     enemies.Add(go);
                 }
@@ -49,9 +65,12 @@ public class RoomManager : MonoBehaviour
         {
             isDoorOpened = true;
             isCleared = true;
-            foreach (GameObject door in doors)
+            foreach (Door door in doors)
             {
-                door.GetComponent<Animator>().SetTrigger("Open");
+                if (door.connectedRoom != null)
+                {
+                    door.door.GetComponent<Animator>().SetTrigger("Open");
+                }
             }
             if (rewardCanvas != null)
             {
@@ -77,7 +96,7 @@ public class RoomManager : MonoBehaviour
         List<GameObject> buttons = rewardCards;
         for (int i = 0; i < 3; i++)
         {
-            int num = Random.Range(0, buttons.Count);
+            int num = UnityEngine.Random.Range(0, buttons.Count);
             GameObject go = Instantiate(buttons[num], horizontalLayoutGroup.transform);
             buttons.RemoveAt(num);
             rewardButtons.Add(go.GetComponent<Button>());
