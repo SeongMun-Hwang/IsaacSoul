@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -140,12 +140,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 40
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 42
+        y: 41
+        width: 19
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 40
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 142
+        y: 41
+        width: 19
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_2
       rect:
         serializedVersion: 2
-        x: 241
-        y: 40
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 242
+        y: 41
+        width: 19
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_3
       rect:
         serializedVersion: 2
-        x: 341
-        y: 40
-        width: 28
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 342
+        y: 41
+        width: 26
+        height: 21
+      alignment: 9
+      pivot: {x: 0.3846154, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_4
       rect:
         serializedVersion: 2
-        x: 441
-        y: 40
-        width: 25
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 442
+        y: 41
+        width: 23
+        height: 21
+      alignment: 9
+      pivot: {x: 0.43478262, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,12 +250,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_5
       rect:
         serializedVersion: 2
-        x: 541
-        y: 41
-        width: 24
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 542
+        y: 42
+        width: 22
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.05263158}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -272,12 +272,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_6
       rect:
         serializedVersion: 2
-        x: 641
-        y: 41
-        width: 37
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 642
+        y: 42
+        width: 35
+        height: 19
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.05263158}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_7
       rect:
         serializedVersion: 2
-        x: 741
-        y: 40
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 742
+        y: 41
+        width: 22
+        height: 21
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: Skeleton Archer-Attack_8
       rect:
         serializedVersion: 2
-        x: 841
-        y: 40
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 842
+        y: 41
+        width: 19
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 07e46b005f82f3344a40b59fcf83f204
     internalID: 0
     vertices: []
     indices: 
@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skeleton Archer-Attack_0: 5831249578833918177
+      Skeleton Archer-Attack_1: -5115799158601542271
+      Skeleton Archer-Attack_2: 8367284235869872797
+      Skeleton Archer-Attack_3: -5136505023480181264
+      Skeleton Archer-Attack_4: -680714922076083305
+      Skeleton Archer-Attack_5: -2658758925605049528
+      Skeleton Archer-Attack_6: -2031123962511942785
+      Skeleton Archer-Attack_7: -3705935541706527765
+      Skeleton Archer-Attack_8: 4538006817009380375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

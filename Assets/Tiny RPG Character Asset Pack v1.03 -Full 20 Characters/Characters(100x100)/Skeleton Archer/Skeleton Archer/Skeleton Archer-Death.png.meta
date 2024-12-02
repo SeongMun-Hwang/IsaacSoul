@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,12 +125,12 @@ TextureImporter:
       name: Skeleton Archer-Death_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 40
-        width: 23
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 42
+        y: 41
+        width: 21
+        height: 21
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Skeleton Archer-Death_1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 40
-        width: 26
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 143
+        y: 41
+        width: 24
+        height: 19
+      alignment: 9
+      pivot: {x: 0.375, y: 0.10526316}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Skeleton Archer-Death_2
       rect:
         serializedVersion: 2
-        x: 243
-        y: 42
-        width: 19
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 244
+        y: 43
+        width: 17
+        height: 13
+      alignment: 9
+      pivot: {x: 0.3529412, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Skeleton Archer-Death_3
       rect:
         serializedVersion: 2
-        x: 343
-        y: 42
-        width: 19
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 344
+        y: 43
+        width: 17
+        height: 13
+      alignment: 9
+      pivot: {x: 0.3529412, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0558d23694e69fb49850281ba9b90573
     internalID: 0
     vertices: []
     indices: 
@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skeleton Archer-Death_0: -2263011768922231748
+      Skeleton Archer-Death_1: 8919087530369398104
+      Skeleton Archer-Death_2: 6498645642301441340
+      Skeleton Archer-Death_3: 1611609137251078727
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
