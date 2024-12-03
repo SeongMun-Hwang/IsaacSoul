@@ -8,7 +8,7 @@ public class StaminaController : MonoBehaviour
     float moveSpeed;
     State state;
 
-    public float stamina = 100;
+    public float stamina;
     public float maxStamina = 100;
 
     public float staminaRestoreSpeed = 5f;
@@ -20,6 +20,7 @@ public class StaminaController : MonoBehaviour
 
     void Start()
     {
+        stamina = maxStamina;
         stateMachineController = GetComponent<StateMachineController>();
     }
 

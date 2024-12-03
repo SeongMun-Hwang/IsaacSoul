@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8332219047161801992}
   - component: {fileID: 310044185344458862}
+  - component: {fileID: 3599011362552174845}
   - component: {fileID: 7882086929017581321}
   - component: {fileID: 6254534981646537744}
   - component: {fileID: 5270003132815236816}
@@ -17,7 +18,7 @@ GameObject:
   - component: {fileID: 1490098610362480927}
   m_Layer: 0
   m_Name: SkeletonArcher
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,6 +94,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3599011362552174845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5679974928305673095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483dfb9ddd8851540b76fbcb48c37910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackTimer: 0
+  monsterStat: {fileID: 11400000, guid: 06608d1cb6290d047acbd168eb506151, type: 2}
+  firePosition: {fileID: 2280342864483384080}
+  arrowPrefab: {fileID: 7689089781101604322, guid: 99854c0ae9c330d488f5241793e57807, type: 3}
 --- !u!114 &7882086929017581321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +136,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 100
-  m_LinearDamping: 0
+  m_LinearDamping: 3
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
             worldPos = new Vector3(worldPosX, worldPosY),
             room = Instantiate(room, new Vector3(worldPosX, worldPosY, 0), Quaternion.identity)
         };
-        //newRoom.room.SetActive(false);
+        newRoom.room.SetActive(false);
         roomGrid[x, y] = newRoom;
         isRoomPosDisabled[x, y] = true;
 
