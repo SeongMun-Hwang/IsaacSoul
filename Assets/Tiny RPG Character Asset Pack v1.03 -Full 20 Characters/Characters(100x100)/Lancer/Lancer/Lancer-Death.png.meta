@@ -125,12 +125,12 @@ TextureImporter:
       name: Lancer-Death_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 42
-        width: 37
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 43
+        width: 35
+        height: 37
+      alignment: 9
+      pivot: {x: 0.42857143, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Lancer-Death_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 42
-        width: 37
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 133
+        y: 43
+        width: 35
+        height: 34
+      alignment: 9
+      pivot: {x: 0.51428574, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Lancer-Death_2
       rect:
         serializedVersion: 2
-        x: 235
-        y: 42
-        width: 39
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 236
+        y: 43
+        width: 37
+        height: 19
+      alignment: 9
+      pivot: {x: 0.43243244, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Lancer-Death_3
       rect:
         serializedVersion: 2
-        x: 336
-        y: 42
-        width: 38
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 337
+        y: 43
+        width: 36
+        height: 13
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e5bf5517abff20149ae94fb14cb093c3
     internalID: 0
     vertices: []
     indices: 

@@ -137,12 +137,12 @@ TextureImporter:
       name: Lancer-Walk02_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 42
-        width: 51
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 43
+        width: 49
+        height: 29
+      alignment: 9
+      pivot: {x: 0.24489796, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: Lancer-Walk02_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 43
-        width: 51
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 133
+        y: 44
+        width: 49
+        height: 28
+      alignment: 9
+      pivot: {x: 0.24489796, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Lancer-Walk02_2
       rect:
         serializedVersion: 2
-        x: 232
-        y: 43
-        width: 51
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 233
+        y: 44
+        width: 49
+        height: 28
+      alignment: 9
+      pivot: {x: 0.20408162, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: Lancer-Walk02_3
       rect:
         serializedVersion: 2
-        x: 332
-        y: 42
-        width: 51
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 333
+        y: 43
+        width: 49
+        height: 28
+      alignment: 9
+      pivot: {x: 0.26530612, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: Lancer-Walk02_4
       rect:
         serializedVersion: 2
-        x: 432
-        y: 42
-        width: 51
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 433
+        y: 43
+        width: 49
+        height: 28
+      alignment: 9
+      pivot: {x: 0.36734694, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: Lancer-Walk02_5
       rect:
         serializedVersion: 2
-        x: 532
-        y: 42
-        width: 51
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 533
+        y: 43
+        width: 49
+        height: 29
+      alignment: 9
+      pivot: {x: 0.34693876, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: Lancer-Walk02_6
       rect:
         serializedVersion: 2
-        x: 632
-        y: 43
-        width: 51
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 633
+        y: 44
+        width: 49
+        height: 29
+      alignment: 9
+      pivot: {x: 0.3265306, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: Lancer-Walk02_7
       rect:
         serializedVersion: 2
-        x: 732
-        y: 42
-        width: 51
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 733
+        y: 43
+        width: 49
+        height: 29
+      alignment: 9
+      pivot: {x: 0.28571427, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b9ed12cf7e62964b9392ab61c029380
     internalID: 0
     vertices: []
     indices: 

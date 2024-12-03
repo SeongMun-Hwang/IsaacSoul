@@ -131,12 +131,12 @@ TextureImporter:
       name: Lancer-Attack01_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 42
-        width: 51
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 43
+        width: 49
+        height: 29
+      alignment: 9
+      pivot: {x: 0.30612245, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: Lancer-Attack01_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 42
-        width: 49
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 133
+        y: 43
+        width: 47
+        height: 29
+      alignment: 9
+      pivot: {x: 0.31914893, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: Lancer-Attack01_2
       rect:
         serializedVersion: 2
-        x: 232
-        y: 42
-        width: 48
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 233
+        y: 43
+        width: 46
+        height: 28
+      alignment: 9
+      pivot: {x: 0.32608697, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: Lancer-Attack01_3
       rect:
         serializedVersion: 2
-        x: 332
-        y: 42
-        width: 59
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 333
+        y: 43
+        width: 57
+        height: 29
+      alignment: 9
+      pivot: {x: 0.2631579, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: Lancer-Attack01_4
       rect:
         serializedVersion: 2
-        x: 432
-        y: 42
-        width: 57
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 433
+        y: 43
+        width: 55
+        height: 29
+      alignment: 9
+      pivot: {x: 0.27272725, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: Lancer-Attack01_5
       rect:
         serializedVersion: 2
-        x: 532
-        y: 42
-        width: 55
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 533
+        y: 43
+        width: 53
+        height: 29
+      alignment: 9
+      pivot: {x: 0.2830189, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4cb09a983049a0b4faaef229eb835462
     internalID: 0
     vertices: []
     indices: 

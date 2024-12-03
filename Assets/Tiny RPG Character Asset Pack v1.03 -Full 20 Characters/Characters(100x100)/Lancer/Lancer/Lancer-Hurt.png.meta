@@ -125,12 +125,12 @@ TextureImporter:
       name: Lancer-Hurt_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 42
-        width: 37
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 43
+        width: 35
+        height: 34
+      alignment: 9
+      pivot: {x: 0.51428574, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Lancer-Hurt_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 42
-        width: 37
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 133
+        y: 43
+        width: 35
+        height: 34
+      alignment: 9
+      pivot: {x: 0.45714286, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Lancer-Hurt_2
       rect:
         serializedVersion: 2
-        x: 232
-        y: 42
-        width: 37
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 233
+        y: 43
+        width: 35
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4857143, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Lancer-Hurt_3
       rect:
         serializedVersion: 2
-        x: 332
-        y: 42
-        width: 37
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 333
+        y: 43
+        width: 35
+        height: 34
+      alignment: 9
+      pivot: {x: 0.51428574, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 41461bd667beddc4693a340d8b65b2a2
     internalID: 0
     vertices: []
     indices: 

@@ -1,9 +1,9 @@
-using TMPro;
 using UnityEngine;
 
-public class Skeleton : MonsterAgent
+public class Lancer : MonsterAgent
 {
-    private void Start()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
         hpController.OnHpChanged += HandleHpState;
         //Get MonsterStat data

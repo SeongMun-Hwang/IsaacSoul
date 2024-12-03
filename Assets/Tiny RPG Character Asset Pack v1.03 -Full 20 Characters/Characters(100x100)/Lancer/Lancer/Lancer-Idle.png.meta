@@ -131,12 +131,12 @@ TextureImporter:
       name: Lancer-Idle_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 42
-        width: 37
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 43
+        width: 35
+        height: 37
+      alignment: 9
+      pivot: {x: 0.42857143, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: Lancer-Idle_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 42
-        width: 37
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 133
+        y: 43
+        width: 35
+        height: 37
+      alignment: 9
+      pivot: {x: 0.42857143, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: Lancer-Idle_2
       rect:
         serializedVersion: 2
-        x: 232
-        y: 42
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 233
+        y: 43
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: Lancer-Idle_3
       rect:
         serializedVersion: 2
-        x: 332
-        y: 42
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 333
+        y: 43
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.42857143, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: Lancer-Idle_4
       rect:
         serializedVersion: 2
-        x: 432
-        y: 42
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 433
+        y: 43
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.42857143, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: Lancer-Idle_5
       rect:
         serializedVersion: 2
-        x: 532
-        y: 42
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 533
+        y: 43
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d721c846357b5bc41bffb26a5690af25
     internalID: 0
     vertices: []
     indices: 

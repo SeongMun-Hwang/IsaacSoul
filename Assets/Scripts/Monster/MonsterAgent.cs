@@ -51,6 +51,7 @@ public abstract class MonsterAgent : MonoBehaviour
         UpdatePlayerReference();
         HandleTransform();
         HandleState();
+        attackTimer += Time.deltaTime;
     }
     protected void UpdatePlayerReference()
     {
@@ -144,7 +145,6 @@ public abstract class MonsterAgent : MonoBehaviour
     }
     public bool CheckAttackDelay()
     {
-        attackTimer += Time.deltaTime;
         if (attackTimer >= attackDelay)
         {
             return true;      
