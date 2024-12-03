@@ -8,8 +8,8 @@ public abstract class MonsterAgent : MonoBehaviour
     protected Animator animator;
     protected HpController hpController;
 
-    protected Vector3 direction;
-    protected Vector3 distanceToTarget;
+    protected Vector2 direction;
+    protected Vector2 distanceToTarget;
 
     public enum MonsterState
     {
@@ -53,7 +53,7 @@ public abstract class MonsterAgent : MonoBehaviour
         HandleState();
         attackTimer += Time.deltaTime;
     }
-    protected void UpdatePlayerReference()
+    protected virtual void UpdatePlayerReference()
     {
         player = GameObject.FindWithTag("Player");
         if (player != null)
@@ -62,7 +62,7 @@ public abstract class MonsterAgent : MonoBehaviour
             distanceToTarget = agent.destination - transform.position;
         }
     }
-    protected void HandleTransform()
+    protected virtual void HandleTransform()
     {
         if (player != null)
         {
@@ -88,6 +88,7 @@ public abstract class MonsterAgent : MonoBehaviour
         {
             if (distanceToTarget.magnitude < attackRange)
             {
+                Debug.Log(distanceToTarget.magnitude + "   " + attackRange);
                 attackTimer = 0f;
                 int rand = Random.Range(0, attackVarious);
                 animator.SetFloat("AttackType", (float)rand);
