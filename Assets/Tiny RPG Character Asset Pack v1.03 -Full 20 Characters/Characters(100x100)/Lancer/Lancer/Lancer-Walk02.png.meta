@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lancer-Walk02_0: -4547218432173621031
+      Lancer-Walk02_1: -8941407436831763750
+      Lancer-Walk02_2: 4128033273904204160
+      Lancer-Walk02_3: 1628261230148029264
+      Lancer-Walk02_4: -3750112731712479416
+      Lancer-Walk02_5: 3421267511749066158
+      Lancer-Walk02_6: 8521129635984200287
+      Lancer-Walk02_7: -3529040300823656171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Room
@@ -63,7 +64,7 @@ public class GameManager : MonoBehaviour
         {
             if (currentRoomPos.Count == 0) break; //방을 생성할 곳이 없으면
 
-            Vector2Int currentPos = currentRoomPos.Peek(); //스택 위 좌표부터 방 생성
+            Vector2Int currentPos = currentRoomPos.ElementAt(Random.Range(0, currentRoomPos.Count));
 
             Vector2Int dir;
             //모든 방향을 확인했으면
@@ -104,7 +105,7 @@ public class GameManager : MonoBehaviour
             worldPos = new Vector3(worldPosX, worldPosY),
             room = Instantiate(room, new Vector3(worldPosX, worldPosY, 0), Quaternion.identity)
         };
-        newRoom.room.SetActive(false);
+        //newRoom.room.SetActive(false);
         roomGrid[x, y] = newRoom;
         isRoomPosDisabled[x, y] = true;
 
