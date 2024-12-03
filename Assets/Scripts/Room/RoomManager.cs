@@ -27,8 +27,8 @@ public class RoomManager : MonoBehaviour
     public List<GameObject> rewardCards;
 
     List<Button> rewardButtons = new List<Button>();
-    Color selectedColor = Color.red;
-    Color originColor = Color.white;
+    Color originColor = new Color(1f, 1f, 1f, 0.5f);
+    Color selectedColor = Color.white;
     public int buttonIndex = 0;
 
     //cinemachine camera border
@@ -103,17 +103,17 @@ public class RoomManager : MonoBehaviour
     {
         for (int i = 0; i < rewardButtons.Count; i++)
         {
-            ColorBlock color = rewardButtons[i].colors;
+            Color color = rewardButtons[i].GetComponent<Image>().color;
             if (i == buttonIndex)
             {
                 rewardButtons[i].Select();
-                color.selectedColor = selectedColor;
+                color = selectedColor;
             }
             else
             {
-                color.selectedColor = originColor;
+                color = originColor;
             }
-            rewardButtons[i].colors = color;
+            rewardButtons[i].GetComponent<Image>().color = color;
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
