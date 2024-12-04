@@ -54,6 +54,10 @@ public class StateMachineController : MonoBehaviour
     public AudioSource playerAudio;
     public AudioClip gunSound;
     public AudioClip spearSound;
+    public AudioClip walkSound;
+    public AudioClip runSound;
+    private string currentSound = "";
+
     private void Awake()
     {
         stateMachines = new List<StateMachine>();
@@ -81,7 +85,7 @@ public class StateMachineController : MonoBehaviour
         //stamina
         staminaController = GetComponent<StaminaController>();
         //audio
-        playerAudio=GetComponent<AudioSource>();
+        playerAudio = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -96,6 +100,32 @@ public class StateMachineController : MonoBehaviour
         switch (state)
         {
             case State.Idle:
+                if (moveSpeed > 6)
+                {
+                    if (currentSound != "run")
+                    {
+                        playerAudio.Stop();
+                        playerAudio.PlayOneShot(runSound);
+                        currentSound = "run";
+                    }
+                }
+                else if (moveSpeed > 0 && moveSpeed <= 6)
+                {
+                    if (currentSound != "walk")
+                    {
+                        playerAudio.Stop();
+                        playerAudio.PlayOneShot(walkSound);
+                        currentSound = "walk";
+                    }
+                }
+                else if (moveSpeed == 0)
+                {
+                    if (currentSound != "none")
+                    {
+                        playerAudio.Stop();
+                        currentSound = "none";
+                    }
+                }
                 if (attackVector != Vector2.zero)
                 {
                     stateMachines[stateIndex].TransitionToAttack();
@@ -215,7 +245,7 @@ public class StateMachineController : MonoBehaviour
     void PlayerAttack()
     {
         attackVector = attackInput.ReadValue<Vector2>();
-        if (attackVector != Vector2.zero && state!=State.SpearAttack)
+        if (attackVector != Vector2.zero && state != State.SpearAttack)
         {
             attackAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
             playerAnimator.SetFloat("AttackDirection", attackAngle);
