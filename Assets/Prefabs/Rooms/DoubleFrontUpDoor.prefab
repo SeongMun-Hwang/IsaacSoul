@@ -185,6 +185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977596545815240857}
   - component: {fileID: 1675590165028257761}
+  - component: {fileID: 5277518336003796815}
   m_Layer: 0
   m_Name: RightDoor
   m_TagString: Untagged
@@ -253,6 +254,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3, y: 1.7089243}
   m_EdgeRadius: 0
+--- !u!50 &5277518336003796815
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2595924814229778333}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &6958982509492044669
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2990710783433928204}
   - component: {fileID: 7327817677768667574}
+  - component: {fileID: 671048684320276330}
   m_Layer: 0
   m_Name: LeftDoor
   m_TagString: Untagged
@@ -331,3 +360,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3, y: 1.7089243}
   m_EdgeRadius: 0
+--- !u!50 &671048684320276330
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958982509492044669}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0

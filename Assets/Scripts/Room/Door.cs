@@ -17,14 +17,17 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //cineCam.GetComponent<CinemachineConfiner2D>().enabled = false;
-        collision.gameObject.transform.position = connectedDoor.transform.position;
-        cineBorder.gameObject.transform.position = connectedDoor.transform.root.gameObject.transform.position;
-        cineCam.GetComponent<CinemachineConfiner2D>().BoundingShape2D = cineBorder.GetComponent<PolygonCollider2D>();
-        //cineCam.GetComponent<CinemachineConfiner2D>().enabled = true;
-        //Camera.main.transform.position = connectedDoor.transform.root.gameObject.transform.position;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            //cineCam.GetComponent<CinemachineConfiner2D>().enabled = false;
+            collision.gameObject.transform.position = connectedDoor.transform.position;
+            cineBorder.gameObject.transform.position = connectedDoor.transform.root.gameObject.transform.position;
+            cineCam.GetComponent<CinemachineConfiner2D>().BoundingShape2D = cineBorder.GetComponent<PolygonCollider2D>();
+            //cineCam.GetComponent<CinemachineConfiner2D>().enabled = true;
+            //Camera.main.transform.position = connectedDoor.transform.root.gameObject.transform.position;
 
-        gameObject.transform.root.gameObject.SetActive(false);
-        connectedDoor.transform.root.gameObject.SetActive(true);
+            gameObject.transform.root.gameObject.SetActive(false);
+            connectedDoor.transform.root.gameObject.SetActive(true);
+        }
     }
 }

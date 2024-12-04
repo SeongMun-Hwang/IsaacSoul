@@ -54,7 +54,7 @@ TagManager:
   - name: Wall
     uniqueID: 428311555
     locked: 0
-  - name: Player
+  - name: OnFloor
     uniqueID: 1117849617
     locked: 0
   m_RenderingLayers:

@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     private Room[,] roomGrid;
     private bool[,] isRoomPosDisabled;
 
+    public bool createdRoomActive = false;
     //확장 방향
     Vector2Int[] directions = new Vector2Int[]
 {
@@ -105,7 +106,7 @@ public class GameManager : MonoBehaviour
             worldPos = new Vector3(worldPosX, worldPosY),
             room = Instantiate(room, new Vector3(worldPosX, worldPosY, 0), Quaternion.identity)
         };
-        newRoom.room.SetActive(false);
+        newRoom.room.SetActive(createdRoomActive);
         roomGrid[x, y] = newRoom;
         isRoomPosDisabled[x, y] = true;
 

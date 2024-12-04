@@ -148,7 +148,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -162,7 +162,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1072,7 +1072,45 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Furniture_tileset_0: -1717641003731269054
+      Furniture_tileset_1: -1081790872619556613
+      Furniture_tileset_10: -3146936257368971871
+      Furniture_tileset_11: -2395074920742360510
+      Furniture_tileset_12: -7014875034726478064
+      Furniture_tileset_13: -2837574386366254117
+      Furniture_tileset_14: 3431512567394911869
+      Furniture_tileset_15: 4223026051701835128
+      Furniture_tileset_16: 7153734087126029133
+      Furniture_tileset_17: -3304828388400304826
+      Furniture_tileset_18: -6474147828960188212
+      Furniture_tileset_19: 941153815973725637
+      Furniture_tileset_2: -759489847416808752
+      Furniture_tileset_20: 2877874389230303914
+      Furniture_tileset_21: -7985837391028252714
+      Furniture_tileset_22: 4323129169110868975
+      Furniture_tileset_23: 2864907644477452890
+      Furniture_tileset_24: -8144849137875641358
+      Furniture_tileset_25: 5498771184144215453
+      Furniture_tileset_26: 6454232779315329488
+      Furniture_tileset_27: -9114613278213319189
+      Furniture_tileset_28: 1381007311040425423
+      Furniture_tileset_29: -2047283549030923543
+      Furniture_tileset_3: 7235541077568559766
+      Furniture_tileset_30: -6784535055939287791
+      Furniture_tileset_31: -6139055871862228415
+      Furniture_tileset_32: 6470029369848254627
+      Furniture_tileset_33: 9213082942322635888
+      Furniture_tileset_34: 1645780517182754955
+      Furniture_tileset_35: 6985833483568938614
+      Furniture_tileset_36: -2679487119129168982
+      Furniture_tileset_37: -5881631523621998008
+      Furniture_tileset_4: 3965392526268458644
+      Furniture_tileset_5: -1850732710134217902
+      Furniture_tileset_6: 148067790494802917
+      Furniture_tileset_7: 6290812633910564289
+      Furniture_tileset_8: 6475211620270574768
+      Furniture_tileset_9: 3754308216583300469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
