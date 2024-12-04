@@ -22,9 +22,12 @@ public class GunStateMachine : StateMachine
     }
     public void TransitionToReloading()
     {
-        addedBullet = maxBullet - player.currentBullet;
-        player.currentBullet += addedBullet;
-        player.totalBullet -= addedBullet;
+        if (player.totalBullet > 0)
+        {
+            addedBullet = maxBullet - player.currentBullet;
+            player.currentBullet += addedBullet;
+            player.totalBullet -= addedBullet;
+        }
         player.state = State.Reload;
         player.playerAudio.PlayOneShot(player.reloadSound);
         player.playerAnimator.SetTrigger("Reload");

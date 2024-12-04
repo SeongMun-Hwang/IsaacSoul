@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65b908a9e8a4e74096caf2524e9007e, type: 3}
   m_Name: SkeletonArcher
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 0}
+  monsterPrefab: {fileID: 5679974928305673095, guid: fd43c7cdad6139346afd87086f2e5774, type: 3}
   moveSpeed: 2.5
-  attackRange: 20
+  attackRange: 10
   attackDamage: 25
   attackDelay: 2
   attackTimer: 0

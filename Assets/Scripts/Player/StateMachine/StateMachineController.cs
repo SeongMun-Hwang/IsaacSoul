@@ -159,7 +159,7 @@ public class StateMachineController : MonoBehaviour
                 //공격 전 스태미나가 0이하면
                 if (staminaController.stamina + 10 <= 0)
                 {
-                    if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.5f)
+                    if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.4f)
                     {
                         stateMachines[stateIndex].Enter();
                         playerAnimator.SetFloat("MoveDirection", attackAngle);
