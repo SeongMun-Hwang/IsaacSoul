@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3816645531132537629}
   - component: {fileID: 1490098610362480927}
   - component: {fileID: 7050183695614516631}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SkeletonArcher
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -150,8 +150,8 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &5270003132815236816
 CapsuleCollider2D:
@@ -340,7 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2280342864483384080}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FirePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}

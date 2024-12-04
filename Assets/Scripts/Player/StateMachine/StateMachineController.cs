@@ -286,9 +286,27 @@ public class StateMachineController : MonoBehaviour
     }
     public void ShootBullet()
     {
+        Vector3 fireVectorPos = new Vector2();
         if (currentBullet > 0)
         {
-            GameObject go = Instantiate(BulletPrefab, FirePosition.transform.position, Quaternion.identity);
+            if(attackAngle==0)//right
+            {
+                fireVectorPos = new Vector3(0.7f,0.6f);
+            }
+            else if (attackAngle == 90)//up
+            {
+                fireVectorPos = new Vector3(0.35f,1.5f);
+            }
+            else if (attackAngle == 180)//left
+            {
+                fireVectorPos = new Vector3(-0.7f,0.75f);
+            }
+            else if (attackAngle == -90)//
+            {
+                fireVectorPos = new Vector3(-0.35f,0.15f);
+            }
+            fireVectorPos += transform.position;
+            GameObject go = Instantiate(BulletPrefab,fireVectorPos, Quaternion.identity);
             go.GetComponent<LongRangeWeapon>().Damage = bulletDamage;
             go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
             currentBullet--;

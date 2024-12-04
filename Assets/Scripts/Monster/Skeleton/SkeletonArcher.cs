@@ -76,7 +76,8 @@ public class SkeletonArcher : MonsterAgent
     public void FireArrow()
     {
         float attackAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        GameObject go = Instantiate(arrowPrefab, firePosition.transform.position, Quaternion.identity);
+        GameObject go = Instantiate(arrowPrefab, new Vector2(firePosition.transform.position.x,
+            firePosition.transform.position.y), Quaternion.identity);
         go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
     }
 }
