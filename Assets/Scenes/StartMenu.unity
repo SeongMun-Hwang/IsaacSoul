@@ -2247,6 +2247,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3292738461342959767, guid: 08781419c1b16b845963b57809b897ad, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856746988237259279, guid: 08781419c1b16b845963b57809b897ad, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 5249437266686791250, guid: 08781419c1b16b845963b57809b897ad, type: 3}
       propertyPath: m_ColliderPaths.Array.size
       value: 1
@@ -2337,6 +2345,10 @@ PrefabInstance:
     - target: {fileID: 1691073336770957887, guid: 844485d937ae1964ca2b6be5f92520f8, type: 3}
       propertyPath: m_Name
       value: Lancer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691073336770957887, guid: 844485d937ae1964ca2b6be5f92520f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7415995773477780077, guid: 844485d937ae1964ca2b6be5f92520f8, type: 3}
       propertyPath: m_LocalPosition.x

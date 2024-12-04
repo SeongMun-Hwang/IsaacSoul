@@ -1,7 +1,10 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Lancer : MonsterAgent
 {
+    bool stopDash = false;
     void Start()
     {
         hpController.OnHpChanged += HandleHpState;
@@ -41,8 +44,6 @@ public class Lancer : MonsterAgent
         player = GameObject.FindWithTag("Player");
         if (player != null)
         {
-            //Debug.Log($"Player: {player}, Destination: {agent.destination}, Distance: {distanceToTarget.magnitude}");
-
             if (Mathf.Abs(player.transform.position.y - transform.position.y) > 2f)
             {
                 agent.destination=new Vector2(transform.position.x, player.transform.position.y);
@@ -56,15 +57,50 @@ public class Lancer : MonsterAgent
     }
     protected override void HandleMoveState()
     {
-        base.HandleMoveState();
-        //if (animator.GetFloat("AttackType") == 2)
-        //{
-        //    agent.speed *= 2;
-        //}
+        if (CheckAttackDelay())
+        {
+            attackTimer = 0f;
+            if (distanceToTarget.magnitude < attackRange)
+            {
+                int rand = Random.Range(0, attackVarious);
+                animator.SetFloat("AttackType", (float)rand);
+                animator.SetTrigger("Attack");
+                state = MonsterState.Attack;
+            }
+            else
+            {
+                Rigidbody2D rb = GetComponent<Rigidbody2D>();
+                Vector2 dashDirection = new Vector2(rb.linearVelocityX,0f);
+                //rb.AddForce(dashDirection * 10,ForceMode2D.Impulse);
+                animator.SetFloat("AttackType", 2);
+                agent.speed *= 100;
+                animator.SetTrigger("Attack");
+                state = MonsterState.Attack;
+            }
+        }
     }
     protected override void HandleAttackState()
     {
-        base.HandleAttackState();
+        if (animator.GetFloat("AttackType") != 2)
+        {
+            agent.speed = 0f;
+            if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+            {
+                animator.SetTrigger("Idle");
+                agent.speed = moveSpeed;
+                state = MonsterState.Move;
+            }
+        }
+        else
+        {
+            if (stopDash)
+            {
+                stopDash = false;
+                animator.SetTrigger("Idle");
+                agent.speed = moveSpeed;
+                state = MonsterState.Move;
+            }
+        }
     }
     protected override void HandleHpState()
     {
@@ -77,5 +113,19 @@ public class Lancer : MonsterAgent
     protected override void HandleDeathState()
     {
         base.HandleDeathState();
+    }
+    IEnumerator Timer(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            stopDash = true;
+            transform.GetComponent<Rigidbody2D>().linearVelocity= Vector3.zero;
+            agent.speed = 0;
+        }
     }
 }

@@ -33,7 +33,10 @@ public abstract class MonsterAgent : MonoBehaviour
     protected int hp;
     public MonsterStat monsterStat;
 
-
+    //Audio
+    AudioSource monsterSound;
+    public AudioClip hitSound;
+    public AudioClip deathSound;
     private void Awake()
     {
         //NavMesh Agent
@@ -44,6 +47,9 @@ public abstract class MonsterAgent : MonoBehaviour
         //Animator
         animator = GetComponent<Animator>();
         hpController = GetComponent<HpController>();
+
+        //Audio
+        monsterSound = GetComponent<AudioSource>();
     }
 
     protected virtual void Update()
@@ -88,7 +94,6 @@ public abstract class MonsterAgent : MonoBehaviour
         {
             if (distanceToTarget.magnitude < attackRange)
             {
-                Debug.Log(distanceToTarget.magnitude + "   " + attackRange);
                 attackTimer = 0f;
                 int rand = Random.Range(0, attackVarious);
                 animator.SetFloat("AttackType", (float)rand);
@@ -110,6 +115,7 @@ public abstract class MonsterAgent : MonoBehaviour
     protected virtual void HandleHpState()
     {
         animator.SetTrigger("Hit");
+        monsterSound.PlayOneShot(hitSound);
         state = MonsterState.Hit;
     }
     protected virtual void HandleHitState()
@@ -121,6 +127,7 @@ public abstract class MonsterAgent : MonoBehaviour
             if (hpController.hp < 0.1f)
             {
                 animator.SetTrigger("Death");
+                monsterSound.PlayOneShot(deathSound);
                 state = MonsterState.Death;
             }
             else
