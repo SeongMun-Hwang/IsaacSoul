@@ -208,9 +208,8 @@ public class StateMachineController : MonoBehaviour
     }
     void PlayerAttack()
     {
-        //if (state == State.Death) return;
         attackVector = attackInput.ReadValue<Vector2>();
-        if (attackVector != Vector2.zero)
+        if (attackVector != Vector2.zero && state!=State.SpearAttack)
         {
             attackAngle = Mathf.Atan2(attackVector.y, attackVector.x) * Mathf.Rad2Deg;
             playerAnimator.SetFloat("AttackDirection", attackAngle);
