@@ -50,6 +50,10 @@ public class StateMachineController : MonoBehaviour
     //state Text
     public TextMeshProUGUI stateText;
     public TextMeshProUGUI moveSpeedText;
+    //Audio
+    public AudioSource playerAudio;
+    public AudioClip gunSound;
+    public AudioClip spearSound;
     private void Awake()
     {
         stateMachines = new List<StateMachine>();
@@ -76,6 +80,8 @@ public class StateMachineController : MonoBehaviour
         hpController.OnHpChanged += ActionOnDamage;
         //stamina
         staminaController = GetComponent<StaminaController>();
+        //audio
+        playerAudio=GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -256,6 +262,7 @@ public class StateMachineController : MonoBehaviour
             go.GetComponent<LongRangeWeapon>().Damage = bulletDamage;
             go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
             currentBullet--;
+            playerAudio.PlayOneShot(gunSound);
         }
     }
     public void ActionOnDeath()

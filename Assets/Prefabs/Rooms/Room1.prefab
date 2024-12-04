@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 1772628060260189026}
   - component: {fileID: 4039932264874593556}
   - component: {fileID: 2593198671961601785}
+  - component: {fileID: 4122498809850217670}
   m_Layer: 0
   m_Name: box_15_0
   m_TagString: Wall
@@ -302,6 +303,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.8125, y: 1.2228117}
   m_EdgeRadius: 0
+--- !u!50 &4122498809850217670
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2703554597880019792}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!1 &3292738461342959767
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,6 +685,7 @@ GameObject:
   - component: {fileID: 2362520549133380024}
   - component: {fileID: 8958295998672794701}
   - component: {fileID: 3396273083945500644}
+  - component: {fileID: 3298058759690320745}
   m_Layer: 0
   m_Name: Barrels_04_0
   m_TagString: Untagged
@@ -780,6 +809,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9375, y: 0.8884392}
   m_EdgeRadius: 0
+--- !u!50 &3298058759690320745
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761677597036504999}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!1 &4856746988237259279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3585,6 +3641,7 @@ GameObject:
   - component: {fileID: 8763966736978632289}
   - component: {fileID: 5581940869751768531}
   - component: {fileID: 1823702492566148022}
+  - component: {fileID: 3569103561322233138}
   m_Layer: 0
   m_Name: Barrels_05_0
   m_TagString: Untagged
@@ -3708,6 +3765,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9375, y: 0.892004}
   m_EdgeRadius: 0
+--- !u!50 &3569103561322233138
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843720249350244263}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!1 &6172804992511700780
 GameObject:
   m_ObjectHideFlags: 0
@@ -3719,6 +3803,7 @@ GameObject:
   - component: {fileID: 8082515402126071756}
   - component: {fileID: 8024383768361355213}
   - component: {fileID: 3059977839090295549}
+  - component: {fileID: 3958262383762841668}
   m_Layer: 0
   m_Name: Barrels_09_0
   m_TagString: Wall
@@ -3833,6 +3918,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 3.0000014, y: 1.7456527}
   m_Direction: 1
+--- !u!50 &3958262383762841668
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6172804992511700780}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!1 &6538162119312587231
 GameObject:
   m_ObjectHideFlags: 0
@@ -3882,6 +3994,7 @@ GameObject:
   - component: {fileID: 4799793347293618901}
   - component: {fileID: 4079759523626742992}
   - component: {fileID: 315076073675424708}
+  - component: {fileID: 5689749041976819831}
   m_Layer: 0
   m_Name: box_20_0
   m_TagString: Wall
@@ -4005,6 +4118,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.625, y: 1.1776719}
   m_EdgeRadius: 0
+--- !u!50 &5689749041976819831
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728994775616570757}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!1 &7612370364810265973
 GameObject:
   m_ObjectHideFlags: 0
@@ -11892,6 +12032,7 @@ GameObject:
   - component: {fileID: 7578985316448839779}
   - component: {fileID: 337288713968149394}
   - component: {fileID: 6816867184880918096}
+  - component: {fileID: 8184720529239943113}
   m_Layer: 0
   m_Name: Barrels_02_0
   m_TagString: Untagged
@@ -12006,6 +12147,33 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010002363, y: -0.08390591}
   m_Size: {x: 1.9375005, y: 0.9054479}
   m_Direction: 1
+--- !u!50 &8184720529239943113
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8399515530209506503}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!1 &8623329118338411554
 GameObject:
   m_ObjectHideFlags: 0
@@ -12259,6 +12427,7 @@ GameObject:
   - component: {fileID: 4543479436881007509}
   - component: {fileID: 352250327516728549}
   - component: {fileID: 5335662547096434831}
+  - component: {fileID: 2713399876682498617}
   m_Layer: 0
   m_Name: box_18_0
   m_TagString: Wall
@@ -12382,6 +12551,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.9375, y: 1.7346942}
   m_EdgeRadius: 0
+--- !u!50 &2713399876682498617
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8955954970264831920}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!1001 &1478458523868965375
 PrefabInstance:
   m_ObjectHideFlags: 0
