@@ -1258,6 +1258,8 @@ MonoBehaviour:
   spearSound: {fileID: 8300000, guid: 6ef97e3eccc3373499f410d52f9b3156, type: 3}
   walkSound: {fileID: 8300000, guid: bcab7118e89e4ee4c870f89357d93b29, type: 3}
   runSound: {fileID: 8300000, guid: 17c2d3bcd5817934ab9fadff79502e32, type: 3}
+  reloadSound: {fileID: 8300000, guid: 14e1b670d4f008747ad960a579af53b8, type: 3}
+  HurtSound: {fileID: 8300000, guid: 2cdd1c42b6eabc84d981f47ce744c486, type: 3}
 --- !u!114 &988604996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,8 +1751,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 08565b51fa6d72b498b17fac8b278500, type: 3}
-  m_Resource: {fileID: 8300000, guid: 08565b51fa6d72b498b17fac8b278500, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb94593f7b45d1248be690d73f24283e, type: 3}
+  m_Resource: {fileID: 8300000, guid: cb94593f7b45d1248be690d73f24283e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2462,7 +2464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5249437266686791250, guid: 08781419c1b16b845963b57809b897ad, type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538162119312587231, guid: 08781419c1b16b845963b57809b897ad, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 7639262074639580832, guid: 08781419c1b16b845963b57809b897ad, type: 3}
       propertyPath: m_Name
@@ -2470,7 +2476,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639262074639580832, guid: 08781419c1b16b845963b57809b897ad, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074471450552348752, guid: 08781419c1b16b845963b57809b897ad, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 76760f43677802545b3f5fcd92c48c7d, type: 2}
+    - target: {fileID: 9074471450552348752, guid: 08781419c1b16b845963b57809b897ad, type: 3}
+      propertyPath: m_UseGeometry
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074471450552348752, guid: 08781419c1b16b845963b57809b897ad, type: 3}
+      propertyPath: m_CollectObjects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074471450552348752, guid: 08781419c1b16b845963b57809b897ad, type: 3}
+      propertyPath: m_OverrideTileSize
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

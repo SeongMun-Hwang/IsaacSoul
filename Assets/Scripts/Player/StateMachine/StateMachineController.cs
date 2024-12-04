@@ -56,6 +56,8 @@ public class StateMachineController : MonoBehaviour
     public AudioClip spearSound;
     public AudioClip walkSound;
     public AudioClip runSound;
+    public AudioClip reloadSound;
+    public AudioClip HurtSound;
     private string currentSound = "";
 
     private void Awake()
@@ -268,6 +270,7 @@ public class StateMachineController : MonoBehaviour
     }
     IEnumerator GetDamage()
     {
+        playerAudio.PlayOneShot(HurtSound);
         hpController.enabled = false;
         for (float f = 0f; f < invincibleTime; f += 0.1f)
         {
