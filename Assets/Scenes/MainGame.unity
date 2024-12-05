@@ -450,7 +450,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1022804989}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &427678885
 MonoBehaviour:
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427678881}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
   m_Name: 
@@ -1247,7 +1247,7 @@ MonoBehaviour:
   state: 0
   staminaController: {fileID: 0}
   currentBullet: 8
-  totalBullet: 8
+  remainBullet: 20
   bulletDamage: 30
   BulletPrefab: {fileID: 2407209647820271621, guid: 64ee293800edfa44fae720c99519aac4, type: 3}
   FirePosition: {fileID: 975059188}
@@ -1687,8 +1687,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 427678884}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1076324467
@@ -1708,7 +1707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1076324468
 Transform:
   m_ObjectHideFlags: 0
@@ -2196,7 +2195,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2391586532268157602, guid: 9ad979e055083704ab0b56082db93097, type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4322059416256773833, guid: 9ad979e055083704ab0b56082db93097, type: 3}
       propertyPath: m_Name
@@ -2204,7 +2203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4322059416256773833, guid: 9ad979e055083704ab0b56082db93097, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4419528232771029708, guid: 9ad979e055083704ab0b56082db93097, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2605,6 +2604,7 @@ SceneRoots:
   - {fileID: 988604990}
   - {fileID: 787956543}
   - {fileID: 1022804989}
+  - {fileID: 427678884}
   - {fileID: 1863973182}
   - {fileID: 359367405}
   - {fileID: 5308356207755880410}

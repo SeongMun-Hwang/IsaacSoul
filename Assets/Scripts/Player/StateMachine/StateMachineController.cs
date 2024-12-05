@@ -43,7 +43,7 @@ public class StateMachineController : MonoBehaviour
     public StaminaController staminaController;
     //bullet
     public int currentBullet = 8;
-    public int totalBullet = 20;
+    public int remainBullet = 20;
     public float bulletDamage = 30;
     public GameObject BulletPrefab;
     public GameObject FirePosition;
@@ -93,7 +93,7 @@ public class StateMachineController : MonoBehaviour
     {
         //status text
         stateText.text = state.ToString();
-        moveSpeedText.text = "Move Speed : " + moveSpeed + "\nTotalBullet : " + totalBullet + "\nCurrentBullet : " + currentBullet;
+        moveSpeedText.text = "Move Speed : " + moveSpeed + "\nRemainBullet : " + remainBullet + "\nCurrentBullet : " + currentBullet;
 
         HandleAnimation();
     }

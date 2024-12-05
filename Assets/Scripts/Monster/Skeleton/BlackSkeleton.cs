@@ -88,7 +88,6 @@ public class BlackSkeleton : MonsterAgent
         Vector2 targetPosition = new Vector2(transform.position.x, transform.position.y) + direction.normalized*3f;
         if (NavMesh.SamplePosition(targetPosition, out hit, 1f, NavMesh.AllAreas))
         {
-            Debug.Log("Hit : " + hit.position);
             transform.position = hit.position;
         }
         agent.speed = moveSpeed;

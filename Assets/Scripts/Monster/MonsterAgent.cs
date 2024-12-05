@@ -75,7 +75,7 @@ public abstract class MonsterAgent : MonoBehaviour
             animator.SetFloat("MoveSpeed", agent.speed);
             direction = player.transform.position - transform.position;
         }
-        if (state==MonsterState.Move)
+        if (state == MonsterState.Move)
         {
             if (direction.x < 0)
             {
@@ -115,6 +115,10 @@ public abstract class MonsterAgent : MonoBehaviour
     protected virtual void HandleHpState()
     {
         animator.SetTrigger("Hit");
+        if (hpController.hp < 0.1f)
+        {
+            gameObject.GetComponent<Collider2D>().enabled = false;
+        }
         monsterSound.PlayOneShot(hitSound);
         state = MonsterState.Hit;
     }
@@ -126,6 +130,7 @@ public abstract class MonsterAgent : MonoBehaviour
         {
             if (hpController.hp < 0.1f)
             {
+                gameObject.GetComponent<Collider2D>().enabled = false;
                 animator.SetTrigger("Death");
                 monsterSound.PlayOneShot(deathSound);
                 state = MonsterState.Death;
@@ -155,7 +160,7 @@ public abstract class MonsterAgent : MonoBehaviour
     {
         if (attackTimer >= attackDelay)
         {
-            return true;      
+            return true;
         }
         return false;
     }

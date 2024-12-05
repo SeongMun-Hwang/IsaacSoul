@@ -46,7 +46,7 @@ public class ButtonsActions : MonoBehaviour
     }
     public void IncreaseBulletNumber(int number)
     {
-        playerController.stateMachineController.totalBullet += number;
+        playerController.stateMachineController.remainBullet += number;
         ButtonQuit();
     }
     public void ButtonQuit()

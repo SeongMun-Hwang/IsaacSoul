@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
 
@@ -14,20 +15,38 @@ public class Door : MonoBehaviour
         cineBorder = GameObject.FindGameObjectWithTag("CineBorder");
         cineCam = GameObject.FindGameObjectWithTag("CineCam");
     }
+     
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //cineCam.GetComponent<CinemachineConfiner2D>().enabled = false;
+            Vector3 nextRoomPos = connectedDoor.transform.root.gameObject.transform.position;
+            StartCoroutine(MoveBorder(nextRoomPos));
             collision.gameObject.transform.position = connectedDoor.transform.position;
-            cineBorder.gameObject.transform.position = connectedDoor.transform.root.gameObject.transform.position;
-            cineCam.GetComponent<CinemachineConfiner2D>().BoundingShape2D = cineBorder.GetComponent<PolygonCollider2D>();
-            //cineCam.GetComponent<CinemachineConfiner2D>().enabled = true;
-            //Camera.main.transform.position = connectedDoor.transform.root.gameObject.transform.position;
-
-            gameObject.transform.root.gameObject.SetActive(false);
-            connectedDoor.transform.root.gameObject.SetActive(true);
         }
+    }
+    private IEnumerator MoveBorder(Vector3 targetPosition)
+    {
+        connectedDoor.transform.root.gameObject.SetActive(true);
+        float borderSpeed = 30f;
+        Vector2 distance = cineBorder.transform.position - targetPosition;
+        if (Mathf.Abs(distance.x) > 0)
+        {
+            borderSpeed = 60f;
+        }
+        Debug.Log(targetPosition);
+        Debug.Log(borderSpeed);
+        while (Vector3.Distance(cineBorder.transform.position, targetPosition) > 0.01f)
+        {
+            cineBorder.transform.position = Vector3.MoveTowards(
+                cineBorder.transform.position,
+                targetPosition,
+                Time.deltaTime * borderSpeed
+            );
+            yield return null; // 다음 프레임까지 대기
+        }
+        cineBorder.transform.position = targetPosition;
+        gameObject.transform.root.gameObject.SetActive(false);
     }
 }
