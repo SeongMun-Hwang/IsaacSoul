@@ -8,9 +8,15 @@ public class HomingArrow : MonoBehaviour
     public string targetTagName;
     public Vector2 Velocity;
     public float homingSpeed = 50f;
-
+    float flyingTime = 0f;
+    
     private void FixedUpdate()
     {
+        flyingTime += Time.deltaTime;
+        if (flyingTime >= 5f)
+        {
+            Destroy(gameObject);
+        }
         GameObject go = GameObject.FindWithTag(targetTagName);
         if(go != null)
         {
