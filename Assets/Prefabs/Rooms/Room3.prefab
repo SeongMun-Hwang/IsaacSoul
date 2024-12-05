@@ -11231,6 +11231,8 @@ MonoBehaviour:
   enemies: []
   spawnableEnemyList:
   - {fileID: 103520070058774815, guid: f6b5b926f5408c14da54ce5275c8c2b7, type: 3}
+  - {fileID: 103520070058774815, guid: f6b5b926f5408c14da54ce5275c8c2b7, type: 3}
+  - {fileID: 3038597640746432781, guid: 356470044d778374791173ab46b3d146, type: 3}
   rewardCanvas: {fileID: 813924633825695001}
   horizontalLayoutGroup: {fileID: 5765874880248695073}
   rewardCards:
