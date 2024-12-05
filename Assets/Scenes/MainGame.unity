@@ -1739,6 +1739,7 @@ MonoBehaviour:
   - {fileID: 7639262074639580832, guid: 08781419c1b16b845963b57809b897ad, type: 3}
   - {fileID: 7639262074639580832, guid: 0275395e1a4b3f847ae580ade2e977a6, type: 3}
   - {fileID: 7639262074639580832, guid: 2f0dafc65a0edea49af728e23e872236, type: 3}
+  - {fileID: 7639262074639580832, guid: 162eff3870c649f46916a3463d30bd57, type: 3}
   baseRoomPrefab: {fileID: 4322059416256773833, guid: 9ad979e055083704ab0b56082db93097, type: 3}
   roomNumber: 10
   row: 5

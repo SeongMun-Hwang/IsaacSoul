@@ -18,6 +18,7 @@ public class ButtonsActions : MonoBehaviour
     public void IncreaseHp(int hp)
     {
         playerController.maxHp += hp;
+        hpController.hp += hp;
         ButtonQuit();
     }
     public void RestoreHp(int hp)
