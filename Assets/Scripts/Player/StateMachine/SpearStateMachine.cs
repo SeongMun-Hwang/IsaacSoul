@@ -22,6 +22,7 @@ public class SpearStateMachine : StateMachine
     }
     public void TransitionToDeath()
     {
+        Enter();
         player.state = State.Death;
         player.GetComponent<Animator>().SetTrigger("Death");
     }

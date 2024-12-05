@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 2629837186412870956}
   - component: {fileID: 8051243316683478316}
   - component: {fileID: 2422305688893690103}
-  - component: {fileID: 2635778941954395283}
-  - component: {fileID: -9161300001548034643}
   m_Layer: 6
   m_Name: HomingArrow
   m_TagString: Enemy
@@ -106,6 +104,7 @@ MonoBehaviour:
   Damage: 30
   targetTagName: Player
   Velocity: {x: 5, y: 0}
+  homingSpeed: 50
 --- !u!70 &2422305688893690103
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -143,52 +142,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.6564396, y: 0.18112136}
   m_Size: {x: 1.3894788, y: 0.512955}
   m_Direction: 1
---- !u!195 &2635778941954395283
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7689089781101604322}
-  m_Enabled: 0
-  m_AgentTypeID: 0
-  m_Radius: 0.01
-  m_Speed: 0
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 20
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 0.00001
-  m_BaseOffset: 0.40625
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!50 &-9161300001548034643
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7689089781101604322}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0

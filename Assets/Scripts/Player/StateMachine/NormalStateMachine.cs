@@ -22,6 +22,7 @@ public class NormalStateMachine : StateMachine
     }
     public void TransitionToDeath()
     {
+        Enter();
         player.state = State.Death;
         player.playerAnimator.SetTrigger("Death");
     }
