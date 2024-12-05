@@ -1744,7 +1744,7 @@ MonoBehaviour:
   roomNumber: 10
   row: 5
   col: 5
-  createdRoomActive: 0
+  createdRoomActive: 1
 --- !u!82 &1076324470
 AudioSource:
   m_ObjectHideFlags: 0
