@@ -37,7 +37,7 @@ public class StateMachineController : MonoBehaviour
     //state enum
     public State state;
     //hp
-    HpController hpController;
+    public HpController hpController;
     float invincibleTime = 1f;
     //stamina
     public StaminaController staminaController;
@@ -82,7 +82,6 @@ public class StateMachineController : MonoBehaviour
         moveInput = inputActions.FindAction("Move");
         attackInput = inputActions.FindAction("Attack");
         //hp action subscribe
-        hpController = GetComponent<HpController>();
         hpController.OnHpChanged += ActionOnDamage;
         //stamina
         staminaController = GetComponent<StaminaController>();

@@ -10,7 +10,7 @@ public class ButtonsActions : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        hpController=player.GetComponent<HpController>();
+        hpController=player.GetComponentInChildren<HpController>();
         staminaController=player.GetComponent<StaminaController>();
         playerController = player.GetComponent<PlayerController>();
         RewardCanvas = transform.parent.parent.gameObject;

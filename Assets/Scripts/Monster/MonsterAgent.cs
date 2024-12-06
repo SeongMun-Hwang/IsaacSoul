@@ -6,7 +6,7 @@ public abstract class MonsterAgent : MonoBehaviour
     protected NavMeshAgent agent;
     protected GameObject player;
     protected Animator animator;
-    protected HpController hpController;
+    public HpController hpController;
 
     protected Vector2 direction;
     protected Vector2 distanceToTarget;
@@ -46,7 +46,6 @@ public abstract class MonsterAgent : MonoBehaviour
 
         //Animator
         animator = GetComponent<Animator>();
-        hpController = GetComponent<HpController>();
 
         //Audio
         monsterSound = GetComponent<AudioSource>();

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6751554396101653406}
   - component: {fileID: 5402801844828375310}
   - component: {fileID: 6852438117643802903}
-  - component: {fileID: 6513275428555096588}
   - component: {fileID: 1817428827054419379}
   - component: {fileID: 9762795904440260}
   - component: {fileID: 5939848022797677573}
@@ -38,6 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5972055398604554826}
+  - {fileID: 852095396983636381}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5402801844828375310
@@ -107,23 +107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a02759cc9552d48a2b4f54e7795d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpController: {fileID: 6704064529364965195}
   attackTimer: 0
   monsterStat: {fileID: 11400000, guid: 3bd03dc3f99ddfc418e447b412c76efc, type: 2}
   hitSound: {fileID: 8300000, guid: 3454012fb08dde94f9b29dc7023d6487, type: 3}
   deathSound: {fileID: 8300000, guid: db7ca097b03a21c4ab50aaefdb24c644, type: 3}
---- !u!114 &6513275428555096588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103520070058774815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 100
 --- !u!50 &1817428827054419379
 Rigidbody2D:
   serializedVersion: 5
@@ -185,9 +173,9 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.11137724, y: 0.43437088}
-  m_Size: {x: 0.7029052, y: 1.062259}
-  m_Direction: 0
+  m_Offset: {x: -0.011861302, y: 0.07471948}
+  m_Size: {x: 0.46368387, y: 0.16188033}
+  m_Direction: 1
 --- !u!195 &5939848022797677573
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -329,6 +317,89 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &4035214198283415359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 852095396983636381}
+  - component: {fileID: 4576675002449291245}
+  - component: {fileID: 6704064529364965195}
+  m_Layer: 0
+  m_Name: HpController
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &852095396983636381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035214198283415359}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6751554396101653406}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &4576675002449291245
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035214198283415359}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.098086596, y: 0.44264692}
+  m_Size: {x: 0.6961732, y: 1.0704211}
+  m_Direction: 0
+--- !u!114 &6704064529364965195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035214198283415359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
 --- !u!1 &8254284465641810358
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +477,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

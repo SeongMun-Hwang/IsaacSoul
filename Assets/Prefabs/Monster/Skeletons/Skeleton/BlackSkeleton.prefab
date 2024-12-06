@@ -1,5 +1,88 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1783595918135154128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 458874204056374037}
+  - component: {fileID: 7980580105229807805}
+  - component: {fileID: 6435909793010317846}
+  m_Layer: 0
+  m_Name: HpController
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &458874204056374037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783595918135154128}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3733685069867339195}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &7980580105229807805
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783595918135154128}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.09557152, y: 0.47534245}
+  m_Size: {x: 0.69114304, y: 0.98490965}
+  m_Direction: 0
+--- !u!114 &6435909793010317846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783595918135154128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 75
 --- !u!1 &2541392948376974597
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +178,6 @@ GameObject:
   - component: {fileID: 3733685069867339195}
   - component: {fileID: 8423879443081589176}
   - component: {fileID: 5093340794008595345}
-  - component: {fileID: 5361706675080706324}
   - component: {fileID: 8665038291253567874}
   - component: {fileID: 3308764892624771731}
   - component: {fileID: 6748233968401215117}
@@ -122,6 +204,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8316925682887955721}
+  - {fileID: 458874204056374037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8423879443081589176
@@ -191,23 +274,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b47a8e07e6feeb48a2c2641ef5c1647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpController: {fileID: 6435909793010317846}
   attackTimer: 0
   monsterStat: {fileID: 11400000, guid: 8835ac2e6256d9e44aeb78f9478e555e, type: 2}
   hitSound: {fileID: 8300000, guid: 3454012fb08dde94f9b29dc7023d6487, type: 3}
   deathSound: {fileID: 8300000, guid: db7ca097b03a21c4ab50aaefdb24c644, type: 3}
---- !u!114 &5361706675080706324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3038597640746432781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 75
 --- !u!50 &8665038291253567874
 Rigidbody2D:
   serializedVersion: 5
@@ -269,9 +340,9 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.11137724, y: 0.43437088}
-  m_Size: {x: 0.7029052, y: 1.062259}
-  m_Direction: 0
+  m_Offset: {x: -0.026949968, y: 0.052084144}
+  m_Size: {x: 0.45362318, y: 0.15685068}
+  m_Direction: 1
 --- !u!195 &6748233968401215117
 NavMeshAgent:
   m_ObjectHideFlags: 0

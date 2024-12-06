@@ -19,11 +19,19 @@ public class SpikeTrap : MonoBehaviour
             currentTime = 0f;
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.GetComponent<HpController>() != null)
+    //    {
+    //        collision.GetComponent<HpController>().GetDamage(10);
+    //    }
+    //}
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.GetComponent<HpController>() != null)
+        HpController hpController = collision.transform.GetComponentInChildren<HpController>();
+        if (hpController != null)
         {
-            collision.GetComponent<HpController>().GetDamage(10);
+            hpController.GetDamage(10);
         }
     }
 }

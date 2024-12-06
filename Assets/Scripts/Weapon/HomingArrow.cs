@@ -46,4 +46,16 @@ public class HomingArrow : MonoBehaviour
         }
         Destroy(gameObject);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<HpController>() != null && collision.gameObject.tag == targetTagName)
+        {
+            collision.gameObject.GetComponent<HpController>().GetDamage(Damage);
+            Destroy(gameObject);
+        }
+        else if(collision.gameObject.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

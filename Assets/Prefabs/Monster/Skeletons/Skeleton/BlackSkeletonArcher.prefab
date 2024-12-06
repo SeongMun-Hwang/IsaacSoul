@@ -1,5 +1,88 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2564278519178920510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4344176530548583242}
+  - component: {fileID: 3196661022428778147}
+  - component: {fileID: 1059080330104359741}
+  m_Layer: 0
+  m_Name: HpController
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4344176530548583242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564278519178920510}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.03125, y: 0.5394758, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4881084482028440803}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &3196661022428778147
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564278519178920510}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0048415065, y: 0.033890486}
+  m_Size: {x: 0.80985594, y: 1.1452451}
+  m_Direction: 0
+--- !u!114 &1059080330104359741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564278519178920510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 75
 --- !u!1 &2674789281004356385
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +125,6 @@ GameObject:
   - component: {fileID: 4881084482028440803}
   - component: {fileID: 5155964656435194876}
   - component: {fileID: 3899087021150095816}
-  - component: {fileID: 6994068077324003850}
   - component: {fileID: 7436834113063732894}
   - component: {fileID: 6081149347445321248}
   - component: {fileID: 8713969615784745863}
@@ -69,6 +151,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6449706167699087730}
+  - {fileID: 4344176530548583242}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5155964656435194876
@@ -138,25 +221,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483dfb9ddd8851540b76fbcb48c37910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpController: {fileID: 1059080330104359741}
   attackTimer: 0
   monsterStat: {fileID: 11400000, guid: 8e2712dce1c05b7479d74b0d97c6208f, type: 2}
   hitSound: {fileID: 8300000, guid: 3454012fb08dde94f9b29dc7023d6487, type: 3}
   deathSound: {fileID: 8300000, guid: db7ca097b03a21c4ab50aaefdb24c644, type: 3}
   firePosition: {fileID: 6449706167699087730}
   arrowPrefab: {fileID: 7689089781101604322, guid: c9a8a094d8ff704428d45f9aee98974b, type: 3}
---- !u!114 &6994068077324003850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4407606746930008019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 75
 --- !u!50 &7436834113063732894
 Rigidbody2D:
   serializedVersion: 5
@@ -218,9 +289,9 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.042217672, y: 0.5394758}
-  m_Size: {x: 0.80798686, y: 1.3289516}
-  m_Direction: 0
+  m_Offset: {x: -0.13420607, y: 0.06500768}
+  m_Size: {x: 0.46717054, y: 0.11858034}
+  m_Direction: 1
 --- !u!195 &8713969615784745863
 NavMeshAgent:
   m_ObjectHideFlags: 0
