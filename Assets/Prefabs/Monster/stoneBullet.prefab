@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4578535440407344885}
   - component: {fileID: 1647246719053442948}
+  - component: {fileID: 8142977992418404037}
   - component: {fileID: 3761071522881808754}
-  - component: {fileID: 8615120174735911133}
   - component: {fileID: 3122118984825889756}
   m_Layer: 0
   m_Name: stoneBullet
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 27575909
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 6636585613346608120, guid: 22bac5b238e3feb44b658a89d17a89ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -90,6 +90,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8142977992418404037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545514438745392226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafb60016541a3a40bda47c91edbf954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 40
+  targetTagName: Player
+  Velocity: {x: 5, y: 0}
+  homingSpeed: 50
 --- !u!70 &3761071522881808754
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -127,20 +143,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0025435437, y: -0.012081443}
   m_Size: {x: 0.3318494, y: 0.10277446}
   m_Direction: 1
---- !u!114 &8615120174735911133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1545514438745392226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d288ed2cbd873442b1c3ed920237ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 10, y: 0}
-  statAttack: 2
 --- !u!50 &3122118984825889756
 Rigidbody2D:
   serializedVersion: 5

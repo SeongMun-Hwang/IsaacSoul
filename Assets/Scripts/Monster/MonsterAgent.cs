@@ -34,7 +34,7 @@ public abstract class MonsterAgent : MonoBehaviour
     public MonsterStat monsterStat;
 
     //Audio
-    AudioSource monsterSound;
+    protected AudioSource monsterSound;
     public AudioClip hitSound;
     public AudioClip deathSound;
     private void Awake()
@@ -93,7 +93,6 @@ public abstract class MonsterAgent : MonoBehaviour
         {
             if (distanceToTarget.magnitude < attackRange)
             {
-                attackTimer = 0f;
                 int rand = Random.Range(0, attackVarious);
                 animator.SetFloat("AttackType", (float)rand);
                 animator.SetTrigger("Attack");
@@ -106,6 +105,7 @@ public abstract class MonsterAgent : MonoBehaviour
         agent.speed = 0f;
         if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
+            attackTimer = 0f;
             animator.SetTrigger("Idle");
             agent.speed = moveSpeed;
             state = MonsterState.Move;
