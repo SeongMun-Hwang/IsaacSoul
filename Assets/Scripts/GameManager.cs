@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public List<GameObject> roomsPrefab;
     public GameObject baseRoomPrefab;
     public int roomNumber;
+    public GameObject bossRoom;
+    bool bossRoomCreated = false;
 
     public int row = 10;
     public int col = 10;
@@ -63,7 +65,8 @@ public class GameManager : MonoBehaviour
 
         while (createdRooms < roomNumber) //생성된 방이 생성할 갯수보다 적으면
         {
-            if (currentRoomPos.Count == 0) break; //방을 생성할 곳이 없으면
+            Debug.Log(currentRoomPos.Count);
+            //if (currentRoomPos.Count == 0) break; //방을 생성할 곳이 없으면
 
             Vector2Int currentPos = currentRoomPos.ElementAt(Random.Range(0, currentRoomPos.Count));
 
@@ -86,10 +89,21 @@ public class GameManager : MonoBehaviour
             int nextY = currentPos.y + dir.y;
             if (CheckNextRoomPosition(nextX, nextY)) //방 생성 가능한지 확인
             {
-                GameObject go = roomsPrefab[Random.Range(0, roomsPrefab.Count)];
+                GameObject go;
+                if (currentRoomPos.Count>=4 && !bossRoomCreated)
+                {
+                    go = bossRoom;
+                    bossRoomCreated = true;
+                }
+                else
+                {
+                    go = roomsPrefab[Random.Range(0, roomsPrefab.Count)];
+                }
                 CreateRoom(nextX, nextY, go);
-
-                currentRoomPos.Push(new Vector2Int(nextX, nextY)); //생성하고 생성한 방 좌표 푸시
+                if (go != bossRoom)
+                {
+                    currentRoomPos.Push(new Vector2Int(nextX, nextY)); //생성하고 생성한 방 좌표 푸시
+                }
                 picked.Clear();
                 createdRooms++;
             }
