@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         while (createdRooms < roomNumber) //생성된 방이 생성할 갯수보다 적으면
         {
             Debug.Log(currentRoomPos.Count);
-            //if (currentRoomPos.Count == 0) break; //방을 생성할 곳이 없으면
+            if (currentRoomPos.Count == 0) break; //방을 생성할 곳이 없으면
 
             Vector2Int currentPos = currentRoomPos.ElementAt(Random.Range(0, currentRoomPos.Count));
 

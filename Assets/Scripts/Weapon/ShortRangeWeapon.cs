@@ -13,7 +13,7 @@ public class ShortRangeWeapon : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<HpController>() != null && collision.gameObject.tag == targetTagName)
+        if (collision.gameObject.GetComponent<HpController>() != null)
         {
             collision.gameObject.GetComponent<HpController>().GetDamage(Damage);
         }

@@ -138,7 +138,7 @@ public class StateMachineController : MonoBehaviour
                         (stateMachines[stateIndex] as GunStateMachine).TransitionToReloading();
                     }
                 }
-                if (Input.GetKey(KeyCode.LeftShift) && staminaController.stamina > 0 && state != State.GunAttack)
+                if (Input.GetKey(KeyCode.LeftShift) && staminaController.stamina > 0 && (state != State.GunAttack||state!=State.Reload))
                 {
                     isRunPressed = true;
                 }
@@ -158,7 +158,7 @@ public class StateMachineController : MonoBehaviour
                 //공격 전 스태미나가 0이하면
                 if (staminaController.stamina + 10 <= 0)
                 {
-                    if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.4f)
+                    if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.3f)
                     {
                         stateMachines[stateIndex].Enter();
                         playerAnimator.SetFloat("MoveDirection", attackAngle);

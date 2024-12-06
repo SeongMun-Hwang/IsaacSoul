@@ -3,7 +3,7 @@ using UnityEngine;
 public class SpikeTrap : MonoBehaviour
 {
     Animator animator;
-    float activeTimer = 2f;
+    public float activeTimer = 2f;
     float currentTime = 0f;
     void Start()
     {

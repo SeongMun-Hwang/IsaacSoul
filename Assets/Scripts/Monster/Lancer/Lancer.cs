@@ -1,10 +1,13 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class Lancer : MonsterAgent
 {
-    bool stopDash = false;
+    bool stopDash = true;
+    private float attackDirection = 1;
+
     void Start()
     {
         hpController.OnHpChanged += HandleHpState;
@@ -42,18 +45,26 @@ public class Lancer : MonsterAgent
     protected override void UpdatePlayerReference()
     {
         player = GameObject.FindWithTag("Player");
-        if (player != null)
+        if (player != null && state != MonsterState.Attack)
         {
             if (Mathf.Abs(player.transform.position.y - transform.position.y) > 2f)
             {
-                agent.destination=new Vector2(transform.position.x, player.transform.position.y);
+                agent.destination = new Vector2(transform.position.x, player.transform.position.y);
             }
+            //else if (Mathf.Abs(player.transform.position.x - transform.position.x) < 0.5f)
+            //{
+            //    agent.destination = transform.position + -5f*new Vector3(distanceToTarget.x,distanceToTarget.y);
+            //}
             else
             {
                 agent.destination = player.transform.position;
             }
             distanceToTarget = agent.destination - transform.position;
         }
+    }
+    protected override void HandleTransform()
+    {
+        base.HandleTransform();
     }
     protected override void HandleMoveState()
     {
@@ -63,39 +74,38 @@ public class Lancer : MonsterAgent
             if (distanceToTarget.magnitude < attackRange)
             {
                 int rand = Random.Range(0, attackVarious);
-                animator.SetFloat("AttackType", (float)rand);
+                animator.SetFloat("AttackType", rand);
+                if (rand == 2)
+                {
+                    agent.enabled = false;
+                    stopDash = false;
+                    attackDirection = transform.right.x > 0 ? 1 : -1;
+                }
                 animator.SetTrigger("Attack");
                 state = MonsterState.Attack;
             }
             else
             {
-                Rigidbody2D rb = GetComponent<Rigidbody2D>();
-                Vector2 dashDirection = new Vector2(rb.linearVelocityX,0f);
-                //rb.AddForce(dashDirection * 10,ForceMode2D.Impulse);
                 animator.SetFloat("AttackType", 2);
-                agent.speed *= 100;
-                animator.SetTrigger("Attack");
-                state = MonsterState.Attack;
+
+                agent.enabled = false;
+                stopDash = false;
+                attackDirection = transform.right.x > 0 ? 1 : -1;
             }
+            animator.SetTrigger("Attack");
+            state = MonsterState.Attack;
         }
     }
     protected override void HandleAttackState()
     {
-        if (animator.GetFloat("AttackType") != 2)
+        if (animator.GetFloat("AttackType") == 2)
         {
-            agent.speed = 0f;
+            gameObject.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(12 * attackDirection, 0);
+        }
+        if (stopDash)
+        {
             if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
             {
-                animator.SetTrigger("Idle");
-                agent.speed = moveSpeed;
-                state = MonsterState.Move;
-            }
-        }
-        else
-        {
-            if (stopDash)
-            {
-                stopDash = false;
                 animator.SetTrigger("Idle");
                 agent.speed = moveSpeed;
                 state = MonsterState.Move;
@@ -104,6 +114,8 @@ public class Lancer : MonsterAgent
     }
     protected override void HandleHpState()
     {
+        agent.enabled = true;
+        stopDash = true;
         base.HandleHpState();
     }
     protected override void HandleHitState()
@@ -114,18 +126,14 @@ public class Lancer : MonsterAgent
     {
         base.HandleDeathState();
     }
-    IEnumerator Timer(float time)
-    {
-        yield return new WaitForSeconds(time);
-
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (animator.GetFloat("AttackType") == 2)
         {
             stopDash = true;
-            transform.GetComponent<Rigidbody2D>().linearVelocity= Vector3.zero;
-            agent.speed = 0;
+            attackTimer = 0;
+            agent.enabled = true;
+            gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         }
     }
 }

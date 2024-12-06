@@ -116,8 +116,9 @@ public abstract class MonsterAgent : MonoBehaviour
         animator.SetTrigger("Hit");
         if (hpController.hp < 0.1f)
         {
-            gameObject.GetComponent<Collider2D>().enabled = false;
+            hpController.GetComponentInChildren<Collider2D>().enabled = false;
         }
+        agent.GetComponent<Rigidbody2D>().linearVelocity= Vector3.zero;
         monsterSound.PlayOneShot(hitSound);
         state = MonsterState.Hit;
     }
