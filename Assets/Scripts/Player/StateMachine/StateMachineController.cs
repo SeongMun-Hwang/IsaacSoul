@@ -269,6 +269,7 @@ public class StateMachineController : MonoBehaviour
     }
     IEnumerator GetDamage()
     {
+        playerAudio.Stop();
         playerAudio.PlayOneShot(HurtSound);
         hpController.enabled = false;
         for (float f = 0f; f < invincibleTime; f += 0.1f)

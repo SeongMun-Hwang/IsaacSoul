@@ -25,6 +25,7 @@ public class GunStateMachine : StateMachine
         if (player.remainBullet > 0)
         {
             addedBullet = maxBullet - player.currentBullet;
+            if (addedBullet > player.remainBullet) addedBullet = player.remainBullet;
             player.currentBullet += addedBullet;
             player.remainBullet -= addedBullet;
         }

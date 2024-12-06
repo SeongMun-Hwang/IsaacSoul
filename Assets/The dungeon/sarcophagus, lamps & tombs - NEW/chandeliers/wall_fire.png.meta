@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,10 +131,10 @@ TextureImporter:
       name: wall_fire_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 16
-        width: 30
-        height: 30
+        x: 10
+        y: 17
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: wall_fire_1
       rect:
         serializedVersion: 2
-        x: 59
-        y: 17
-        width: 26
-        height: 27
+        x: 60
+        y: 18
+        width: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: wall_fire_2
       rect:
         serializedVersion: 2
-        x: 105
-        y: 16
-        width: 30
-        height: 30
+        x: 106
+        y: 17
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: wall_fire_3
       rect:
         serializedVersion: 2
-        x: 155
-        y: 17
-        width: 26
-        height: 27
+        x: 156
+        y: 18
+        width: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: wall_fire_4
       rect:
         serializedVersion: 2
-        x: 201
-        y: 16
-        width: 30
-        height: 30
+        x: 202
+        y: 17
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: wall_fire_5
       rect:
         serializedVersion: 2
-        x: 251
-        y: 17
-        width: 26
-        height: 27
+        x: 252
+        y: 18
+        width: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f0ef2f42dc2893f44bbe4f1dcd3abf9c
     internalID: 0
     vertices: []
     indices: 
@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wall_fire_0: -4440630370855905244
+      wall_fire_1: -3078708575159541722
+      wall_fire_2: 3313217070153066527
+      wall_fire_3: 1614339330387983702
+      wall_fire_4: 2585066727505474807
+      wall_fire_5: -6677788612550551837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -19,7 +19,7 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("PlayerRoot"))
         {
             Vector3 nextRoomPos = connectedDoor.transform.root.gameObject.transform.position;
             StartCoroutine(MoveBorder(nextRoomPos));
