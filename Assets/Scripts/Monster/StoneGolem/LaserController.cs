@@ -11,6 +11,8 @@ public class LaserController : MonoBehaviour
     public float rotationSpeed = 360f;
     private float rotationTime = 0f;
     private float totalRotationDuration = 0.5f;
+
+    public AudioSource golemAudioSource;
     void Start()
     {
         laserAnimator = GetComponent<Animator>();
@@ -45,5 +47,6 @@ public class LaserController : MonoBehaviour
         Debug.Log("EndLaser");
         laserAnimator.GetComponent<Animator>().SetTrigger("Idle");
         stoneGolemAgent.isStopped = false;
+        golemAudioSource.Stop();
     }
 }

@@ -180,6 +180,7 @@ public class StateMachineController : MonoBehaviour
                 }
                 break;
             case State.Reload:
+                isRunPressed = false;
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
                     stateMachines[stateIndex].Enter();

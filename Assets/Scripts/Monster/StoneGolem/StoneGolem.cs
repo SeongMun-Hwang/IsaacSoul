@@ -1,11 +1,15 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class StoneGolem : MonsterAgent
 {
     public GameObject projectilePrefab;
     public Transform firePosition;
     public Animator LaserAnimator;
+    public Unknown unknown;
 
+    public AudioClip laserCast;
+    public AudioClip attack;
     private void Start()
     {
         hpController.OnHpChanged += HandleHpState;
@@ -89,10 +93,20 @@ public class StoneGolem : MonsterAgent
     }
     public void LaserCast()
     {
+        monsterSound.PlayOneShot(laserCast);
         LaserAnimator.SetTrigger("Laser");
     }
     public void TeleportToPlayer()
     {
-        transform.position = player.transform.position + new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f));
+        Vector3 targetPosition = player.transform.position + new Vector3(Random.Range(-3f, 3f), Random.Range(-5f, 5f));
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(targetPosition, out hit, 5f, NavMesh.AllAreas))
+        {
+            agent.Warp(hit.position);
+        }
+    }
+    public void UnknownCircleAttack()
+    {
+        StartCoroutine(unknown.ShootInCircle());
     }
 }

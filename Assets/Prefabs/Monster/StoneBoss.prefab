@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7839762694115996759}
   - component: {fileID: 5966728392116551494}
   - component: {fileID: 838438124472559419}
+  - component: {fileID: 2346386661415093742}
   m_Layer: 0
   m_Name: StoneBoss
   m_TagString: Untagged
@@ -142,11 +143,14 @@ MonoBehaviour:
   hpController: {fileID: 6352338962348457513}
   attackTimer: 0
   monsterStat: {fileID: 11400000, guid: 6d6f0df2fdc962e4290995138d64c1c3, type: 2}
-  hitSound: {fileID: 0}
-  deathSound: {fileID: 0}
+  hitSound: {fileID: 8300000, guid: 92b701246ddbf1343a2d5819145abe2f, type: 3}
+  deathSound: {fileID: 8300000, guid: 351557085d6026f43b9d62956d1e21b1, type: 3}
   projectilePrefab: {fileID: 1545514438745392226, guid: ee93241a2cd162643b0e48c6559140b2, type: 3}
   firePosition: {fileID: 7400271655810506758}
   LaserAnimator: {fileID: 5456032209598114468}
+  unknown: {fileID: 4130554146591350311}
+  laserCast: {fileID: 8300000, guid: 759d822c61519d1468d4b14ac3b2778b, type: 3}
+  attack: {fileID: 8300000, guid: f3d18c652eeef1a44a5fe9b22bfb263e, type: 3}
 --- !u!95 &8299135489933735557
 Animator:
   serializedVersion: 7
@@ -203,8 +207,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 1000
+  m_LinearDamping: 5
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -255,6 +259,103 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0025663252, y: 0.04099516}
   m_Size: {x: 0.11909775, y: 0.064886324}
   m_Direction: 1
+--- !u!82 &2346386661415093742
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4444764322060795103}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6339742077810891307
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +402,7 @@ GameObject:
   - component: {fileID: 7846132507377884906}
   - component: {fileID: 1035591980144950550}
   - component: {fileID: 5197003527471512528}
+  - component: {fileID: 279858826096908631}
   m_Layer: 0
   m_Name: LaserAnimator
   m_TagString: Laser
@@ -360,6 +462,7 @@ MonoBehaviour:
   laserRotationPoint: {fileID: 6339742077810891307}
   stoneGolemAgent: {fileID: 7839762694115996759}
   rotationSpeed: 360
+  golemAudioSource: {fileID: 2346386661415093742}
 --- !u!114 &7846132507377884906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,6 +578,103 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.4328885, y: 0.2092803}
   m_EdgeRadius: 0
+--- !u!82 &279858826096908631
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547660517623633535}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7425870159085006099
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,26 +766,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8361287167402254131}
     m_Modifications:
-    - target: {fileID: 2538828114715863178, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2538828114715863178, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1117849617
-      objectReference: {fileID: 0}
-    - target: {fileID: 2594498359826647064, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.20895888
-      objectReference: {fileID: 0}
-    - target: {fileID: 2594498359826647064, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.20895888
-      objectReference: {fileID: 0}
-    - target: {fileID: 2594498359826647064, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.20895888
-      objectReference: {fileID: 0}
     - target: {fileID: 2594498359826647064, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.102
@@ -630,15 +810,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8222556010518838059, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
+--- !u!114 &4130554146591350311 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8885406923538107466, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}
+  m_PrefabInstance: {fileID: 4764214230240006765}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed3f7abcc17fe224783661485f420423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7357862658342394485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2594498359826647064, guid: 8c17cd7972466124281c7ce2de3f19c1, type: 3}

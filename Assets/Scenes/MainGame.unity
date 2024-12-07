@@ -419,7 +419,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 6
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -694,7 +694,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1201,9 +1201,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 444867121}
   - {fileID: 1546653654}
   - {fileID: 975059189}
-  - {fileID: 444867121}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &988604991
@@ -2344,6 +2344,10 @@ PrefabInstance:
     - target: {fileID: 4444764322060795103, guid: 6d16b0db8b4e00a4b8a825cab63de873, type: 3}
       propertyPath: m_Name
       value: StoneBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444764322060795103, guid: 6d16b0db8b4e00a4b8a825cab63de873, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8361287167402254131, guid: 6d16b0db8b4e00a4b8a825cab63de873, type: 3}
       propertyPath: m_LocalPosition.x
