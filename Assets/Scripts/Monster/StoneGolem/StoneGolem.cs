@@ -6,6 +6,7 @@ public class StoneGolem : MonsterAgent
     public GameObject projectilePrefab;
     public Transform firePosition;
     public Animator LaserAnimator;
+    public Animator ShockWaveAnimator;
     public Unknown unknown;
 
     public AudioClip laserCast;
@@ -69,7 +70,7 @@ public class StoneGolem : MonsterAgent
             if (distanceToTarget.magnitude < attackRange)
             {
                 int rand = Random.Range(0, attackVarious);
-                animator.SetFloat("AttackType", (float)rand);
+                animator.SetFloat("AttackType", 1);
                 if (rand == 3)
                 {
                     agent.isStopped = true;
@@ -108,5 +109,9 @@ public class StoneGolem : MonsterAgent
     public void UnknownCircleAttack()
     {
         StartCoroutine(unknown.ShootInCircle());
+    }
+    public void ShockWaveCast()
+    {
+        ShockWaveAnimator.SetTrigger("ShockWave");
     }
 }
