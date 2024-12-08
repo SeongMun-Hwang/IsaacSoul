@@ -41,7 +41,7 @@ public class BlackSkeleton : MonsterAgent
     }
     protected override void HandleMoveState()
     {
-        if (CheckAttackDelay())
+        if (CheckAttackDelay() && hpController.hp > 0)
         {
             if (distanceToTarget.magnitude < attackRange)
             {
@@ -85,7 +85,7 @@ public class BlackSkeleton : MonsterAgent
         yield return new WaitForSeconds(0.5f);
 
         NavMeshHit hit;
-        Vector2 targetPosition = new Vector2(transform.position.x, transform.position.y) + direction.normalized*3f;
+        Vector2 targetPosition = new Vector2(transform.position.x, transform.position.y) + direction.normalized * 3f;
         if (NavMesh.SamplePosition(targetPosition, out hit, 1f, NavMesh.AllAreas))
         {
             transform.position = hit.position;

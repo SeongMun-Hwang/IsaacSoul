@@ -50,8 +50,11 @@ public class RoomManager : MonoBehaviour
                 foreach (Transform child in monsterSpawnPosition)
                 {
                     int number = UnityEngine.Random.Range(0, spawnableEnemyList.Count);
-                    GameObject go = Instantiate(spawnableEnemyList[number], child.transform.position, spawnableEnemyList[number].transform.rotation);
-                    enemies.Add(go);
+                    if (spawnableEnemyList[number] != null)
+                    {
+                        GameObject go = Instantiate(spawnableEnemyList[number], child.transform.position, spawnableEnemyList[number].transform.rotation);
+                        enemies.Add(go);
+                    }
                 }
             }
         }

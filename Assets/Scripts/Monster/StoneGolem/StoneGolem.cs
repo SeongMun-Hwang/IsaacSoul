@@ -70,7 +70,7 @@ public class StoneGolem : MonsterAgent
             if (distanceToTarget.magnitude < attackRange)
             {
                 int rand = Random.Range(0, attackVarious);
-                animator.SetFloat("AttackType", 1);
+                animator.SetFloat("AttackType", rand);
                 if (rand == 3)
                 {
                     agent.isStopped = true;

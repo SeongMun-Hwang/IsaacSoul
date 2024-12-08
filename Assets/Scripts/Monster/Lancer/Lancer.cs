@@ -7,7 +7,7 @@ public class Lancer : MonsterAgent
 {
     bool stopDash = true;
     private float attackDirection = 1;
-
+    public AudioClip dashSound;
     void Start()
     {
         hpController.OnHpChanged += HandleHpState;
@@ -77,6 +77,7 @@ public class Lancer : MonsterAgent
                 animator.SetFloat("AttackType", rand);
                 if (rand == 2)
                 {
+                    monsterSound.PlayOneShot(dashSound);
                     agent.enabled = false;
                     stopDash = false;
                     attackDirection = transform.right.x > 0 ? 1 : -1;
@@ -133,7 +134,8 @@ public class Lancer : MonsterAgent
             stopDash = true;
             attackTimer = 0;
             agent.enabled = true;
-            gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
+            rb.linearVelocity = Vector2.zero;
         }
     }
 }

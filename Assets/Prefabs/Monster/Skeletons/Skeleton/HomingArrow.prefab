@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafb60016541a3a40bda47c91edbf954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 30
+  Damage: 25
   targetTagName: Player
   Velocity: {x: 5, y: 0}
   homingSpeed: 50

@@ -21,13 +21,9 @@ public class ButtonsActions : MonoBehaviour
         hpController.hp += hp;
         ButtonQuit();
     }
-    public void RestoreHp(int hp)
+    public void RestoreHpPortion()
     {
-        hpController.hp += hp;
-        if (hpController.hp > playerController.maxHp)
-        {
-            hpController.hp = playerController.maxHp;
-        }
+        playerController.stateMachineController.numOfPortion++;
         ButtonQuit();
     }
     public void IncreaseStamina(float stamina)

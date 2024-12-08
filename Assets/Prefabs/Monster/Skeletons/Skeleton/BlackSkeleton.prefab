@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d208aba089cd646a5401b4ed3cc128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 30
+  Damage: 25
   targetTagName: Player
 --- !u!70 &2864072390669506313
 CapsuleCollider2D:

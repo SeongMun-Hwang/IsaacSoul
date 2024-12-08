@@ -65,9 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Restore
-
-    HP +40'
+  m_text: Get hp portion++
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f1d3c73cbdff5643b773d6e862c9207, type: 2}
   m_sharedMaterial: {fileID: -8124299434488200381, guid: 4f1d3c73cbdff5643b773d6e862c9207, type: 2}
@@ -94,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 77
+  m_fontSizeBase: 77
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -152,7 +150,7 @@ GameObject:
   - component: {fileID: 8501986306924178622}
   - component: {fileID: 4574556599982031008}
   m_Layer: 0
-  m_Name: HP_RestoreCard
+  m_Name: HpPortion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

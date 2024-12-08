@@ -48,8 +48,8 @@ public class StateMachineController : MonoBehaviour
     public GameObject BulletPrefab;
     public GameObject FirePosition;
     //state Text
-    public TextMeshProUGUI stateText;
-    public TextMeshProUGUI moveSpeedText;
+    public TextMeshProUGUI bulletText;
+    public TextMeshProUGUI portionText;
     //Audio
     public AudioSource playerAudio;
     public AudioClip gunSound;
@@ -59,7 +59,10 @@ public class StateMachineController : MonoBehaviour
     public AudioClip reloadSound;
     public AudioClip HurtSound;
     private string currentSound = "";
-
+    //portion
+    public int numOfPortion = 2;
+    //playercontroller
+    public PlayerController playerController;
     private void Awake()
     {
         stateMachines = new List<StateMachine>();
@@ -91,8 +94,8 @@ public class StateMachineController : MonoBehaviour
     private void Update()
     {
         //status text
-        stateText.text = state.ToString();
-        moveSpeedText.text = "Move Speed : " + moveSpeed + "\nRemainBullet : " + remainBullet + "\nCurrentBullet : " + currentBullet;
+        bulletText.text = ":" + currentBullet + "/" + remainBullet;
+        portionText.text = ":" + numOfPortion;
 
         HandleAnimation();
     }
@@ -151,6 +154,11 @@ public class StateMachineController : MonoBehaviour
                         stateIndex = 0;
                     }
                     stateMachines[stateIndex].Enter();
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha1) && numOfPortion > 0 && hpController.hp<playerController.maxHp)
+                {
+                    hpController.hp += 40;
+                    numOfPortion--;
                 }
                 break;
             case State.SpearAttack:

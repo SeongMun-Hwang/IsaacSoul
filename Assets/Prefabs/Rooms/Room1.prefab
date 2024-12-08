@@ -12392,6 +12392,8 @@ MonoBehaviour:
   - {fileID: 5679974928305673095, guid: fd43c7cdad6139346afd87086f2e5774, type: 3}
   - {fileID: 3038597640746432781, guid: 356470044d778374791173ab46b3d146, type: 3}
   - {fileID: 4407606746930008019, guid: 4612e939ec81f6b4e8ef461978b6293c, type: 3}
+  - {fileID: 1691073336770957887, guid: 844485d937ae1964ca2b6be5f92520f8, type: 3}
+  - {fileID: 0}
   rewardCanvas: {fileID: 813924633825695001}
   horizontalLayoutGroup: {fileID: 5765874880248695073}
   rewardCards:

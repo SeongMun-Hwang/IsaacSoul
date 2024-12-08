@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3886709248236569427}
   - component: {fileID: 3763458826065876720}
+  - component: {fileID: 6415220070577677943}
   - component: {fileID: 3742652738928327166}
   m_Layer: 0
   m_Name: Spear
@@ -40,9 +41,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966388868472048782}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0d208aba089cd646a5401b4ed3cc128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 30
+  targetTagName: Player
+--- !u!114 &6415220070577677943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966388868472048782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4677fd723b56e4449ac97ca4b99c8c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 30
@@ -205,6 +220,7 @@ MonoBehaviour:
   monsterStat: {fileID: 11400000, guid: 557531abeae8ee842848d34cf4b7036e, type: 2}
   hitSound: {fileID: 8300000, guid: cd7437c7c8e87774c8f4e9daa7daf081, type: 3}
   deathSound: {fileID: 8300000, guid: b524757e9fa418b4ba13c72eb6c8e848, type: 3}
+  dashSound: {fileID: 8300000, guid: 2d792200532f33946874607f980b7596, type: 3}
 --- !u!50 &142841920860166627
 Rigidbody2D:
   serializedVersion: 5
@@ -221,7 +237,7 @@ Rigidbody2D:
   m_LinearDamping: 3
   m_AngularDamping: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8d48170a8a426c447996b293d3cc4c2a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -492,4 +508,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 300
+  hp: 200

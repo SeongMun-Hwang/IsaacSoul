@@ -128,9 +128,9 @@ public abstract class MonsterAgent : MonoBehaviour
         if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f
             && animator.GetCurrentAnimatorStateInfo(0).IsName("Hurt"))
         {
-            if (hpController.hp < 0.1f)
+            if (hpController.hp < 0.5f)
             {
-                gameObject.GetComponent<Collider2D>().enabled = false;
+                //gameObject.GetComponent<Collider2D>().enabled = false;
                 animator.SetTrigger("Death");
                 monsterSound.PlayOneShot(deathSound);
                 state = MonsterState.Death;
