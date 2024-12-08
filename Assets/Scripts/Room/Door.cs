@@ -35,8 +35,6 @@ public class Door : MonoBehaviour
         {
             borderSpeed = 60f;
         }
-        Debug.Log(targetPosition);
-        Debug.Log(borderSpeed);
         while (Vector3.Distance(cineBorder.transform.position, targetPosition) > 0.01f)
         {
             cineBorder.transform.position = Vector3.MoveTowards(

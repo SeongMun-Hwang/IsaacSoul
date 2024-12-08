@@ -19,6 +19,15 @@ public class BlackSkeleton : MonsterAgent
 
         state = MonsterState.Move;
     }
+    protected override void Update()
+    {
+        base.Update();
+        if (hpController.hp <= 0 && state != MonsterState.Death)
+        {
+            state = MonsterState.Death;
+            animator.SetTrigger("Death");
+        }
+    }
     protected override void HandleState()
     {
         switch (state)
@@ -42,7 +51,8 @@ public class BlackSkeleton : MonsterAgent
     }
     protected override void HandleMoveState()
     {
-        if (CheckAttackDelay() && hpController.hp > 0)
+        if (hpController.hp <= 0) return;
+        if (CheckAttackDelay())
         {
             if (distanceToTarget.magnitude < attackRange)
             {
@@ -80,7 +90,7 @@ public class BlackSkeleton : MonsterAgent
     }
     private IEnumerator PerformTeleport()
     {
-
+        if(hpController.hp<=0) yield break;
         animator.SetTrigger("Idle");
         state = MonsterState.Idle;
 

@@ -19,4 +19,4 @@ MonoBehaviour:
   attackDelay: 1
   attackTimer: 0
   attackVarious: 4
-  hp: 500
+  hp: 1000

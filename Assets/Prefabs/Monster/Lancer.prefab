@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3886709248236569427}
-  - component: {fileID: 3763458826065876720}
   - component: {fileID: 6415220070577677943}
   - component: {fileID: 3742652738928327166}
   m_Layer: 0
@@ -34,20 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7415995773477780077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3763458826065876720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966388868472048782}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d208aba089cd646a5401b4ed3cc128, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 30
-  targetTagName: Player
 --- !u!114 &6415220070577677943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,4 +493,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 200
+  hp: 150
