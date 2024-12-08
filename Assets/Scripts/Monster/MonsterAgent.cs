@@ -60,7 +60,7 @@ public abstract class MonsterAgent : MonoBehaviour
     }
     protected virtual void UpdatePlayerReference()
     {
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("PlayerRoot");
         if (player != null)
         {
             agent.destination = player.transform.position;

@@ -5,6 +5,7 @@ using static MonsterAgent;
 
 public class BlackSkeleton : MonsterAgent
 {
+    public AudioClip attackSound;
     private void Start()
     {
         hpController.OnHpChanged += HandleHpState;
@@ -50,6 +51,7 @@ public class BlackSkeleton : MonsterAgent
                 animator.SetFloat("AttackType", (float)rand);
                 animator.SetTrigger("Attack");
                 state = MonsterState.Attack;
+                monsterSound.PlayOneShot(attackSound);
             }
             else
             {

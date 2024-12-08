@@ -1241,6 +1241,7 @@ MonoBehaviour:
   runSound: {fileID: 8300000, guid: 17c2d3bcd5817934ab9fadff79502e32, type: 3}
   reloadSound: {fileID: 8300000, guid: 14e1b670d4f008747ad960a579af53b8, type: 3}
   HurtSound: {fileID: 8300000, guid: 2cdd1c42b6eabc84d981f47ce744c486, type: 3}
+  DrinkSound: {fileID: 8300000, guid: 90db1c11d82ea774280481d60d765856, type: 3}
   numOfPortion: 2
   playerController: {fileID: 988604999}
 --- !u!114 &988604996
@@ -1524,6 +1525,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1057651711
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1416764543286208231, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666692049361609613, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322059416256773833, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_Name
+      value: BossRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419528232771029708, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7381649515755637189, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: ce78bb5da8bcdb64e9e39fee79e5f8a2, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
 --- !u!1 &1076324467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,7 +1648,7 @@ MonoBehaviour:
   - {fileID: 4322059416256773833, guid: b8986bd70dd7fce49b7c89153b9b0cf9, type: 3}
   baseRoomPrefab: {fileID: 4322059416256773833, guid: 9ad979e055083704ab0b56082db93097, type: 3}
   roomNumber: 10
-  bossRoom: {fileID: 4322059416256773833, guid: b8986bd70dd7fce49b7c89153b9b0cf9, type: 3}
+  bossRoom: {fileID: 4322059416256773833, guid: dfad7c6f3e4f60c48aff9ffe477f7ac8, type: 3}
   row: 6
   col: 5
   createdRoomActive: 0
@@ -2385,8 +2455,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284506208
-  m_fontColor: {r: 0.3764706, g: 0.3764706, b: 0.3764706, a: 1}
+    rgba: 4280888361
+  m_fontColor: {r: 0.16078432, g: 0.17254902, b: 0.16078432, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2521,8 +2591,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284506208
-  m_fontColor: {r: 0.3764706, g: 0.3764706, b: 0.3764706, a: 1}
+    rgba: 4280888361
+  m_fontColor: {r: 0.16078432, g: 0.17254902, b: 0.16078432, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2605,3 +2675,4 @@ SceneRoots:
   - {fileID: 1863973182}
   - {fileID: 359367405}
   - {fileID: 1377804610}
+  - {fileID: 1057651711}

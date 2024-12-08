@@ -58,6 +58,7 @@ public class StateMachineController : MonoBehaviour
     public AudioClip runSound;
     public AudioClip reloadSound;
     public AudioClip HurtSound;
+    public AudioClip DrinkSound;
     private string currentSound = "";
     //portion
     public int numOfPortion = 2;
@@ -141,7 +142,7 @@ public class StateMachineController : MonoBehaviour
                         (stateMachines[stateIndex] as GunStateMachine).TransitionToReloading();
                     }
                 }
-                if (Input.GetKey(KeyCode.LeftShift) && staminaController.stamina > 0 && (state != State.GunAttack||state!=State.Reload))
+                if (Input.GetKey(KeyCode.LeftShift) && staminaController.stamina > 0 && (state != State.GunAttack || state != State.Reload))
                 {
                     isRunPressed = true;
                 }
@@ -155,9 +156,15 @@ public class StateMachineController : MonoBehaviour
                     }
                     stateMachines[stateIndex].Enter();
                 }
-                if (Input.GetKeyDown(KeyCode.Alpha1) && numOfPortion > 0 && hpController.hp<playerController.maxHp)
+                if (Input.GetKeyDown(KeyCode.Alpha1) && numOfPortion > 0 && hpController.hp < playerController.maxHp)
                 {
+                    playerAudio.Stop();
+                    playerAudio.PlayOneShot(DrinkSound);
                     hpController.hp += 40;
+                    if (hpController.hp > playerController.maxHp)
+                    {
+                        hpController.hp = playerController.maxHp;
+                    }
                     numOfPortion--;
                 }
                 break;
@@ -301,27 +308,28 @@ public class StateMachineController : MonoBehaviour
         Vector3 fireVectorPos = new Vector2();
         if (currentBullet > 0)
         {
-            if(attackAngle==0)//right
+            if (attackAngle == 0)//right
             {
-                fireVectorPos = new Vector3(0.7f,0.6f);
+                fireVectorPos = new Vector3(0.7f, 0.6f);
             }
             else if (attackAngle == 90)//up
             {
-                fireVectorPos = new Vector3(0.35f,1.5f);
+                fireVectorPos = new Vector3(0.35f, 1.5f);
             }
             else if (attackAngle == 180)//left
             {
-                fireVectorPos = new Vector3(-0.7f,0.75f);
+                fireVectorPos = new Vector3(-0.7f, 0.75f);
             }
             else if (attackAngle == -90)//
             {
-                fireVectorPos = new Vector3(-0.35f,0.15f);
+                fireVectorPos = new Vector3(-0.35f, 0.15f);
             }
             fireVectorPos += transform.position;
-            GameObject go = Instantiate(BulletPrefab,fireVectorPos, Quaternion.identity);
+            GameObject go = Instantiate(BulletPrefab, fireVectorPos, Quaternion.identity);
             go.GetComponent<LongRangeWeapon>().Damage = bulletDamage;
             go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
             currentBullet--;
+            playerAudio.Stop();
             playerAudio.PlayOneShot(gunSound);
         }
     }

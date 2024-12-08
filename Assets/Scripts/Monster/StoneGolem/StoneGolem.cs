@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class StoneGolem : MonsterAgent
 {
@@ -11,6 +13,10 @@ public class StoneGolem : MonsterAgent
 
     public AudioClip laserCast;
     public AudioClip attack;
+
+    float maxHp;
+    public Image redHpBar;
+    public Image yellowHpBar;
     private void Start()
     {
         hpController.OnHpChanged += HandleHpState;
@@ -23,6 +29,7 @@ public class StoneGolem : MonsterAgent
         hpController.hp = monsterStat.hp;
 
         state = MonsterState.Move;
+        maxHp = hpController.hp;
     }
     protected override void HandleState()
     {
@@ -53,13 +60,16 @@ public class StoneGolem : MonsterAgent
             {
                 direction = player.transform.position - transform.position;
             }
-            if (direction.x < 0)
+            if (GetComponent<Rigidbody2D>().linearVelocity != Vector2.zero)
             {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-            }
-            else
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
+                if (direction.x < 0)
+                {
+                    transform.rotation = Quaternion.Euler(0, 180, 0);
+                }
+                else
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
             }
         }
     }
@@ -83,7 +93,17 @@ public class StoneGolem : MonsterAgent
     }
     protected override void HandleHpState()
     {
+        float currentHpPercentage = hpController.hp / maxHp;
+        StartCoroutine(UpdateHpBars(currentHpPercentage));
         monsterSound.PlayOneShot(hitSound);
+        if (hpController.hp < 0.5f)
+        {
+            hpController.GetComponent<Collider2D>().enabled = false;
+            animator.SetTrigger("Death");
+            unknown.Death();
+            monsterSound.PlayOneShot(deathSound);
+            state = MonsterState.Death;
+        }
     }
     public void FireArrow()
     {
@@ -113,5 +133,21 @@ public class StoneGolem : MonsterAgent
     public void ShockWaveCast()
     {
         ShockWaveAnimator.SetTrigger("ShockWave");
+    }
+    private IEnumerator UpdateHpBars(float targetFillAmount)
+    {
+        redHpBar.fillAmount = targetFillAmount;
+
+        float initialFill = yellowHpBar.fillAmount;
+        float duration = 0.5f;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            yellowHpBar.fillAmount = Mathf.Lerp(initialFill, targetFillAmount, elapsed / duration);
+            yield return null;
+        }
+        yellowHpBar.fillAmount = targetFillAmount;
     }
 }

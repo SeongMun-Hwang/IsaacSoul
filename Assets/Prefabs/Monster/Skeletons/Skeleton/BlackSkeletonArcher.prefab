@@ -228,6 +228,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: db7ca097b03a21c4ab50aaefdb24c644, type: 3}
   firePosition: {fileID: 6449706167699087730}
   arrowPrefab: {fileID: 7689089781101604322, guid: c9a8a094d8ff704428d45f9aee98974b, type: 3}
+  arrowClip: {fileID: 8300000, guid: 3b1c0d5a21c884246850f1bc3af84306, type: 3}
 --- !u!50 &7436834113063732894
 Rigidbody2D:
   serializedVersion: 5

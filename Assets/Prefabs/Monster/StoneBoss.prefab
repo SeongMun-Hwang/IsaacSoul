@@ -315,6 +315,8 @@ MonoBehaviour:
   unknown: {fileID: 4130554146591350311}
   laserCast: {fileID: 8300000, guid: 759d822c61519d1468d4b14ac3b2778b, type: 3}
   attack: {fileID: 8300000, guid: f3d18c652eeef1a44a5fe9b22bfb263e, type: 3}
+  redHpBar: {fileID: 0}
+  yellowHpBar: {fileID: 0}
 --- !u!95 &8299135489933735557
 Animator:
   serializedVersion: 7
@@ -884,7 +886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 976263b7b2dea324289b794675073817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 500
+  hp: 1000
 --- !u!70 &7526659409032453983
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class HomingArrow : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        GameObject go = GameObject.FindWithTag(targetTagName);
+        GameObject go = GameObject.FindWithTag("PlayerRoot");
         if(go != null)
         {
             Vector3 targetPosition = go.transform.position;

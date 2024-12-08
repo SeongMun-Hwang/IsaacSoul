@@ -27,7 +27,6 @@ public class Unknown : MonoBehaviour
         attackTimer += Time.fixedDeltaTime;
         if (attackDuration <= attackTimer && !isAttacking)
         {
-            Debug.Log("RandomATtack");
             int rand = UnityEngine.Random.Range(0, attackVarious.Count);
             StartCoroutine(attackVarious[rand]());
         }
@@ -80,5 +79,9 @@ public class Unknown : MonoBehaviour
         yield return null;
         attackTimer = 0;
         isAttacking = false;
+    }
+    public void Death()
+    {
+        unknownAnimator.SetTrigger("Death");
     }
 }

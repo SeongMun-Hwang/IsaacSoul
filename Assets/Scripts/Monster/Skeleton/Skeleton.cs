@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Skeleton : MonsterAgent
 {
+    public AudioClip attackSound;
     private void Start()
     {
         hpController.OnHpChanged += HandleHpState;
@@ -39,7 +40,17 @@ public class Skeleton : MonsterAgent
     }
     protected override void HandleMoveState()
     {
-        base.HandleMoveState();
+        if (CheckAttackDelay())
+        {
+            if (distanceToTarget.magnitude < attackRange)
+            {
+                int rand = Random.Range(0, attackVarious);
+                animator.SetFloat("AttackType", (float)rand);
+                animator.SetTrigger("Attack");
+                state = MonsterState.Attack;
+                monsterSound.PlayOneShot(attackSound);
+            }
+        }
     }
     protected override void HandleAttackState()
     {

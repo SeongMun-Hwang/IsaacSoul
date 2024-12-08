@@ -279,6 +279,7 @@ MonoBehaviour:
   monsterStat: {fileID: 11400000, guid: 8835ac2e6256d9e44aeb78f9478e555e, type: 2}
   hitSound: {fileID: 8300000, guid: 3454012fb08dde94f9b29dc7023d6487, type: 3}
   deathSound: {fileID: 8300000, guid: db7ca097b03a21c4ab50aaefdb24c644, type: 3}
+  attackSound: {fileID: 8300000, guid: 7b9c1ffdd67a546469416fd31af3e988, type: 3}
 --- !u!50 &8665038291253567874
 Rigidbody2D:
   serializedVersion: 5

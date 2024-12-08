@@ -19,7 +19,7 @@ public class LaserController : MonoBehaviour
     }
     private void Update()
     {
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("PlayerRoot");
         if (player != null)
         {
             RotateLaser();
@@ -44,7 +44,6 @@ public class LaserController : MonoBehaviour
     }
     public void EndLaser()
     {
-        Debug.Log("EndLaser");
         laserAnimator.GetComponent<Animator>().SetTrigger("Idle");
         stoneGolemAgent.isStopped = false;
         golemAudioSource.Stop();
