@@ -17,6 +17,7 @@ public class StoneGolem : MonsterAgent
     float maxHp;
     public Image redHpBar;
     public Image yellowHpBar;
+    public GameObject bossInfo;
     private void Start()
     {
         hpController.OnHpChanged += HandleHpState;
@@ -149,5 +150,9 @@ public class StoneGolem : MonsterAgent
             yield return null;
         }
         yellowHpBar.fillAmount = targetFillAmount;
+    }
+    private void OnDestroy()
+    {
+        Destroy(bossInfo);
     }
 }

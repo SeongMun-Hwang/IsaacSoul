@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class BossRoomManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject boss;
+    public GameObject winCanvas;
+    private void Update()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(boss == null)
+        {
+            winCanvas.SetActive(true);
+        }
     }
 }
