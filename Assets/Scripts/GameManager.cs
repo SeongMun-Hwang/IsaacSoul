@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     public bool createdRoomActive = false;
     public GameObject player;
     public GameObject dieCanvas;
-
+    public GameObject escCanvas;
     //확장 방향
     Vector2Int[] directions = new Vector2Int[]
 {
@@ -61,6 +61,17 @@ public class GameManager : MonoBehaviour
         if (player == null)
         {
             dieCanvas.SetActive(true);
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (escCanvas.activeSelf == false)
+            {
+                escCanvas.SetActive(true);
+            }
+            else
+            {
+                escCanvas.SetActive(false);
+            }
         }
     }
     public void CreateMap(int startX, int startY)
