@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject dieCanvas;
     public GameObject escCanvas;
+    public GameObject HowtoPlay;
     //확장 방향
     Vector2Int[] directions = new Vector2Int[]
 {
@@ -64,6 +65,10 @@ public class GameManager : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            if (HowtoPlay.activeSelf)
+            {
+                HowtoPlay.SetActive(false);
+            }
             if (escCanvas.activeSelf == false)
             {
                 escCanvas.SetActive(true);
