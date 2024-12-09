@@ -69,13 +69,16 @@ public class GameManager : MonoBehaviour
             {
                 HowtoPlay.SetActive(false);
             }
-            if (escCanvas.activeSelf == false)
-            {
-                escCanvas.SetActive(true);
-            }
             else
             {
-                escCanvas.SetActive(false);
+                if (escCanvas.activeSelf == false)
+                {
+                    escCanvas.SetActive(true);
+                }
+                else
+                {
+                    escCanvas.SetActive(false);
+                }
             }
         }
     }

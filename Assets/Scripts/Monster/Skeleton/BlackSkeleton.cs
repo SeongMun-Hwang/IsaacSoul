@@ -22,7 +22,7 @@ public class BlackSkeleton : MonsterAgent
     protected override void Update()
     {
         base.Update();
-        if (hpController.hp <= 0 && state != MonsterState.Death)
+        if (hpController.hp <= 0 && state != MonsterState.Death&& animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             state = MonsterState.Death;
             animator.SetTrigger("Death");
@@ -104,6 +104,6 @@ public class BlackSkeleton : MonsterAgent
         }
         agent.speed = moveSpeed;
         state = MonsterState.Move;
-        attackTimer = 1.5f;
+        attackTimer = 1.0f;
     }
 }

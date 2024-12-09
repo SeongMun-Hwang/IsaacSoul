@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -13,6 +14,10 @@ public class StartMenuCanvas : MonoBehaviour
     Color originColor = new Color(50 / 255f, 50 / 255f, 50 / 255f);
     Color redColor = new Color(209 / 255f, 56 / 255f, 56 / 255f);
     Color greenColor = new Color(56 / 255f, 209 / 255f, 56 / 255f);
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
