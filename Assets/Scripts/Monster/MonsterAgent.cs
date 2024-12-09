@@ -114,7 +114,7 @@ public abstract class MonsterAgent : MonoBehaviour
     protected virtual void HandleHpState()
     {
         animator.SetTrigger("Hit");
-        if (hpController.hp < 0.1f)
+        if (hpController.hp <= 0.1f)
         {
             hpController.GetComponentInChildren<Collider2D>().enabled = false;
         }

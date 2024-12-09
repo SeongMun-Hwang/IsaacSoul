@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
     private bool[,] isRoomPosDisabled;
 
     public bool createdRoomActive = false;
+    public GameObject player;
+    public GameObject dieCanvas;
+
     //확장 방향
     Vector2Int[] directions = new Vector2Int[]
 {
@@ -52,6 +55,13 @@ public class GameManager : MonoBehaviour
         //맵 생성
         CreateMap(centerX, centerY);
         ConnectDoor();
+    }
+    private void Update()
+    {
+        if (player == null)
+        {
+            dieCanvas.SetActive(true);
+        }
     }
     public void CreateMap(int startX, int startY)
     {
