@@ -1,11 +1,10 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class DieCanvas : MonoBehaviour
+public class StartMenuCanvas : MonoBehaviour
 {
     public TextMeshProUGUI retryText;
     public TextMeshProUGUI giveUpBText;
@@ -14,15 +13,9 @@ public class DieCanvas : MonoBehaviour
     Color originColor = new Color(50 / 255f, 50 / 255f, 50 / 255f);
     Color redColor = new Color(209 / 255f, 56 / 255f, 56 / 255f);
     Color greenColor = new Color(56 / 255f, 209 / 255f, 56 / 255f);
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             buttonIndex = buttonIndex == 0 ? 1 : 0;
         }
@@ -41,20 +34,12 @@ public class DieCanvas : MonoBehaviour
             buttons[buttonIndex].onClick.Invoke();
         }
     }
-    public void Retry()
+    public void StartButton()
     {
         SceneManager.LoadScene("MainGame");
     }
-    public void GiveUp()
+    public void QuitButton()
     {
-        SceneManager.LoadScene("StartMenu");
-    }
-    private void OnEnable()
-    {
-        Time.timeScale = 0f;
-    }
-    private void OnDisable()
-    {
-        Time.timeScale = 1f;
+        Application.Quit();
     }
 }

@@ -8,6 +8,7 @@ public class CanvasAnimator : MonoBehaviour
     public AudioSource audioSource;
     bool animationPlay = false;
     public GameObject player;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
