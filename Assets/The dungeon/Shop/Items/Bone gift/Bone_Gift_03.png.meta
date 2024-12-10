@@ -154,6 +154,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -522,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bone_Gift_03_0: -1947174913398303537
+      Bone_Gift_03_1: 3183811803685709342
+      Bone_Gift_03_10: -77141605265221342
+      Bone_Gift_03_11: -6962959767398044751
+      Bone_Gift_03_12: -5002102539263142122
+      Bone_Gift_03_13: 9027781077164796128
+      Bone_Gift_03_14: 1285853258577355307
+      Bone_Gift_03_15: -965421592397995531
+      Bone_Gift_03_2: -8153164093419372696
+      Bone_Gift_03_3: -77805671087449620
+      Bone_Gift_03_4: 4484757309797795253
+      Bone_Gift_03_5: -7335159261864582026
+      Bone_Gift_03_6: -1556929038606630684
+      Bone_Gift_03_7: -6320967474521888321
+      Bone_Gift_03_8: -8437380650998170371
+      Bone_Gift_03_9: -9219404405476434976
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

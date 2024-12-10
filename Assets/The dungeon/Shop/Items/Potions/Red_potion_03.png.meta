@@ -154,6 +154,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -522,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Red_potion_03_0: 5630499971627219787
+      Red_potion_03_1: 2568719420704771562
+      Red_potion_03_10: -7153240851589033456
+      Red_potion_03_11: -2049703589231518718
+      Red_potion_03_12: 3691806495480443782
+      Red_potion_03_13: 3859465207877806265
+      Red_potion_03_14: -2625723598653207360
+      Red_potion_03_15: 6193694523702906062
+      Red_potion_03_2: 1855013215096995515
+      Red_potion_03_3: 875175177822286258
+      Red_potion_03_4: -1536432959546646002
+      Red_potion_03_5: 471081558127357430
+      Red_potion_03_6: -1902316784264326556
+      Red_potion_03_7: 5131637952827284539
+      Red_potion_03_8: -834189181910513665
+      Red_potion_03_9: 2428376994476837748
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,6 +130,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -322,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Door_front_open_right_0: -8580049118301507876
+      Door_front_open_right_1: 7273164124540932343
+      Door_front_open_right_2: 7365667649551465044
+      Door_front_open_right_3: -301914561666725008
+      Door_front_open_right_4: 769953217650223969
+      Door_front_open_right_5: 8177835943171279853
+      Door_front_open_right_6: -235064820581789904
+      Door_front_open_right_7: 8931272186206956364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

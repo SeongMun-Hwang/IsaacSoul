@@ -154,6 +154,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -522,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Violet_potion_03_0: -5269283939885836337
+      Violet_potion_03_1: -7880412201222293399
+      Violet_potion_03_10: 6507988549904046589
+      Violet_potion_03_11: 5337919658471433456
+      Violet_potion_03_12: -8718000089220101805
+      Violet_potion_03_13: -2351751593677493591
+      Violet_potion_03_14: -8396225527934263613
+      Violet_potion_03_15: -5469694883637563222
+      Violet_potion_03_2: 7189554097231306571
+      Violet_potion_03_3: 6603975835011724284
+      Violet_potion_03_4: 3969291795865852506
+      Violet_potion_03_5: -413228897997931986
+      Violet_potion_03_6: 8351321052705876340
+      Violet_potion_03_7: 4107524256384827901
+      Violet_potion_03_8: 1061247217155835767
+      Violet_potion_03_9: -69846431994492660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -196,6 +196,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -872,7 +885,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yellow_potion_01_0: -1621476392100500449
+      Yellow_potion_01_1: -6792922885768407458
+      Yellow_potion_01_10: 8324396364583076369
+      Yellow_potion_01_11: -1528627582219087591
+      Yellow_potion_01_12: -3335753047023907749
+      Yellow_potion_01_13: -2447422925467585111
+      Yellow_potion_01_14: -877375091898783910
+      Yellow_potion_01_15: -2562828309270037986
+      Yellow_potion_01_16: 3432662305647149706
+      Yellow_potion_01_17: 210296858782086888
+      Yellow_potion_01_18: 6704897371362641290
+      Yellow_potion_01_19: -293163630366330843
+      Yellow_potion_01_2: 6988575187941503274
+      Yellow_potion_01_20: 4575719862938090239
+      Yellow_potion_01_21: -8233256176470591346
+      Yellow_potion_01_22: 5257287830415784342
+      Yellow_potion_01_23: -4076665880126143038
+      Yellow_potion_01_24: 2283830646826394054
+      Yellow_potion_01_25: -138799973662305598
+      Yellow_potion_01_26: 9188772721415617797
+      Yellow_potion_01_27: -4126509174062509734
+      Yellow_potion_01_28: -5110805859736323735
+      Yellow_potion_01_29: -3671604418098665950
+      Yellow_potion_01_3: 1916535576964872595
+      Yellow_potion_01_4: 5512216886884724989
+      Yellow_potion_01_5: -1861651979521769177
+      Yellow_potion_01_6: -538149387661187860
+      Yellow_potion_01_7: -6677918752637619702
+      Yellow_potion_01_8: 7665759176927628124
+      Yellow_potion_01_9: -8097191561079222312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

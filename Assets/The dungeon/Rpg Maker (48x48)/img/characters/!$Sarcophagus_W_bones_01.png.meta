@@ -142,6 +142,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -422,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Sarcophagus_W_bones_01_0': 3473892270560134487
+      '!$Sarcophagus_W_bones_01_1': -760817668673917811
+      '!$Sarcophagus_W_bones_01_10': 2553992854707790792
+      '!$Sarcophagus_W_bones_01_11': -6125527491447520773
+      '!$Sarcophagus_W_bones_01_2': -5879178303713662144
+      '!$Sarcophagus_W_bones_01_3': -6162068903842344319
+      '!$Sarcophagus_W_bones_01_4': 1374086359096366122
+      '!$Sarcophagus_W_bones_01_5': 5195045505506961403
+      '!$Sarcophagus_W_bones_01_6': -1372524838420443089
+      '!$Sarcophagus_W_bones_01_7': 7743856237796815695
+      '!$Sarcophagus_W_bones_01_8': -2969383769700092471
+      '!$Sarcophagus_W_bones_01_9': -2445610095663184056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

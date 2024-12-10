@@ -202,6 +202,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -922,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Violet_potion_02_0: 4969198929124407220
+      Violet_potion_02_1: 1881210032978567929
+      Violet_potion_02_10: -723937617918539376
+      Violet_potion_02_11: -5294724600573366548
+      Violet_potion_02_12: -2603154504643276022
+      Violet_potion_02_13: 775005207928223361
+      Violet_potion_02_14: 2419471416829063251
+      Violet_potion_02_15: -4602926484597381558
+      Violet_potion_02_16: -2399566306800695059
+      Violet_potion_02_17: -5640310926109906425
+      Violet_potion_02_18: 1839767150956546828
+      Violet_potion_02_19: -4859654139951442372
+      Violet_potion_02_2: -2867271975699269911
+      Violet_potion_02_20: 6622781604592242039
+      Violet_potion_02_21: -5877010201862768840
+      Violet_potion_02_22: -5018169768108667609
+      Violet_potion_02_23: 2378155506679700110
+      Violet_potion_02_24: -8183471210024184338
+      Violet_potion_02_25: 507855008831566393
+      Violet_potion_02_26: -6112214192278813072
+      Violet_potion_02_27: 2390879378702293337
+      Violet_potion_02_28: 1642623462816322871
+      Violet_potion_02_29: -8382212942511124944
+      Violet_potion_02_3: 6579672899689341557
+      Violet_potion_02_30: -5823894420988364152
+      Violet_potion_02_31: 5901412352337770958
+      Violet_potion_02_4: 6413349723072300059
+      Violet_potion_02_5: -4429867223000858044
+      Violet_potion_02_6: 4276478532063687996
+      Violet_potion_02_7: -118897111074839097
+      Violet_potion_02_8: -1785286698746604688
+      Violet_potion_02_9: 8385944938303899772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,6 +160,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -572,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      black_book_02_0: 1856513050875196789
+      black_book_02_1: 8327422758387571275
+      black_book_02_10: 5071632909348444752
+      black_book_02_11: -369303478687995648
+      black_book_02_12: 6696507998706248467
+      black_book_02_13: 8040782327157204885
+      black_book_02_14: -2433144512122937321
+      black_book_02_15: 1312994391406042111
+      black_book_02_16: 4951015271364425274
+      black_book_02_17: 5428849540741419043
+      black_book_02_2: -8907347260275371928
+      black_book_02_3: -6769827770757405658
+      black_book_02_4: 2997074458584830093
+      black_book_02_5: -4566982682121967765
+      black_book_02_6: -1798821716190862908
+      black_book_02_7: 7144045110023313747
+      black_book_02_8: 2079927016697398210
+      black_book_02_9: -6121940402477289632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

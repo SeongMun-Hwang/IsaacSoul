@@ -142,6 +142,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -422,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sarcophagus_01_0: -1713068144818966142
+      sarcophagus_01_1: -2461606571200062581
+      sarcophagus_01_10: -4952955963254167353
+      sarcophagus_01_11: -5461350154178577472
+      sarcophagus_01_2: -8666007513213781948
+      sarcophagus_01_3: 6694650017447668358
+      sarcophagus_01_4: 3673831027954521915
+      sarcophagus_01_5: 1225651336004690270
+      sarcophagus_01_6: -3136087787564993335
+      sarcophagus_01_7: 1992028538342242764
+      sarcophagus_01_8: -4166915328663657551
+      sarcophagus_01_9: -8310122052557350511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

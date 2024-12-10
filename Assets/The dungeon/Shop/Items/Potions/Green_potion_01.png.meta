@@ -196,6 +196,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -872,7 +885,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Green_potion_01_0: 1287552668755783647
+      Green_potion_01_1: -3085934132734959515
+      Green_potion_01_10: -2195360007638208140
+      Green_potion_01_11: -5139536135685447632
+      Green_potion_01_12: 7288475435615955657
+      Green_potion_01_13: 8991660626792510490
+      Green_potion_01_14: -3826029392006703798
+      Green_potion_01_15: -7954405393225110903
+      Green_potion_01_16: 734110294523308992
+      Green_potion_01_17: 5765079077009090968
+      Green_potion_01_18: -6067606714691895739
+      Green_potion_01_19: -9018130196318077311
+      Green_potion_01_2: -1022955349134767303
+      Green_potion_01_20: 3046918042939269613
+      Green_potion_01_21: -8243021905743619423
+      Green_potion_01_22: -417669272322180104
+      Green_potion_01_23: 4951432213503575052
+      Green_potion_01_24: -312319513183023809
+      Green_potion_01_25: -3020647308089194948
+      Green_potion_01_26: 2454958339831175585
+      Green_potion_01_27: -3097388971084456570
+      Green_potion_01_28: 6638055662672093458
+      Green_potion_01_29: 792056545956573479
+      Green_potion_01_3: 1052230883475916231
+      Green_potion_01_4: 9145162266764351194
+      Green_potion_01_5: 1508400701968594118
+      Green_potion_01_6: -1279773129240170049
+      Green_potion_01_7: 2631190144128596154
+      Green_potion_01_8: -5174556631777451332
+      Green_potion_01_9: -5788995921789009770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

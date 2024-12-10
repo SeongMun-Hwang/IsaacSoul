@@ -154,6 +154,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -522,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yellow_potion_03_0: -5537168588070819164
+      Yellow_potion_03_1: -5982502170441688078
+      Yellow_potion_03_10: -1271036730251195645
+      Yellow_potion_03_11: -844896998461823951
+      Yellow_potion_03_12: -5963593586596670026
+      Yellow_potion_03_13: 7213728917377018425
+      Yellow_potion_03_14: -7300094988606046225
+      Yellow_potion_03_15: -8031072064507657194
+      Yellow_potion_03_2: 1923155052490136532
+      Yellow_potion_03_3: -1761778387363600471
+      Yellow_potion_03_4: 426859747760422074
+      Yellow_potion_03_5: 2474619450746356351
+      Yellow_potion_03_6: -942173892861160650
+      Yellow_potion_03_7: -1369270726783379896
+      Yellow_potion_03_8: 6030754110356401737
+      Yellow_potion_03_9: -5325474080665242343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

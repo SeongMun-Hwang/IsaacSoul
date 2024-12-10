@@ -154,6 +154,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -522,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skull_W_candle_0: 223697108677028731
+      Skull_W_candle_1: 8045435350378929044
+      Skull_W_candle_10: 5572945595343243091
+      Skull_W_candle_11: -177796760494133711
+      Skull_W_candle_12: 479980680513461126
+      Skull_W_candle_13: 6232334817435538904
+      Skull_W_candle_14: -3390664399589853376
+      Skull_W_candle_15: -2882778236003598364
+      Skull_W_candle_2: -227836245485912216
+      Skull_W_candle_3: 4010692521044246152
+      Skull_W_candle_4: 825684386228924451
+      Skull_W_candle_5: 5978572853130634556
+      Skull_W_candle_6: 2862914332383312849
+      Skull_W_candle_7: -4795287566524861288
+      Skull_W_candle_8: -940293404205693162
+      Skull_W_candle_9: 8570033744308013063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

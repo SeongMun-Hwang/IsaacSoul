@@ -193,6 +193,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -847,7 +860,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Items_tileset_0: 5911018221967080776
+      Items_tileset_1: 5785647303659104819
+      Items_tileset_10: 1551665164907400661
+      Items_tileset_11: -7952196032919726295
+      Items_tileset_12: -1532625522671518816
+      Items_tileset_13: 9088915396857097036
+      Items_tileset_14: -8368594048721093109
+      Items_tileset_15: -5086783656482153891
+      Items_tileset_16: 8927951104861077081
+      Items_tileset_17: -6565392479669138184
+      Items_tileset_18: -7460436690664081426
+      Items_tileset_19: 8763077755710914014
+      Items_tileset_2: 2546508475109972839
+      Items_tileset_20: 7708293205773257916
+      Items_tileset_21: 5771777077608542136
+      Items_tileset_22: 1124566348213029168
+      Items_tileset_23: -5807643753762774550
+      Items_tileset_24: 1117322934146305284
+      Items_tileset_25: 8318758387335934170
+      Items_tileset_26: 495421636296937399
+      Items_tileset_27: -3436568782516997422
+      Items_tileset_28: -2099820910573465776
+      Items_tileset_3: -3291034765220960785
+      Items_tileset_4: -2318019065830669274
+      Items_tileset_5: -8142492775252880950
+      Items_tileset_6: 4109266653084891781
+      Items_tileset_7: -717331672302659300
+      Items_tileset_8: 754428052011874254
+      Items_tileset_9: 9021161435288133570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

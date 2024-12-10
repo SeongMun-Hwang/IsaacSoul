@@ -172,6 +172,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -672,7 +685,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      red_book_01_0: -374601196701315732
+      red_book_01_1: -7738021991377649314
+      red_book_01_10: 3191081779628380336
+      red_book_01_11: -3703345659770262923
+      red_book_01_12: 7988118260089726404
+      red_book_01_13: 1350590528223415148
+      red_book_01_14: 4897012124598188051
+      red_book_01_15: 1886493318488627954
+      red_book_01_16: 7715787487607424544
+      red_book_01_17: 8751759127999129628
+      red_book_01_18: 899258835656402341
+      red_book_01_19: 3511464135752778777
+      red_book_01_2: 7854971030014943098
+      red_book_01_20: -3523202750938459412
+      red_book_01_21: 5901308810086160781
+      red_book_01_3: 6548039157197526247
+      red_book_01_4: 2716675524017608439
+      red_book_01_5: -2542389677351849759
+      red_book_01_6: -2289226683818421246
+      red_book_01_7: -1787260656488892586
+      red_book_01_8: -2100257945938790155
+      red_book_01_9: 8931520782066270909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

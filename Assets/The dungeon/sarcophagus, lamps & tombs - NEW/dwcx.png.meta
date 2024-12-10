@@ -280,6 +280,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1572,7 +1585,65 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dwcx_0: 3510311844869429937
+      dwcx_1: 5548838932004505024
+      dwcx_10: -7394876025774406433
+      dwcx_11: -4532188385049600160
+      dwcx_12: 4804437754680343788
+      dwcx_13: -4991099748359383324
+      dwcx_14: 7184174592176138691
+      dwcx_15: 8187561773337687132
+      dwcx_16: 7101117479057765286
+      dwcx_17: 3145636753947641074
+      dwcx_18: 7399353418967659691
+      dwcx_19: 802811888346197171
+      dwcx_2: -2141024925920459341
+      dwcx_20: -8108686575517005931
+      dwcx_21: -4222666349528857728
+      dwcx_22: 6818299861418621851
+      dwcx_23: -348519514079440850
+      dwcx_24: 3498348205836932057
+      dwcx_25: 3720342357956949273
+      dwcx_26: -8168368775052324169
+      dwcx_27: 8899785794263901010
+      dwcx_28: -3650814742697340637
+      dwcx_29: 8242534880889055642
+      dwcx_3: -2646128800456377864
+      dwcx_30: 26739679720628378
+      dwcx_31: -729815126613291827
+      dwcx_32: 4325204679405825592
+      dwcx_33: -3092926019114708387
+      dwcx_34: 7737767931143922072
+      dwcx_35: -7413066016963345674
+      dwcx_36: -5585340000604615259
+      dwcx_37: -5831825889780715405
+      dwcx_38: -5344993680572131218
+      dwcx_39: 4277571429271568361
+      dwcx_4: -5914409008369041056
+      dwcx_40: 7455329872287226313
+      dwcx_41: 2106406290867473452
+      dwcx_42: -3054762748726522792
+      dwcx_43: 1677353899983149820
+      dwcx_44: -5974586061156192480
+      dwcx_45: 5574494242993592217
+      dwcx_46: -5680492787513615735
+      dwcx_47: 9143641735036190042
+      dwcx_48: -8085636803044089961
+      dwcx_49: -72530974221717269
+      dwcx_5: 4017052030249466003
+      dwcx_50: 4298476999480314279
+      dwcx_51: 8481802323928672507
+      dwcx_52: 2369780108967777638
+      dwcx_53: -4833857494424326243
+      dwcx_54: -536556570481548237
+      dwcx_55: -2124462123864764780
+      dwcx_56: -3554349600924841030
+      dwcx_57: -862144419410590537
+      dwcx_6: 3273671129571865568
+      dwcx_7: 5450254325602254205
+      dwcx_8: 8695856147782024572
+      dwcx_9: 1580973034587065987
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

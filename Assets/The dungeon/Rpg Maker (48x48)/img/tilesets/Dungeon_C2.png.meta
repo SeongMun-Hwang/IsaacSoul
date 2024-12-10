@@ -190,6 +190,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -822,7 +835,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dungeon_C2_0: -1937762948273731332
+      Dungeon_C2_1: -825077188583003154
+      Dungeon_C2_10: 5330845817318036826
+      Dungeon_C2_11: -4924821456403287731
+      Dungeon_C2_12: 8909060395516082746
+      Dungeon_C2_13: 6028181916394938046
+      Dungeon_C2_14: -4505381182340593554
+      Dungeon_C2_15: -3991015336636839085
+      Dungeon_C2_16: 5796874692186580666
+      Dungeon_C2_17: -4619806847787468915
+      Dungeon_C2_18: -5698706437642427996
+      Dungeon_C2_19: 4228637288379180111
+      Dungeon_C2_2: -3014867124039819044
+      Dungeon_C2_20: 3360301426255933558
+      Dungeon_C2_21: -5959735084970381482
+      Dungeon_C2_22: -5550823743572751800
+      Dungeon_C2_23: -3044925285192448325
+      Dungeon_C2_24: -3514389693648617089
+      Dungeon_C2_25: 7880313336816149187
+      Dungeon_C2_26: 149339309888888811
+      Dungeon_C2_27: -5261673737997136811
+      Dungeon_C2_3: 7216018916913554613
+      Dungeon_C2_4: 759668512610944511
+      Dungeon_C2_5: 6427531918917170275
+      Dungeon_C2_6: 1416386573468626185
+      Dungeon_C2_7: 6563864279530452164
+      Dungeon_C2_8: 7270364758810002746
+      Dungeon_C2_9: 1956177746593197720
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,6 +160,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -572,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      green_book_02_0: -5659456526782484362
+      green_book_02_1: -2335596814540282180
+      green_book_02_10: -7925837475366012764
+      green_book_02_11: 822741836247722092
+      green_book_02_12: -5552529436389389223
+      green_book_02_13: -6050767750999004978
+      green_book_02_14: -676343057517247475
+      green_book_02_15: -475239869587670593
+      green_book_02_16: 7841879545319577923
+      green_book_02_17: 6478161130086493931
+      green_book_02_2: 9145157821160344192
+      green_book_02_3: -5500456514783838303
+      green_book_02_4: 5923125445218891432
+      green_book_02_5: 5987258863070033852
+      green_book_02_6: 6100604418909799387
+      green_book_02_7: 2200514405337570548
+      green_book_02_8: -187984634941513733
+      green_book_02_9: 2594912669958938175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

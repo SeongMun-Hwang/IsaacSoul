@@ -202,6 +202,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -922,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bone_Gift_02_0: 7951026970432344643
+      Bone_Gift_02_1: -7495936833093869689
+      Bone_Gift_02_10: -1386115779793050950
+      Bone_Gift_02_11: 8167069656385051259
+      Bone_Gift_02_12: -1304198402383041173
+      Bone_Gift_02_13: 5856914242017363766
+      Bone_Gift_02_14: -713395228893250132
+      Bone_Gift_02_15: 6598838767134317491
+      Bone_Gift_02_16: 4418935384704248028
+      Bone_Gift_02_17: -8417909123894154944
+      Bone_Gift_02_18: -4687005099083253984
+      Bone_Gift_02_19: -8332686323148569072
+      Bone_Gift_02_2: 7045899098213507779
+      Bone_Gift_02_20: 2838027876907127852
+      Bone_Gift_02_21: 5604613274325995770
+      Bone_Gift_02_22: -7711689005165731779
+      Bone_Gift_02_23: -5193646146901608255
+      Bone_Gift_02_24: -7870114917010494321
+      Bone_Gift_02_25: 559251552044984931
+      Bone_Gift_02_26: 8116802861150784924
+      Bone_Gift_02_27: 2495279228564573396
+      Bone_Gift_02_28: -6174939422122283797
+      Bone_Gift_02_29: -6255102865549223601
+      Bone_Gift_02_3: 5368792654942436891
+      Bone_Gift_02_30: -5839858586495309749
+      Bone_Gift_02_31: -1016773633204515500
+      Bone_Gift_02_4: -1460555632234526658
+      Bone_Gift_02_5: -1389282517201334403
+      Bone_Gift_02_6: 3799680715761731644
+      Bone_Gift_02_7: -2858643665050411103
+      Bone_Gift_02_8: -8818480394881746274
+      Bone_Gift_02_9: 7692407706369038745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

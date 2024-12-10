@@ -202,6 +202,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -922,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Red_potion_02_0: -2462033700518329298
+      Red_potion_02_1: -6282520334725036200
+      Red_potion_02_10: -6151074995677222312
+      Red_potion_02_11: 1485414724524527646
+      Red_potion_02_12: -1758438622205176896
+      Red_potion_02_13: 1774743586339310817
+      Red_potion_02_14: 1345122840210542127
+      Red_potion_02_15: -8841684451287466157
+      Red_potion_02_16: -5360471663964993610
+      Red_potion_02_17: 6811952789349267364
+      Red_potion_02_18: -7529163907024295268
+      Red_potion_02_19: -1415622176871731250
+      Red_potion_02_2: 5050384049334956251
+      Red_potion_02_20: -6532499165784162277
+      Red_potion_02_21: -6694311745779346820
+      Red_potion_02_22: -7034651807479106464
+      Red_potion_02_23: -3646559562664768035
+      Red_potion_02_24: -590311922345011583
+      Red_potion_02_25: -670390620005159009
+      Red_potion_02_26: -1953220875258886048
+      Red_potion_02_27: -7707967624931642617
+      Red_potion_02_28: 6229227568315378724
+      Red_potion_02_29: -6462866923607987964
+      Red_potion_02_3: -7048464030741036033
+      Red_potion_02_30: -4353859250245825133
+      Red_potion_02_31: 4964001460813471821
+      Red_potion_02_4: -9083633748050928444
+      Red_potion_02_5: 2564473653749568450
+      Red_potion_02_6: 2894625901654096679
+      Red_potion_02_7: 2959140927992396637
+      Red_potion_02_8: 2072533804384633105
+      Red_potion_02_9: 6103435177229760945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

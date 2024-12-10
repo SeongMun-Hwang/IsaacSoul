@@ -130,6 +130,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -322,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Arrow2_wiggle_0: 2554895134464641741
+      Arrow2_wiggle_1: 149075485829933603
+      Arrow2_wiggle_2: 3976921039859984437
+      Arrow2_wiggle_3: -4314953359678648727
+      Arrow2_wiggle_4: 6772283837346830834
+      Arrow2_wiggle_5: -2497746298014906164
+      Arrow2_wiggle_6: -3685687331139362817
+      Arrow2_wiggle_7: 4457843186930559717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

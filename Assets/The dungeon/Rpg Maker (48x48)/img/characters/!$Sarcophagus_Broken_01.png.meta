@@ -142,6 +142,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -422,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Sarcophagus_Broken_01_0': -7954142423966140308
+      '!$Sarcophagus_Broken_01_1': -3282958942731846693
+      '!$Sarcophagus_Broken_01_10': 3078780258609010010
+      '!$Sarcophagus_Broken_01_11': 2395654907034108735
+      '!$Sarcophagus_Broken_01_2': -5132379077286558259
+      '!$Sarcophagus_Broken_01_3': 6935101046690141977
+      '!$Sarcophagus_Broken_01_4': -1415726851945114077
+      '!$Sarcophagus_Broken_01_5': 7424371727718069318
+      '!$Sarcophagus_Broken_01_6': -8528155032660480691
+      '!$Sarcophagus_Broken_01_7': 2764651769246023582
+      '!$Sarcophagus_Broken_01_8': 271803416272507818
+      '!$Sarcophagus_Broken_01_9': -7317169081044322728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

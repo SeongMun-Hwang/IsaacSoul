@@ -202,6 +202,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -922,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blue_potion_02_0: -2793215028983319707
+      Blue_potion_02_1: -4786873525319558538
+      Blue_potion_02_10: 1710032423761002057
+      Blue_potion_02_11: -454312598564047693
+      Blue_potion_02_12: 298117195038304518
+      Blue_potion_02_13: 5517972691483950644
+      Blue_potion_02_14: -8221762601993244337
+      Blue_potion_02_15: -3992122687761746084
+      Blue_potion_02_16: -4925286149296924037
+      Blue_potion_02_17: 499545476409923160
+      Blue_potion_02_18: 8294177195419180760
+      Blue_potion_02_19: -5319999984505677870
+      Blue_potion_02_2: 2596823402472222137
+      Blue_potion_02_20: -3222915455572756420
+      Blue_potion_02_21: 5985730044805249598
+      Blue_potion_02_22: 5848861663212688782
+      Blue_potion_02_23: 9071633978885663701
+      Blue_potion_02_24: -4254242221639249624
+      Blue_potion_02_25: -7452243724084964759
+      Blue_potion_02_26: -2299295534692620178
+      Blue_potion_02_27: 6953995512211201915
+      Blue_potion_02_28: -4912071182762797452
+      Blue_potion_02_29: -5742619884565721785
+      Blue_potion_02_3: 8727891384868434844
+      Blue_potion_02_30: 8889459110422141325
+      Blue_potion_02_31: -3258166691525847203
+      Blue_potion_02_4: -530849136199309088
+      Blue_potion_02_5: 6702763243899705631
+      Blue_potion_02_6: -5376131408055028897
+      Blue_potion_02_7: 6688126099421728514
+      Blue_potion_02_8: 20921856137515273
+      Blue_potion_02_9: 8451082850960220228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

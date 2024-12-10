@@ -142,6 +142,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -422,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Chandelier_0': -3717646946603386232
+      '!$Chandelier_1': -4700698866142401512
+      '!$Chandelier_10': 2729044265548519307
+      '!$Chandelier_11': -6766010866582106908
+      '!$Chandelier_2': -1970577103036971856
+      '!$Chandelier_3': -9167003782727453009
+      '!$Chandelier_4': -684091405041784255
+      '!$Chandelier_5': 5206467916800952358
+      '!$Chandelier_6': 4513572323838425113
+      '!$Chandelier_7': -3518785506194061125
+      '!$Chandelier_8': -810715932631174945
+      '!$Chandelier_9': -2341960100909991317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,6 +160,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -572,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Door5_0': -1536157977449505149
+      '!$Door5_1': 1688109816668221143
+      '!$Door5_10': 2937541495548732275
+      '!$Door5_11': 475649558373649285
+      '!$Door5_12': 2186529120532726500
+      '!$Door5_13': -9089277534417968209
+      '!$Door5_14': -1384665894702032966
+      '!$Door5_15': -1470787805711755386
+      '!$Door5_16': -2105979210472562749
+      '!$Door5_17': -2769308177552475884
+      '!$Door5_2': 5721375911934969225
+      '!$Door5_3': 5530639192162017300
+      '!$Door5_4': -753754732372575840
+      '!$Door5_5': 3766319647394378878
+      '!$Door5_6': -4039430455214075837
+      '!$Door5_7': 3229890184152253924
+      '!$Door5_8': 6718346989011795363
+      '!$Door5_9': -8988665481564731115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

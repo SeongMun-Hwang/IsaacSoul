@@ -154,6 +154,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -522,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Green_potion_03_0: -5551807119732231835
+      Green_potion_03_1: -904119532904234152
+      Green_potion_03_10: -3479029590811328704
+      Green_potion_03_11: 5144207350356754843
+      Green_potion_03_12: -5200541621746823392
+      Green_potion_03_13: -46570351820871270
+      Green_potion_03_14: 6506945204044513557
+      Green_potion_03_15: -3009295375024140378
+      Green_potion_03_2: 588057572681454453
+      Green_potion_03_3: -3458751172987098204
+      Green_potion_03_4: -3802766380968934614
+      Green_potion_03_5: 4614647826397851531
+      Green_potion_03_6: 5310613293687599284
+      Green_potion_03_7: 6322949802994021269
+      Green_potion_03_8: -5323701730294491939
+      Green_potion_03_9: -1993494812810164673
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

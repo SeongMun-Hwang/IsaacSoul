@@ -172,6 +172,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -672,7 +685,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orange_book_01_0: -2417782606283606408
+      orange_book_01_1: 7384382615561766754
+      orange_book_01_10: -8165023217921420700
+      orange_book_01_11: 9200792496370381889
+      orange_book_01_12: -1557143897982726498
+      orange_book_01_13: -1083171526485853751
+      orange_book_01_14: 3533110879333407631
+      orange_book_01_15: 6798691404292730765
+      orange_book_01_16: -6608634342799889460
+      orange_book_01_17: -5462982067042446702
+      orange_book_01_18: -3349933904027491945
+      orange_book_01_19: 4118802663297543171
+      orange_book_01_2: 6939418305833583430
+      orange_book_01_20: -8132187225891801395
+      orange_book_01_21: -8985676923186551064
+      orange_book_01_3: 981934406965753974
+      orange_book_01_4: -332459375922952749
+      orange_book_01_5: -6070160759074536921
+      orange_book_01_6: -1992964462688640362
+      orange_book_01_7: 8789982418827836788
+      orange_book_01_8: -8657190120938884441
+      orange_book_01_9: -1116872705359005323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

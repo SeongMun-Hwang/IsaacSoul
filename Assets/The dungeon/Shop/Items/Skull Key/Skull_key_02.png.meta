@@ -184,6 +184,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -772,7 +785,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skull_key_02_0: 7852429738879536812
+      Skull_key_02_1: -1659379397094546146
+      Skull_key_02_10: -1333996025805804158
+      Skull_key_02_11: -5636324341997290026
+      Skull_key_02_12: 9056553167484404425
+      Skull_key_02_13: -3353855239266179904
+      Skull_key_02_14: -5657788625719511946
+      Skull_key_02_15: 1302952781896250178
+      Skull_key_02_16: -7727948227069326777
+      Skull_key_02_17: -9180489770676623692
+      Skull_key_02_18: 3265166647179766765
+      Skull_key_02_19: 6744133876114203930
+      Skull_key_02_2: -7574946937324096058
+      Skull_key_02_20: 1691679416177668131
+      Skull_key_02_21: 6671888502842886919
+      Skull_key_02_22: 4947442375266811536
+      Skull_key_02_23: 4879676332866417702
+      Skull_key_02_24: -5332352335029636129
+      Skull_key_02_25: -476889786132560258
+      Skull_key_02_3: 533558858554912361
+      Skull_key_02_4: 3350874601967315754
+      Skull_key_02_5: 8991451529098098354
+      Skull_key_02_6: 2828251847358624561
+      Skull_key_02_7: 5749939084578454088
+      Skull_key_02_8: 4670420876291076198
+      Skull_key_02_9: 5076619349094159647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

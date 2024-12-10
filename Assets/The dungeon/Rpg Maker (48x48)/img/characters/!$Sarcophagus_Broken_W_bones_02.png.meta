@@ -142,6 +142,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -422,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Sarcophagus_Broken_W_bones_02_0': 5341850396626568264
+      '!$Sarcophagus_Broken_W_bones_02_1': 4576864387295738196
+      '!$Sarcophagus_Broken_W_bones_02_10': 8844145373267995850
+      '!$Sarcophagus_Broken_W_bones_02_11': -176899967791799710
+      '!$Sarcophagus_Broken_W_bones_02_2': -980605156482316143
+      '!$Sarcophagus_Broken_W_bones_02_3': -5816757987855081498
+      '!$Sarcophagus_Broken_W_bones_02_4': 5234771660791884195
+      '!$Sarcophagus_Broken_W_bones_02_5': -2153124455418657827
+      '!$Sarcophagus_Broken_W_bones_02_6': -5482658524309443730
+      '!$Sarcophagus_Broken_W_bones_02_7': 8967789303422771876
+      '!$Sarcophagus_Broken_W_bones_02_8': -9145562496010850513
+      '!$Sarcophagus_Broken_W_bones_02_9': -5333984017805570719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

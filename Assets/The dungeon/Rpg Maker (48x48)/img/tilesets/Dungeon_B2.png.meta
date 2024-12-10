@@ -400,6 +400,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2572,7 +2585,105 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dungeon_B2_0: 6545205013949576241
+      Dungeon_B2_1: 7049331364719081096
+      Dungeon_B2_10: 2475598470115960017
+      Dungeon_B2_11: 3829602505497619340
+      Dungeon_B2_12: 8454004818404286846
+      Dungeon_B2_13: -9027112373749836174
+      Dungeon_B2_14: 7212498096994198110
+      Dungeon_B2_15: 4522599251051131033
+      Dungeon_B2_16: 7539174712251453819
+      Dungeon_B2_17: 6904247669495431526
+      Dungeon_B2_18: -5010702742494545566
+      Dungeon_B2_19: -7686478470733215917
+      Dungeon_B2_2: -7618094993152209486
+      Dungeon_B2_20: -1717822773416163906
+      Dungeon_B2_21: 4439462472716000823
+      Dungeon_B2_22: -3496358403254492430
+      Dungeon_B2_23: 6679539591605870501
+      Dungeon_B2_24: -8003375928317642917
+      Dungeon_B2_25: -8546456349653713052
+      Dungeon_B2_26: 529536416235823142
+      Dungeon_B2_27: -6718699928811868021
+      Dungeon_B2_28: -7357780566497848901
+      Dungeon_B2_29: -7921487551888340727
+      Dungeon_B2_3: 5250870991577334944
+      Dungeon_B2_30: 6173651775037246
+      Dungeon_B2_31: -6437793792959470033
+      Dungeon_B2_32: -1109305140140168084
+      Dungeon_B2_33: 5313705175505143444
+      Dungeon_B2_34: -3342891187704057167
+      Dungeon_B2_35: 8542793483134762761
+      Dungeon_B2_36: 3679078657426908804
+      Dungeon_B2_37: -3238311608865759266
+      Dungeon_B2_38: -5646329825800044656
+      Dungeon_B2_39: 7100904340621206489
+      Dungeon_B2_4: 1561208306992702955
+      Dungeon_B2_40: 3151132795206932194
+      Dungeon_B2_41: -237934181704850496
+      Dungeon_B2_42: -972794983850650754
+      Dungeon_B2_43: 5527980678022468438
+      Dungeon_B2_44: -2727663745818548681
+      Dungeon_B2_45: 8415835449519478313
+      Dungeon_B2_46: -4852958931890097334
+      Dungeon_B2_47: 2131168235440988542
+      Dungeon_B2_48: 8025203074519713832
+      Dungeon_B2_49: -1811365181308369041
+      Dungeon_B2_5: -7277276497287166214
+      Dungeon_B2_50: 5121850737213431287
+      Dungeon_B2_51: -8691015821219152446
+      Dungeon_B2_52: -2518976816193317511
+      Dungeon_B2_53: 3885245469236800308
+      Dungeon_B2_54: 8800367414705762758
+      Dungeon_B2_55: 7926051921078762968
+      Dungeon_B2_56: 2388780651284101923
+      Dungeon_B2_57: 1888247775448290087
+      Dungeon_B2_58: -2010021432104405592
+      Dungeon_B2_59: 3057713409407595774
+      Dungeon_B2_6: -2604168424775927207
+      Dungeon_B2_60: 2505304670872466775
+      Dungeon_B2_61: -6191840096774402932
+      Dungeon_B2_62: -1443710413089220184
+      Dungeon_B2_63: 653094866896312949
+      Dungeon_B2_64: 205993169760396330
+      Dungeon_B2_65: 2066828436059516852
+      Dungeon_B2_66: 2120113988484481282
+      Dungeon_B2_67: -8274716217912444060
+      Dungeon_B2_68: -5022133297235147174
+      Dungeon_B2_69: -1932742038370290793
+      Dungeon_B2_7: 1267481271562710458
+      Dungeon_B2_70: -32771859025100816
+      Dungeon_B2_71: -4232912147253384698
+      Dungeon_B2_72: -6539505064313384537
+      Dungeon_B2_73: -6463120936727945706
+      Dungeon_B2_74: -6352365978391352563
+      Dungeon_B2_75: 1209538304820911515
+      Dungeon_B2_76: 7306982754387394218
+      Dungeon_B2_77: -5907663404647678022
+      Dungeon_B2_78: -202052220819431806
+      Dungeon_B2_79: 5162448514657484832
+      Dungeon_B2_8: 1205548057743631104
+      Dungeon_B2_80: 6228658554207117435
+      Dungeon_B2_81: -1505207108625086943
+      Dungeon_B2_82: -3697684179588891631
+      Dungeon_B2_83: -6527682969098249305
+      Dungeon_B2_84: 8999327689065983368
+      Dungeon_B2_85: 1160098790839498934
+      Dungeon_B2_86: 7576901523940634943
+      Dungeon_B2_87: -5786461485884434676
+      Dungeon_B2_88: 5831036248166148993
+      Dungeon_B2_89: -1834666583332235630
+      Dungeon_B2_9: -1062543690292351087
+      Dungeon_B2_90: -6941696624793545106
+      Dungeon_B2_91: -8026743266938540421
+      Dungeon_B2_92: 8005622905587718482
+      Dungeon_B2_93: 4029166479378138872
+      Dungeon_B2_94: -9122537888181658436
+      Dungeon_B2_95: 3298665027447561850
+      Dungeon_B2_96: -926284791802928025
+      Dungeon_B2_97: -4473215656266374379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
