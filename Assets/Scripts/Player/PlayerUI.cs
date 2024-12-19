@@ -3,7 +3,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class PlayerUI : MonoBehaviour
 {
     public HpController hpController;
     StaminaController staminaController;

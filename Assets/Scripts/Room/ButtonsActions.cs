@@ -5,14 +5,14 @@ public class ButtonsActions : MonoBehaviour
     GameObject player;
     HpController hpController;
     StaminaController staminaController;
-    PlayerController playerController;
+    PlayerUI playerController;
     GameObject RewardCanvas;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("PlayerRoot");
         hpController=player.GetComponentInChildren<HpController>();
         staminaController=player.GetComponent<StaminaController>();
-        playerController = player.GetComponent<PlayerController>();
+        playerController = player.GetComponent<PlayerUI>();
         RewardCanvas = transform.parent.parent.gameObject;
     }
     public void IncreaseHp(int hp)

@@ -51,19 +51,11 @@ public class StateMachineController : MonoBehaviour
     public TextMeshProUGUI bulletText;
     public TextMeshProUGUI portionText;
     //Audio
-    public AudioSource playerAudio;
-    public AudioClip gunSound;
-    public AudioClip spearSound;
-    public AudioClip walkSound;
-    public AudioClip runSound;
-    public AudioClip reloadSound;
-    public AudioClip HurtSound;
-    public AudioClip DrinkSound;
-    private string currentSound = "";
+    public PlayerAudio playerAudio;
     //portion
     public int numOfPortion = 2;
     //playercontroller
-    public PlayerController playerController;
+    public PlayerUI playerController;
     private void Awake()
     {
         stateMachines = new List<StateMachine>();
@@ -89,8 +81,6 @@ public class StateMachineController : MonoBehaviour
         hpController.OnHpChanged += ActionOnDamage;
         //stamina
         staminaController = GetComponent<StaminaController>();
-        //audio
-        playerAudio = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -107,29 +97,15 @@ public class StateMachineController : MonoBehaviour
             case State.Idle:
                 if (moveSpeed > 6)
                 {
-                    if (currentSound != "run")
-                    {
-                        playerAudio.Stop();
-                        playerAudio.PlayOneShot(runSound);
-                        currentSound = "run";
-                    }
+                    playerAudio.PlayRunSound();
                 }
                 else if (moveSpeed > 0 && moveSpeed <= 6)
                 {
-                    if (currentSound != "walk")
-                    {
-                        playerAudio.Stop();
-                        playerAudio.PlayOneShot(walkSound);
-                        currentSound = "walk";
-                    }
+                    playerAudio.PlayWalkSound();
                 }
                 else if (moveSpeed == 0)
                 {
-                    if (currentSound != "none")
-                    {
-                        playerAudio.Stop();
-                        currentSound = "none";
-                    }
+                    playerAudio.StopSound();
                 }
                 if (attackVector != Vector2.zero)
                 {
@@ -158,8 +134,7 @@ public class StateMachineController : MonoBehaviour
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1) && numOfPortion > 0 && hpController.hp < playerController.maxHp)
                 {
-                    playerAudio.Stop();
-                    playerAudio.PlayOneShot(DrinkSound);
+                    playerAudio.PlayDrinkSound();
                     hpController.hp += 40;
                     if (hpController.hp > playerController.maxHp)
                     {
@@ -285,8 +260,7 @@ public class StateMachineController : MonoBehaviour
     }
     IEnumerator GetDamage()
     {
-        playerAudio.Stop();
-        playerAudio.PlayOneShot(HurtSound);
+        playerAudio.PlayHurtSound();
         hpController.enabled = false;
         for (float f = 0f; f < invincibleTime; f += 0.1f)
         {
@@ -329,8 +303,7 @@ public class StateMachineController : MonoBehaviour
             go.GetComponent<LongRangeWeapon>().Damage = bulletDamage;
             go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
             currentBullet--;
-            playerAudio.Stop();
-            playerAudio.PlayOneShot(gunSound);
+            playerAudio.PlayGunSound();
         }
     }
     public void ActionOnDeath()

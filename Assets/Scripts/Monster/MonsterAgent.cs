@@ -49,6 +49,9 @@ public abstract class MonsterAgent : MonoBehaviour
 
         //Audio
         monsterSound = GetComponent<AudioSource>();
+
+        player = PlayerInfo.Instance.player;
+
     }
 
     protected virtual void Update()
@@ -60,7 +63,7 @@ public abstract class MonsterAgent : MonoBehaviour
     }
     protected virtual void UpdatePlayerReference()
     {
-        player = GameObject.FindWithTag("PlayerRoot");
+        //player = GameObject.FindWithTag("PlayerRoot");
         if (player != null)
         {
             agent.destination = player.transform.position;

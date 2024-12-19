@@ -30,7 +30,7 @@ public class GunStateMachine : StateMachine
             player.remainBullet -= addedBullet;
         }
         player.state = State.Reload;
-        player.playerAudio.PlayOneShot(player.reloadSound);
+        player.playerAudio.PlayReloadSound();
         player.playerAnimator.SetTrigger("Reload");
     }
     public void TransitionToDeath()
