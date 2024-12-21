@@ -4289,6 +4289,8 @@ MonoBehaviour:
   maxHp: 100
   playerSpear: {fileID: 1546653656}
   stateMachineController: {fileID: 988604995}
+  bulletText: {fileID: 2079149173}
+  portionText: {fileID: 2037621292}
 --- !u!114 &988605000
 MonoBehaviour:
   m_ObjectHideFlags: 0

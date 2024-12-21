@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Threading;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +18,10 @@ public class PlayerUI : MonoBehaviour
     public ShortRangeWeapon playerSpear;
     public StateMachineController stateMachineController;
 
+    //state Text
+    public TextMeshProUGUI bulletText;
+    public TextMeshProUGUI portionText;
+
     private void Start()
     {
         staminaController = GetComponent<StaminaController>();
@@ -27,6 +32,10 @@ public class PlayerUI : MonoBehaviour
         staminaBar.fillAmount = staminaController.stamina / staminaController.maxStamina;
         float currentHpPercentage = hpController.hp / maxHp;
         StartCoroutine(UpdateHpBars(currentHpPercentage));
+
+        //status text
+        bulletText.text = ":" + stateMachineController.currentBullet + "/" + stateMachineController.remainBullet;
+        portionText.text = ":" + stateMachineController.numOfPortion;
     }
     private IEnumerator UpdateHpBars(float targetFillAmount)
     {

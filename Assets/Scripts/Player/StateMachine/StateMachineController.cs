@@ -47,9 +47,6 @@ public class StateMachineController : MonoBehaviour
     public float bulletDamage = 30;
     public GameObject BulletPrefab;
     public GameObject FirePosition;
-    //state Text
-    public TextMeshProUGUI bulletText;
-    public TextMeshProUGUI portionText;
     //Audio
     public PlayerAudio playerAudio;
     //portion
@@ -84,10 +81,6 @@ public class StateMachineController : MonoBehaviour
     }
     private void Update()
     {
-        //status text
-        bulletText.text = ":" + currentBullet + "/" + remainBullet;
-        portionText.text = ":" + numOfPortion;
-
         HandleAnimation();
     }
     void HandleAnimation()
