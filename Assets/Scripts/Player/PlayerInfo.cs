@@ -9,6 +9,7 @@ public class PlayerInfo : MonoBehaviour
 
     public PlayerAudio playerAudio;
     public GunController gunController;
+    public HpController hpController;
     void Awake()
     {
         if(instance != null)
