@@ -17,20 +17,14 @@ public class GunStateMachine : StateMachine
     public void TransitionToAttack()
     {
         player.playerAnimator.SetTrigger("Attack");
-        player.ShootBullet();
+        //PlayerInfo.Instance.gunController.ShootBullet();
         player.state = State.GunAttack;
     }
     public void TransitionToReloading()
     {
-        if (player.remainBullet > 0)
-        {
-            addedBullet = maxBullet - player.currentBullet;
-            if (addedBullet > player.remainBullet) addedBullet = player.remainBullet;
-            player.currentBullet += addedBullet;
-            player.remainBullet -= addedBullet;
-        }
+        PlayerInfo.Instance.gunController.ReloadBullet();
         player.state = State.Reload;
-        player.playerAudio.PlayReloadSound();
+        PlayerInfo.Instance.playerAudio.PlayReloadSound();
         player.playerAnimator.SetTrigger("Reload");
     }
     public void TransitionToDeath()

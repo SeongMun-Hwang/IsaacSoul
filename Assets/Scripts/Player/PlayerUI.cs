@@ -34,7 +34,7 @@ public class PlayerUI : MonoBehaviour
         StartCoroutine(UpdateHpBars(currentHpPercentage));
 
         //status text
-        bulletText.text = ":" + stateMachineController.currentBullet + "/" + stateMachineController.remainBullet;
+        bulletText.text = ":" + PlayerInfo.Instance.gunController.currentBullet + "/" + PlayerInfo.Instance.gunController.remainBullet;
         portionText.text = ":" + stateMachineController.numOfPortion;
     }
     private IEnumerator UpdateHpBars(float targetFillAmount)

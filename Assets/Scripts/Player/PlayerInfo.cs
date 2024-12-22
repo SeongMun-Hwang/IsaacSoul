@@ -6,6 +6,9 @@ public class PlayerInfo : MonoBehaviour
     public static PlayerInfo Instance { get { return instance; } }
 
     public GameObject player;
+
+    public PlayerAudio playerAudio;
+    public GunController gunController;
     void Awake()
     {
         if(instance != null)

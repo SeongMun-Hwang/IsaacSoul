@@ -41,14 +41,6 @@ public class StateMachineController : MonoBehaviour
     float invincibleTime = 1f;
     //stamina
     public StaminaController staminaController;
-    //bullet
-    public int currentBullet = 8;
-    public int remainBullet = 20;
-    public float bulletDamage = 30;
-    public GameObject BulletPrefab;
-    public GameObject FirePosition;
-    //Audio
-    public PlayerAudio playerAudio;
     //portion
     public int numOfPortion = 2;
     //playercontroller
@@ -90,15 +82,15 @@ public class StateMachineController : MonoBehaviour
             case State.Idle:
                 if (moveSpeed > 6)
                 {
-                    playerAudio.PlayRunSound();
+                    PlayerInfo.Instance.playerAudio.PlayRunSound();
                 }
                 else if (moveSpeed > 0 && moveSpeed <= 6)
                 {
-                    playerAudio.PlayWalkSound();
+                    PlayerInfo.Instance.playerAudio.PlayWalkSound();
                 }
                 else if (moveSpeed == 0)
                 {
-                    playerAudio.StopSound();
+                    PlayerInfo.Instance.playerAudio.StopSound();
                 }
                 if (attackVector != Vector2.zero)
                 {
@@ -127,7 +119,7 @@ public class StateMachineController : MonoBehaviour
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha1) && numOfPortion > 0 && hpController.hp < playerController.maxHp)
                 {
-                    playerAudio.PlayDrinkSound();
+                    PlayerInfo.Instance.playerAudio.PlayDrinkSound();
                     hpController.hp += 40;
                     if (hpController.hp > playerController.maxHp)
                     {
@@ -253,7 +245,7 @@ public class StateMachineController : MonoBehaviour
     }
     IEnumerator GetDamage()
     {
-        playerAudio.PlayHurtSound();
+        PlayerInfo.Instance.playerAudio.PlayHurtSound();
         hpController.enabled = false;
         for (float f = 0f; f < invincibleTime; f += 0.1f)
         {
@@ -269,35 +261,6 @@ public class StateMachineController : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         hpController.enabled = true;
-    }
-    public void ShootBullet()
-    {
-        Vector3 fireVectorPos = new Vector2();
-        if (currentBullet > 0)
-        {
-            if (attackAngle == 0)//right
-            {
-                fireVectorPos = new Vector3(0.7f, 0.6f);
-            }
-            else if (attackAngle == 90)//up
-            {
-                fireVectorPos = new Vector3(0.35f, 1.5f);
-            }
-            else if (attackAngle == 180)//left
-            {
-                fireVectorPos = new Vector3(-0.7f, 0.75f);
-            }
-            else if (attackAngle == -90)//
-            {
-                fireVectorPos = new Vector3(-0.35f, 0.15f);
-            }
-            fireVectorPos += transform.position;
-            GameObject go = Instantiate(BulletPrefab, fireVectorPos, Quaternion.identity);
-            go.GetComponent<LongRangeWeapon>().Damage = bulletDamage;
-            go.transform.rotation = Quaternion.Euler(0f, 0f, attackAngle);
-            currentBullet--;
-            playerAudio.PlayGunSound();
-        }
     }
     public void ActionOnDeath()
     {

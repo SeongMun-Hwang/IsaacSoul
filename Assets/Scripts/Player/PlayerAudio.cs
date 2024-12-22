@@ -19,10 +19,6 @@ public class PlayerAudio : MonoBehaviour
     {
         playerAudio = GetComponent<AudioSource>();
     }
-    void Update()
-    {
-        
-    }
     public void PlayRunSound()
     {
         if (currentSound != "run")

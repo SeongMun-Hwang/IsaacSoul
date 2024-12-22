@@ -17,7 +17,7 @@ public class SpearStateMachine : StateMachine
     {
         player.state = State.SpearAttack;
         player.staminaController.stamina -= 10f;
-        player.playerAudio.PlaySpearSound();
+        PlayerInfo.Instance.playerAudio.PlaySpearSound();
         player.GetComponent<Animator>().SetTrigger("Attack");
     }
     public void TransitionToDeath()

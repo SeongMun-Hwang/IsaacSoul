@@ -38,12 +38,12 @@ public class ButtonsActions : MonoBehaviour
     }
     public void IncreaseBulletDamage(float damage)
     {
-        playerController.stateMachineController.bulletDamage += damage;
+        PlayerInfo.Instance.gunController.bulletDamage += damage;
         ButtonQuit();
     }
     public void IncreaseBulletNumber(int number)
     {
-        playerController.stateMachineController.remainBullet += number;
+        PlayerInfo.Instance.gunController.remainBullet += number;
         ButtonQuit();
     }
     public void ButtonQuit()

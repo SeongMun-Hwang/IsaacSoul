@@ -2910,7 +2910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdfa11d56ec1374da893ca9216a9e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 988604989}
+  playerAudio: {fileID: 55865230}
+  gunController: {fileID: 988605002}
 --- !u!4 &696217659
 Transform:
   m_ObjectHideFlags: 0
@@ -4035,6 +4037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988604990}
   - component: {fileID: 988604992}
+  - component: {fileID: 988605002}
   - component: {fileID: 988604995}
   - component: {fileID: 988605000}
   - component: {fileID: 988604999}
@@ -4193,13 +4196,6 @@ MonoBehaviour:
   state: 0
   hpController: {fileID: 444867122}
   staminaController: {fileID: 0}
-  currentBullet: 8
-  remainBullet: 16
-  bulletDamage: 30
-  BulletPrefab: {fileID: 2407209647820271621, guid: 64ee293800edfa44fae720c99519aac4, type: 3}
-  FirePosition: {fileID: 975059188}
-  bulletText: {fileID: 2079149173}
-  portionText: {fileID: 2037621292}
   playerAudio: {fileID: 55865230}
   numOfPortion: 2
   playerController: {fileID: 988604999}
@@ -4404,6 +4400,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &988605002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988604989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a268cc87d10abb44493da9a1909981d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentBullet: 8
+  remainBullet: 20
+  bulletDamage: 30
+  BulletPrefab: {fileID: 2407209647820271621, guid: 64ee293800edfa44fae720c99519aac4, type: 3}
+  FirePosition: {fileID: 975059188}
 --- !u!1 &1022804987
 GameObject:
   m_ObjectHideFlags: 0
