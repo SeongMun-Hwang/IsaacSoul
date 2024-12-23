@@ -12,13 +12,13 @@ public class PlayerInfo : MonoBehaviour
     public HpController hpController;
     void Awake()
     {
-        if(instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        //if (instance != null)
+        //{
+        //    Destroy(gameObject);
+        //    return;
+        //}
         instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
     private void Start()
     {
