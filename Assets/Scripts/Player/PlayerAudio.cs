@@ -4,7 +4,7 @@ public class PlayerAudio : MonoBehaviour
 {
     AudioSource playerAudio;
 
-    //È¿°úÀ½ ¸ñ·Ï
+    //È¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
     [SerializeField] AudioClip gunSound;
     [SerializeField] AudioClip spearSound;
     [SerializeField] AudioClip walkSound;

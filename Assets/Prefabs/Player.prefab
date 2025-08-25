@@ -369,7 +369,7 @@ MonoBehaviour:
   moveSpeed: 0
   state: 0
   hpController: {fileID: 3796739341352444394}
-  staminaController: {fileID: 0}
+  staminaController: {fileID: 5266885928213975811}
   numOfPortion: 2
   playerController: {fileID: 7690093978673261478}
 --- !u!114 &5266885928213975811

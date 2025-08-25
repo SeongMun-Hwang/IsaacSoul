@@ -17,7 +17,6 @@ public class StateMachineController : MonoBehaviour
 {
     //StateMachine for each equipment
     public List<StateMachine> stateMachines;
-    public NormalStateMachine normalStateMachine;
     public SpearStateMachine spearStateMachine;
     public GunStateMachine gunStateMachine;
     public int stateIndex = 0;
@@ -48,11 +47,9 @@ public class StateMachineController : MonoBehaviour
     private void Awake()
     {
         stateMachines = new List<StateMachine>();
-        normalStateMachine = new NormalStateMachine(this);
         spearStateMachine = new SpearStateMachine(this);
         gunStateMachine = new GunStateMachine(this);
 
-        stateMachines.Add(normalStateMachine);
         stateMachines.Add(spearStateMachine);
         stateMachines.Add(gunStateMachine);
     }
@@ -130,7 +127,7 @@ public class StateMachineController : MonoBehaviour
                 break;
             case State.SpearAttack:
                 playerRb.linearVelocity = Vector2.zero;
-                //°ø°Ý Àü ½ºÅÂ¹Ì³ª°¡ 0ÀÌÇÏ¸é
+                //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Â¹Ì³ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½Ï¸ï¿½
                 if (staminaController.stamina + 10 <= 0)
                 {
                     if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.3f)
@@ -139,7 +136,7 @@ public class StateMachineController : MonoBehaviour
                         playerAnimator.SetFloat("MoveDirection", attackAngle);
                     }
                 }
-                //½ºÅÂ¹Ì³ª 0¸¸ ³ÑÀ¸¸é °ø°Ý °¡´É
+                //ï¿½ï¿½ï¿½Â¹Ì³ï¿½ 0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 if (playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                 {
 
