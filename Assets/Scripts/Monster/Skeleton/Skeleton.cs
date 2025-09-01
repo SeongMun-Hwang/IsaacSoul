@@ -12,6 +12,7 @@ public class Skeleton : MonsterAgent
         moveSpeed = monsterStat.moveSpeed;
         agent.speed = monsterStat.moveSpeed;
         attackVarious = monsterStat.attackVarious;
+        attackVarious = skills.Count;
         attackDelay = monsterStat.attackDelay;
         hpController.hp = monsterStat.hp;
 

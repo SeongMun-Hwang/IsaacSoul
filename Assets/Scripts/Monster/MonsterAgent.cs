@@ -1,3 +1,6 @@
+using NUnit.Framework;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -37,13 +40,17 @@ public abstract class MonsterAgent : MonoBehaviour
     protected AudioSource monsterSound;
     public AudioClip hitSound;
     public AudioClip deathSound;
+
+    //PatternList
+    public GameObject skillList;
+    protected List<MonsterSkill> skills;
     private void Awake()
     {
         //NavMesh Agent
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-
+         
         //Animator
         animator = GetComponent<Animator>();
 
@@ -51,7 +58,9 @@ public abstract class MonsterAgent : MonoBehaviour
         monsterSound = GetComponent<AudioSource>();
 
         player = PlayerInfo.Instance.player;
-
+        //skill
+        if(skillList != null)
+        skills = skillList.GetComponentsInChildren<MonsterSkill>().ToList();
     }
 
     protected virtual void Update()
@@ -166,5 +175,9 @@ public abstract class MonsterAgent : MonoBehaviour
             return true;
         }
         return false;
+    }
+    public void SetAnimationTrigger(string trigger)
+    {
+        animator.SetTrigger(trigger);
     }
 }

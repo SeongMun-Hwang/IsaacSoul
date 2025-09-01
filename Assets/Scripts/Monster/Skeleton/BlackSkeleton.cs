@@ -63,13 +63,6 @@ public class BlackSkeleton : MonsterAgent
                 state = MonsterState.Attack;
                 monsterSound.PlayOneShot(attackSound);
             }
-            else
-            {
-                agent.speed = 0;
-                animator.SetFloat("MoveSpeed", 0);
-                gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
-                StartCoroutine(PerformTeleport());
-            }
         }
     }
     protected override void HandleAttackState()
